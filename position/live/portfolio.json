@@ -1,0 +1,9 @@
+{
+  "cash": 20000,
+  "holdings": {
+    "sh515050": {"name": "通信CPO/PCB", "shares": 30000, "cost":1},
+    "sh512480": {"name": "半导体设备", "shares": 25000, "cost": 1},
+    "sh512010": {"name": "存储芯片", "shares": 8000, "cost": 1},
+    "sh512800": {"name": "科创芯片", "shares": 8000, "cost": 1}
+  }
+}

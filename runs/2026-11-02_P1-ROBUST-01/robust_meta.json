@@ -1,0 +1,44 @@
+{
+  "id": "P1-ROBUST-01",
+  "run_at": "2026-11-02 20:24:07",
+  "start": "20190101",
+  "combos": [
+    "baseline k5 reb5 c5bp d1",
+    "k=3",
+    "k=8",
+    "reb=10",
+    "reb=20",
+    "cost=0.001",
+    "cost=0.002",
+    "delay=0",
+    "delay=2"
+  ],
+  "detail": {
+    "base": {
+      "passed": true,
+      "verdicts": {
+        "①9组合全为正": true,
+        "②剔除后仍为正": true,
+        "③逐年为正占比≥60%(6/8)": true,
+        "④去掉最大年(2026)后年化超额>0": true,
+        "⑤滚动3年>0占比≥70%(48/48)": true
+      },
+      "live_start": "2019-08-13",
+      "live_end": "2026-11-02",
+      "roll_share": 1.0
+    },
+    "ext": {
+      "passed": true,
+      "verdicts": {
+        "①9组合全为正": true,
+        "②剔除后仍为正": true,
+        "③逐年为正占比≥60%(7/8)": true,
+        "④去掉最大年(2020)后年化超额>0": true,
+        "⑤滚动3年>0占比≥70%(48/48)": true
+      },
+      "live_start": "2019-08-13",
+      "live_end": "2026-11-02",
+      "roll_share": 1.0
+    }
+  }
+}

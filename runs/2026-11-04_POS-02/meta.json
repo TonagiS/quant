@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-04 15:05",
+  "data": "data/cache2019, 2019-08-13~2026-11-02, 5bp",
+  "note": "2026-11-04 修正 VolTarget base_ret 后重跑；ERC/MDP 的波动估计使用同权重方案",
+  "code_sha16": {
+    "engine.py": "4248345af9c15488",
+    "advanced.py": "bb58f68b65882df4"
+  },
+  "sources": [
+    "https://quantpedia.com/an-introduction-to-volatility-targeting/",
+    "https://quantpedia.com/risk-parity-asset-allocation/",
+    "https://quantpedia.com/introduction-to-cppi-constant-proportion-portfolio-insurance/"
+  ]
+}

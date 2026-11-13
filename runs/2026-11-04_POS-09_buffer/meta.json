@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-04",
+  "costs_bp": [
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    60.0
+  ],
+  "config": "k5 buffer7 reb5 delay1 VT15 every5, symmetric costs",
+  "checks": {
+    "ext": {
+      "breakeven_bp": 50.8,
+      "breakeven_base_bp": 34.3,
+      "C1": true,
+      "C2": true,
+      "C3": true,
+      "C3_turn_ratio": 0.773,
+      "C4_delay2_excess_pp": 8.97,
+      "C4_exclude3_excess_pp": 12.31,
+      "C4": true
+    },
+    "base": {
+      "breakeven_bp": 33.8,
+      "breakeven_base_bp": 31.3,
+      "C1": true,
+      "C2": true,
+      "C3": false,
+      "C3_turn_ratio": 0.826,
+      "C4_delay2_excess_pp": 4.67,
+      "C4_exclude3_excess_pp": 2.99,
+      "C4": true
+    }
+  },
+  "passed": false,
+  "code_sha16": {
+    "engine.py": "4248345af9c15488",
+    "buffer_vt.py": "79325bec71ff3fe2"
+  }
+}

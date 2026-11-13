@@ -1,0 +1,2 @@
+﻿appended section, rows: 14
+backup: E:\Code\quant\work\bak\results.md.bak_signal_list_20261105_145630.md

@@ -1,0 +1,31 @@
+{
+  "created": "2026-11-04",
+  "snapshot": "2026-11-02",
+  "data": {
+    "cache2019": "E:\\Code\\quant\\data\\cache2019",
+    "cache2007": "E:\\Code\\quant\\data\\cache2007",
+    "cache_base": "E:\\Code\\quant\\data\\cache_base",
+    "daily": "E:\\Code\\quant\\data\\daily"
+  },
+  "reuse_from": "E:\\Code\\quant\\indicators\\code",
+  "pools": ["base", "ext", "long", "stocks", "long+stocks"],
+  "baseline": {
+    "k": 5, "reb": 5, "cost": 0.0005, "delay": 1,
+    "start_etf": "20190101", "start_long": "20070101"
+  },
+  "evidence": {
+    "rule": "三段同向 且 NW_t>=2 且 不重叠t>=1.5（Bonferroni 约需 t>=3）",
+    "portfolio": "加到 S2 后的 卡玛/最大回撤/年化换手 增量，对照同平均仓位固定缩放",
+    "robust": ["OFAT", "剔除涨幅前3", "分年"],
+    "cost_gate": "换手增量 × 单位成本 < 卡玛增益"
+  },
+  "combination": {
+    "up": "AND（慢：60~120日）",
+    "down": "OR（快：5~20日）",
+    "hysteresis": "±1% 或 5 日确认，数值在预登记中冻结"
+  },
+  "trial_budget": {
+    "per_round": 3,
+    "cumulative_before": 7
+  }
+}

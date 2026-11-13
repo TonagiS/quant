@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-03 22:30",
+  "data": "data/cache2019, 2019-08-13~2026-11-02, 5bp",
+  "baseline": {
+    "ext": {
+      "cagr": 0.1884,
+      "mdd": -0.3358,
+      "calmar": 0.561
+    },
+    "base": {
+      "cagr": 0.1682,
+      "mdd": -0.3731,
+      "calmar": 0.451
+    }
+  },
+  "methods": [
+    "VT15",
+    "EWMA15",
+    "CVaR2",
+    "CPPI3_80 initial",
+    "CPPI3_75P peak",
+    "CPPI5_75P peak",
+    "CPPI5_85 peak",
+    "CPPI8_90 peak",
+    "ERC126",
+    "ERC+VT15",
+    "ERC+VT15+cap40",
+    "MDP126",
+    "MDP+VT15"
+  ],
+  "sources": [
+    "https://quantpedia.com/an-introduction-to-volatility-targeting/",
+    "https://quantpedia.com/risk-parity-asset-allocation/",
+    "https://quantpedia.com/introduction-to-cppi-constant-proportion-portfolio-insurance/",
+    "https://quantpedia.com/an-introduction-to-value-at-risk-methodologies/",
+    "https://conference.nber.org/conf_papers/f88104/f88104.executive_summary.pdf"
+  ],
+  "code_sha16": {
+    "engine.py": "5793df294beb0941",
+    "advanced.py": "7661e21a3ea3ddc2"
+  },
+  "notice": "same-sample, not out-of-sample; CPPI is a capital-protection tool, not a return enhancer"
+}

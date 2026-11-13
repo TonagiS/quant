@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-11-03",
+  "migrated_at": "2026-11-03",
+  "migration_note": "目录迁移到 position/live/shadow：run_shadow.py 只改路径常量，规则/参数未变；哈希已更新。RULES_v1.md 未改。",
+  "files": {
+    "RULES_v1.md": "46912b5d41e0430d771de913842e6cb285f3e7d86e200f5dc0343c648f9d4441",
+    "engine.py": "74d4c154c7fdb0acb807964c3b9859b126f76e9dc50ef3220a9faf3e7b73eca0",
+    "run_shadow.py": "f82e47ad0d5c0f3c58b30223d98f032183a66315519a4a769a1e3e17157a5f55",
+    "universe_v1.csv": "0539ca147dbb6dc829a59c3282ed0c6a1e652e9c462289aa9e1513b14260e884"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "深市可用源": "未找到",
+  "尝试1": "ak.fund_etf_scale_szse() -> TypeError(bytes)",
+  "尝试2": "东财系接口(fund_etf_spot_em 等)被墙",
+  "结论": "深市份额需另找源，暂不纳入"
+}

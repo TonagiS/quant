@@ -1,0 +1,18 @@
+{
+  "version": "v2.1",
+  "created": "2026-11-03",
+  "updated": "2026-11-04",
+  "reason": "场外基金赎回费分档：<7自然日 1.5%、7~30 自然日 0.5%、≥30 自然日 0.1~0.2%；场内 ETF 只有佣金（万5），没有赎回费",
+  "reb_calendar_days": 14,
+  "min_hold_calendar_days": 7,
+  "buy_cost": 0.0005,
+  "redeem_fee_short": 0.015,
+  "redeem_fee_mid": 0.005,
+  "redeem_fee_long": 0.0015,
+  "tier_days": { "short": 7, "long": 30 },
+  "reference_arm": {
+    "note": "5 交易日一调（≈7 自然日）保留为参考臂：仅场内口径（佣金万5、无赎回费）成立；场外口径这一档吃 0.5% 赎回费",
+    "cadence_calendar_days": 7,
+    "sell_cost": 0.0005
+  }
+}

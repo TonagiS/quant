@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-30",
+  "data_end": "2026-10-30",
+  "params": {
+    "demo": false,
+    "demo_momentum": 0.0,
+    "demo_regime": false,
+    "start": "20070101",
+    "k": 5,
+    "reb": 5,
+    "cost": 0.0005,
+    "delay": 1,
+    "cooldown": 10,
+    "min_names": 8,
+    "lookback": 120,
+    "exclude": "",
+    "n_random": 200,
+    "pool": "long",
+    "vol_targets": "0.12,0.15,0.20",
+    "vol_window": 60,
+    "skip_struct": false,
+    "n_struct_random": 50,
+    "struct_base": 0.6,
+    "cut": 0.4,
+    "add": 0.2,
+    "recall": 2,
+    "hold": 20
+  },
+  "pool": "long",
+  "etf_count": 15,
+  "failed_count": 0,
+  "split_dates": {
+    "train": [
+      "2010-02-08",
+      "2018-06-15"
+    ],
+    "valid": [
+      "2018-06-19",
+      "2022-08-18"
+    ],
+    "test": [
+      "2022-08-19",
+      "2026-10-30"
+    ]
+  },
+  "panel_count": 15,
+  "failed": [],
+  "index_fallback": [],
+  "valid_px_daily": {
+    "median": 11,
+    "min": 10,
+    "max": 15
+  },
+  "valid_vol_daily": {
+    "median": 11,
+    "min": 10,
+    "max": 15
+  },
+  "amount_missing_pct": {
+    "sh000929": 59.9,
+    "sh000930": 59.9,
+    "sh000931": 44.6,
+    "sh000936": 59.9,
+    "sh000937": 59.9
+  },
+  "first_date": {
+    "sh000016": "2007-01-04",
+    "sh000300": "2007-01-04",
+    "sh000905": "2007-01-04",
+    "sz399006": "2010-06-01",
+    "sh000015": "2007-01-04",
+    "sh000928": "2009-07-03",
+    "sh000929": "2009-07-03",
+    "sh000930": "2009-07-03",
+    "sh000931": "2009-07-03",
+    "sh000932": "2009-07-03",
+    "sh000933": "2009-07-03",
+    "sh000934": "2009-07-03",
+    "sh000935": "2009-07-03",
+    "sh000936": "2009-07-03",
+    "sh000937": "2009-07-03"
+  }
+}
