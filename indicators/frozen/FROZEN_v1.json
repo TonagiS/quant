@@ -1,0 +1,10 @@
+{
+  "frozen_at": "2026-11-03",
+  "archived_at": "2026-11-04",
+  "note": "v1 runner 从 work/pre_reorg_20261103.zip 归档；当前 shadow/run_shadow.py 已是 v2，见 FROZEN_v2.json",
+  "files": {
+    "run_shadow_v1.py": "e7a8e9b0fbbdcf6ead6a72e382da607b7f8bb985bd065d40680a44ed8d66ee06",
+    "RULES_v1.md": "46912b5d41e0430d771de913842e6cb285f3e7d86e200f5dc0343c648f9d4441",
+    "universe_v1.csv": "0539ca147dbb6dc829a59c3282ed0c6a1e652e9c462289aa9e1513b14260e884"
+  }
+}

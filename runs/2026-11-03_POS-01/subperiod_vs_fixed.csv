@@ -1,0 +1,13 @@
+﻿pool,variant,segment,calmar,fixed_calmar,diff
+ext,VT12%,train,1.182,1.006,0.176
+ext,VT12%,valid,0.253,0.157,0.096
+ext,VT12%,test,2.215,0.753,1.462
+ext,VT15%,train,1.155,1.012,0.143
+ext,VT15%,valid,0.291,0.145,0.146
+ext,VT15%,test,2.136,0.753,1.384
+base,VT12%,train,0.987,0.948,0.039
+base,VT12%,valid,0.081,-0.097,0.178
+base,VT12%,test,2.169,0.763,1.406
+base,VT15%,train,0.96,0.953,0.008
+base,VT15%,valid,0.094,-0.107,0.201
+base,VT15%,test,2.026,0.769,1.257

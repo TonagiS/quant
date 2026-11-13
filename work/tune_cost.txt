@@ -1,0 +1,27 @@
+﻿
+[AstrBot 群上下文]
+  provider_ltm_settings.group_message_max_cnt: 20 -> 10
+  provider_ltm_settings.group_message_history_max_cnt: 100 -> 40
+  provider_ltm_settings.image_caption: True -> False
+
+[stealer]
+  enable_natural_emotion_analysis: True -> False
+  steal_chance: 0.3 -> 0.2
+
+[ds_alert]
+  image_probability: 0.3 -> 0.12
+  max_per_hour: 2 -> 1
+
+[ds_meme_boost]
+  max_judge_per_hour: 12 -> 5
+  cooldown_seconds: 15 -> 40
+
+[reply_guess]
+  judge_max_per_hour: 15 -> 5
+
+[group_profile]
+  max_people: 15 -> 8
+  inject_chars: 600 -> 400
+  trigger_messages: 120 -> 250
+
+备份: E:\Code\quant\work\bak\*.bak_cost_20261105_220524

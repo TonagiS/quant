@@ -1,0 +1,9 @@
+﻿池,变体,C1_盈亏平衡≥30bp,C2_超额≥V0-1pp且卡玛≥V0-0.05,C3_换手降≥30%,C4_delay2与剔除前3均>0,盈亏平衡bp,5bp超额pp,5bp卡玛,换手%,delay2超额pp,剔除前3超额pp,通过
+base,V0 现行,False,True,False,True,25,8.2,0.45,3640,6.16,2.55,False
+base,V1 rebx2,False,False,True,True,25,5.29,0.37,2367,4.69,3.04,False
+base,V2 缓冲带,True,True,False,True,33,9.01,0.54,2883,5.12,4.99,False
+base,V3 rebx2+缓冲,False,False,True,True,22,3.81,0.34,2018,2.61,3.8,False
+ext,V0 现行,False,True,False,True,29,11.05,0.56,3988,9.63,7.18,False
+ext,V1 rebx2,True,False,True,True,38,9.73,0.55,2604,8.05,6.85,False
+ext,V2 缓冲带,True,True,False,True,43,13.31,0.62,3040,10.28,8.19,False
+ext,V3 rebx2+缓冲,True,False,True,True,32,6.65,0.41,2201,5.87,6.28,False

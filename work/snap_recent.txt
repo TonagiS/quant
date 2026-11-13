@@ -1,0 +1,10 @@
+﻿E:\Code\quant\venv\Scripts\python.exe :   File "<string>", line 4
+所在位置 行:1 字符: 129
++ ... F8Encoding]::new($false); E:\Code\quant\venv\Scripts\python.exe -c @"
++                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string>", line 4:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    d=json.loads(Path(r'E:\Code\quant\data\daily\'+ds+'.json').read_text(encoding='utf-8-sig'))
+                                                                                            ^
+SyntaxError: unterminated string literal (detected at line 4)

@@ -1,0 +1,18 @@
+﻿
+[Ⱥ������]
+  provider_ltm_settings.group_message_max_cnt: 10 -> 6
+  provider_ltm_settings.group_message_history_max_cnt: 40 -> 30
+
+[Ⱥ��Ա����]
+  max_people: 8 -> 5
+  inject_chars: 400 -> 300
+  trigger_messages: 250 -> 300
+
+[�����Ȩ��¼]
+  max_judge_per_hour: 5 -> 3
+
+[ds �ؼ��ʽӻ�]
+  probability: 0.45 -> 0.35
+  max_per_hour: 1 -> 1
+
+����: E:\Code\quant\work\bak\*.bak_save_20261106_173638

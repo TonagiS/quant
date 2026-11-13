@@ -1,0 +1,46 @@
+{
+  "signal": "national_team_etf_share_drawdown_defense",
+  "frozen_on": "2026-11-08",
+  "verdict": "未通过（G4b CAGR bootstrap 下沿 -0.87pp；H5 平均仓位 59% < 60%）",
+  "evidence_level": "无证据（探索性，同批数据，非样本外）",
+  "criteria_changed": false,
+  "usage": "只记录影子日志；不接入 v2；不再追加该信号的测试",
+  "params": {
+    "n_days": 14,
+    "m_threshold_pct": -10.0,
+    "l_delay_days": 5,
+    "k_hold_days": 20,
+    "position_level": 0.0
+  },
+  "universe": [
+    "510050", "510300", "510310", "510330", "510500",
+    "512500", "512100", "588000", "588080"
+  ],
+  "data": {
+    "source": "http://query.sse.com.cn/commonQuery.do?sqlId=COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L",
+    "unit": "万份",
+    "coverage": "2019-01-02 ~ 2026-11-06",
+    "trading_days": 1902
+  },
+  "audit": {
+    "gates_total": 8,
+    "gates_passed": 6,
+    "failed": ["G4b CAGR差90%下沿>0", "H5 平均仓位>=60%"]
+  },
+  "placebo": {
+    "random_dates_all_gates_pass_rate": "3.4% / 3.7%（两次重抽，真实 20.8%）",
+    "random_flat_blocks_calmar_percentile": "真实 1.21 位于随机 300 次的 98 分位（中位 0.88）",
+    "random_dates_max_calmar_900cells": "原始 4.98 / 20.16（退化格子）；按暴露 45-80% 过滤后 1.05 / 1.23，与真实 1.21 同水平",
+    "real_best_calmar_percentile_in_placebo": "98-99 分位"
+  },
+  "shadow_log": "data/national_team/shadow_signal_log.csv",
+  "shadow_script": "tools/nt_signal_shadow.py",
+  "trials": {
+    "grid_hypotheses": 900,
+    "supplementary_grids": 84,
+    "ad_hoc_variants": 27,
+    "placebo_replications": 2,
+    "treatment": "探索性，不做 Bonferroni，结论以三关 + 安慰剂基线为准"
+  }
+}
+

@@ -1,0 +1,4 @@
+﻿bridge: {'proactive_enabled': True, 'proactive_min_minutes': 90, 'proactive_max_minutes': 180, 'proactive_idle_minutes': 40, 'social_enabled': True, 'social_min_minutes': 180, 'social_max_minutes': 300, 'autonomy_enabled': True, 'autonomy_min_minutes': 120, 'autonomy_max_minutes': 240, 'autonomy_idle_minutes': 30}
+ds_alert: {'probability': 0.8, 'cooldown_seconds': 240, 'max_per_hour': 5, 'image_probability': 0.3}
+reply_guess: {'probability': 0.85, 'max_follow': 2, 'judge_max_per_hour': 60, 'judge_cooldown_seconds': 20}
+active_reply: {'enable': True, 'method': 'possibility_reply', 'possibility_reply': 0.01}

@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-11-04",
+  "note": "v2：14 自然日调仓 + 场外分档赎回费；run_shadow.py 路径/调仓逻辑改动后重新冻结",
+  "files": {
+    "RULES_v2.md": "09221143852c05de68a1c624c1d2afe9c336423aefe519d07e3268b36dfda70c",
+    "rules_v2.json": "acd6996af3835f881e0548daea17de97cbd66225d534e0a710fdcbfad78911b3",
+    "run_shadow.py": "2b4f3a0c2a2eb593a28874f326c87b73a0a0a185893622a99fa9879fd244fd13",
+    "engine.py": "74d4c154c7fdb0acb807964c3b9859b126f76e9dc50ef3220a9faf3e7b73eca0",
+    "universe_v1.csv": "0539ca147dbb6dc829a59c3282ed0c6a1e652e9c462289aa9e1513b14260e884"
+  }
+}

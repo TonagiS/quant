@@ -1,0 +1,242 @@
+[11-11 17:33:07] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=2240346522 group_id=559797440 msg_str=''
+[11-11 17:33:07] 进入处理 group=559797440 user=2240346522
+[11-11 17:33:08] 回话成功 group=559797440 user=2240346522
+[11-11 17:38:05] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=392211410 group_id=559797440 msg_str=''
+[11-11 17:38:05] 进入处理 group=559797440 user=392211410
+[11-11 17:38:05] 回话成功 group=559797440 user=392211410
+[11-11 17:38:17] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=392211410 group_id=559797440 msg_str=''
+[11-11 17:38:17] 冷却中 group=559797440 user=392211410 剩47s
+[11-11 18:04:03] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1145047022 group_id=413776331 msg_str=''
+[11-11 18:05:18] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=841233567 group_id=559797440 msg_str=''
+[11-11 18:05:21] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=372294935 group_id=559797440 msg_str=''
+[11-11 18:15:03] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=841233567 group_id=559797440 msg_str=''
+[11-11 18:18:12] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=595710040 group_id=551381811 msg_str=''
+[11-11 18:18:12] 进入处理 group=551381811 user=595710040
+[11-11 18:18:12] 回话成功 group=551381811 user=595710040
+[11-11 18:18:12] 反戳 group=551381811 user=595710040 ok=True
+[11-11 18:18:12] notice 到达: sub_type=poke notice_type=notify target_id=595710040 self_id=2644176460 user_id=2644176460 group_id=551381811 msg_str=''
+[11-11 18:18:12] poke 但不是戳我: target=595710040 self=2644176460
+[11-11 18:30:58] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1579936142 group_id=559797440 msg_str=''
+[11-11 18:53:33] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-11 18:53:44] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-11 19:54:30] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=377289358 group_id=559797440 msg_str=''
+[11-11 19:59:18] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=1853100965 group_id=413776331 msg_str=''
+[11-11 20:26:36] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=2780280082 group_id=868439011 msg_str=''
+[11-11 20:36:53] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1758526785 group_id=413776331 msg_str=''
+[11-11 20:38:15] notice 到达: sub_type=poke notice_type=notify target_id=939277931 self_id=2644176460 user_id=1755043403 group_id=238421055 msg_str=''
+[11-11 20:38:15] poke 但不是戳我: target=939277931 self=2644176460
+[11-11 20:38:23] notice 到达: sub_type=poke notice_type=notify target_id=1755043403 self_id=2644176460 user_id=939277931 group_id=238421055 msg_str=''
+[11-11 20:38:23] poke 但不是戳我: target=1755043403 self=2644176460
+[11-11 20:48:40] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=891157572 group_id=413776331 msg_str=''
+[11-11 21:11:23] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=3164969593 group_id=868439011 msg_str=''
+[11-11 21:15:08] notice 到达: sub_type=poke notice_type=notify target_id=2461649393 self_id=2644176460 user_id=2240346522 group_id=559797440 msg_str=''
+[11-11 21:15:08] poke 但不是戳我: target=2461649393 self=2644176460
+[11-11 21:18:43] notice 到达: sub_type=None notice_type=friend_recall target_id=None self_id=2644176460 user_id=891157572 group_id=None msg_str=''
+[11-11 22:58:05] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=210432189 group_id=868439011 msg_str=''
+[11-11 23:05:53] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-11 23:06:02] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-11 23:08:44] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=2780708945 group_id=868439011 msg_str=''
+[11-11 23:17:52] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=208233968 group_id=868439011 msg_str=''
+[11-12 00:24:01] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=173121729 group_id=868439011 msg_str=''
+[11-12 08:41:17] notice 到达: sub_type=invite notice_type=group_increase target_id=None self_id=2644176460 user_id=2644176460 group_id=391634429 msg_str=''
+[11-12 08:41:17] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2644176460 group_id=391634429 msg_str=''
+[11-12 08:41:19] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2652820917 group_id=391634429 msg_str=''
+[11-12 08:42:11] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1619887902 group_id=391634429 msg_str=''
+[11-12 08:42:33] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 08:42:34] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2630492774 group_id=391634429 msg_str=''
+[11-12 08:42:37] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1282680750 group_id=391634429 msg_str=''
+[11-12 08:42:47] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=372294935 group_id=391634429 msg_str=''
+[11-12 08:43:03] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2290703624 group_id=391634429 msg_str=''
+[11-12 08:44:08] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=541959361 group_id=391634429 msg_str=''
+[11-12 08:44:12] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=849317209 group_id=391634429 msg_str=''
+[11-12 08:45:27] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=752502869 group_id=391634429 msg_str=''
+[11-12 08:45:38] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=354146891 group_id=391634429 msg_str=''
+[11-12 08:46:23] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=969480166 group_id=391634429 msg_str=''
+[11-12 08:46:25] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=835029594 group_id=391634429 msg_str=''
+[11-12 08:47:39] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=895870733 group_id=391634429 msg_str=''
+[11-12 08:50:43] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=345302947 group_id=391634429 msg_str=''
+[11-12 08:51:23] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1793990969 group_id=391634429 msg_str=''
+[11-12 08:54:52] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1446882716 group_id=391634429 msg_str=''
+[11-12 08:57:42] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=526744740 group_id=391634429 msg_str=''
+[11-12 09:00:12] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=751037879 group_id=391634429 msg_str=''
+[11-12 09:01:37] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=928302819 group_id=391634429 msg_str=''
+[11-12 09:02:32] notice 到达: sub_type=poke notice_type=notify target_id=834922948 self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 09:02:32] poke 但不是戳我: target=834922948 self=2644176460
+[11-12 09:05:05] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=948995355 group_id=391634429 msg_str=''
+[11-12 09:07:33] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2240346522 group_id=391634429 msg_str=''
+[11-12 09:07:54] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=652541915 group_id=391634429 msg_str=''
+[11-12 09:09:09] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=892532436 group_id=391634429 msg_str=''
+[11-12 09:09:14] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=864351854 group_id=391634429 msg_str=''
+[11-12 09:11:41] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=562739552 group_id=391634429 msg_str=''
+[11-12 09:13:31] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=365012554 group_id=391634429 msg_str=''
+[11-12 09:18:34] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=619505851 group_id=391634429 msg_str=''
+[11-12 09:21:57] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=3020144726 group_id=868439011 msg_str=''
+[11-12 09:22:44] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1519287775 group_id=391634429 msg_str=''
+[11-12 09:24:29] notice 到达: sub_type=poke notice_type=notify target_id=541959361 self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 09:24:29] poke 但不是戳我: target=541959361 self=2644176460
+[11-12 09:24:53] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1050139755 group_id=391634429 msg_str=''
+[11-12 09:25:08] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=489683622 group_id=391634429 msg_str=''
+[11-12 09:26:47] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1223143992 group_id=391634429 msg_str=''
+[11-12 09:27:18] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1342409234 group_id=391634429 msg_str=''
+[11-12 09:28:03] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=961886265 group_id=391634429 msg_str=''
+[11-12 09:28:18] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1048001324 group_id=391634429 msg_str=''
+[11-12 09:29:07] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2058396283 group_id=391634429 msg_str=''
+[11-12 09:29:38] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2066207637 group_id=391634429 msg_str=''
+[11-12 09:33:47] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=1171578216 group_id=559797440 msg_str=''
+[11-12 09:33:56] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=515757347 group_id=391634429 msg_str=''
+[11-12 09:34:42] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1171578216 group_id=391634429 msg_str=''
+[11-12 09:35:09] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=377289358 group_id=391634429 msg_str=''
+[11-12 09:42:10] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 09:43:34] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=934754083 group_id=391634429 msg_str=''
+[11-12 09:53:24] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2054017108 group_id=391634429 msg_str=''
+[11-12 09:56:49] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=995131106 group_id=391634429 msg_str=''
+[11-12 09:57:58] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1025749439 group_id=391634429 msg_str=''
+[11-12 09:58:25] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=961886265 group_id=391634429 msg_str=''
+[11-12 09:59:20] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=605372045 group_id=559797440 msg_str=''
+[11-12 10:03:02] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=949668188 group_id=391634429 msg_str=''
+[11-12 10:04:01] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1157390329 group_id=391634429 msg_str=''
+[11-12 10:04:43] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1436084142 group_id=391634429 msg_str=''
+[11-12 10:08:48] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=258365110 group_id=391634429 msg_str=''
+[11-12 10:09:23] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=2397113030 group_id=868439011 msg_str=''
+[11-12 10:19:39] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=934167242 group_id=391634429 msg_str=''
+[11-12 10:26:58] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1579936142 group_id=391634429 msg_str=''
+[11-12 10:34:16] notice 到达: sub_type=poke notice_type=notify target_id=1208436467 self_id=2644176460 user_id=939277931 group_id=238421055 msg_str=''
+[11-12 10:34:16] poke 但不是戳我: target=1208436467 self=2644176460
+[11-12 10:34:48] notice 到达: sub_type=poke notice_type=notify target_id=1208436467 self_id=2644176460 user_id=939277931 group_id=238421055 msg_str=''
+[11-12 10:34:48] poke 但不是戳我: target=1208436467 self=2644176460
+[11-12 10:53:33] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1876142146 group_id=391634429 msg_str=''
+[11-12 11:02:20] notice 到达: sub_type=invite notice_type=group_increase target_id=None self_id=2644176460 user_id=1477994275 group_id=391634429 msg_str=''
+[11-12 11:11:17] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 11:12:02] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 11:19:11] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=252826131 group_id=391634429 msg_str=''
+[11-12 11:35:32] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=995992498 group_id=413776331 msg_str=''
+[11-12 11:36:46] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1421360710 group_id=391634429 msg_str=''
+[11-12 11:40:11] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=526820228 group_id=391634429 msg_str=''
+[11-12 11:47:20] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=396399635 group_id=391634429 msg_str=''
+[11-12 11:55:18] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=2240346522 group_id=391634429 msg_str=''
+[11-12 11:55:18] poke 群不在白名单: group=391634429 white=['238421055', '315962846', '413776331', '551381811', '559797440', '633168517', '634489131']
+[11-12 12:01:57] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=810759414 group_id=391634429 msg_str=''
+[11-12 12:04:08] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=583939993 group_id=391634429 msg_str=''
+[11-12 12:06:21] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=484993656 group_id=391634429 msg_str=''
+[11-12 12:09:01] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=3060096188 group_id=391634429 msg_str=''
+[11-12 12:14:31] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=575749720 group_id=391634429 msg_str=''
+[11-12 13:07:02] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=461132216 group_id=559797440 msg_str=''
+[11-12 13:07:31] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2770233319 group_id=391634429 msg_str=''
+[11-12 13:13:37] notice 到达: sub_type=invite notice_type=group_increase target_id=None self_id=2644176460 user_id=291222514 group_id=391634429 msg_str=''
+[11-12 13:29:55] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1007120700 group_id=391634429 msg_str=''
+[11-12 13:49:11] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=519590070 group_id=391634429 msg_str=''
+[11-12 14:17:59] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1445680298 group_id=391634429 msg_str=''
+[11-12 14:23:36] notice 到达: sub_type=invite notice_type=group_increase target_id=None self_id=2644176460 user_id=1132580373 group_id=391634429 msg_str=''
+[11-12 14:24:09] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=2461649393 group_id=391634429 msg_str=''
+[11-12 14:27:03] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1600753401 group_id=391634429 msg_str=''
+[11-12 14:53:53] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=1283848277 group_id=540601376 msg_str=''
+[11-12 15:18:53] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=1586642326 group_id=559797440 msg_str=''
+[11-12 15:23:51] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1424300053 group_id=391634429 msg_str=''
+[11-12 15:26:03] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=1007120700 group_id=391634429 msg_str=''
+[11-12 15:26:34] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=1213540606 group_id=391634429 msg_str=''
+[11-12 15:30:59] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=291222514 group_id=391634429 msg_str=''
+[11-12 15:32:00] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=1714483007 group_id=391634429 msg_str=''
+[11-12 15:32:26] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2393587613 group_id=391634429 msg_str=''
+[11-12 15:48:09] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 16:03:32] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1394505480 group_id=391634429 msg_str=''
+[11-12 16:16:54] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=891157572 group_id=633168517 msg_str=''
+[11-12 16:29:48] notice 到达: sub_type=invite notice_type=group_increase target_id=None self_id=2644176460 user_id=369901947 group_id=391634429 msg_str=''
+[11-12 16:44:04] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-12 16:44:17] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-12 17:26:58] notice 到达: sub_type=poke notice_type=notify target_id=3442433621 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:26:58] poke 但不是戳我: target=3442433621 self=2644176460
+[11-12 17:27:10] notice 到达: sub_type=poke notice_type=notify target_id=523568382 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:27:10] poke 但不是戳我: target=523568382 self=2644176460
+[11-12 17:27:13] notice 到达: sub_type=poke notice_type=notify target_id=939277931 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:27:13] poke 但不是戳我: target=939277931 self=2644176460
+[11-12 17:27:16] notice 到达: sub_type=poke notice_type=notify target_id=1755043403 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:27:16] poke 但不是戳我: target=1755043403 self=2644176460
+[11-12 17:27:19] notice 到达: sub_type=poke notice_type=notify target_id=2795450933 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:27:19] poke 但不是戳我: target=2795450933 self=2644176460
+[11-12 17:27:28] notice 到达: sub_type=poke notice_type=notify target_id=1272768949 self_id=2644176460 user_id=624528415 group_id=238421055 msg_str=''
+[11-12 17:27:28] poke 但不是戳我: target=1272768949 self=2644176460
+[11-12 17:35:53] notice 到达: sub_type=poke notice_type=notify target_id=1755043403 self_id=2644176460 user_id=3225968736 group_id=238421055 msg_str=''
+[11-12 17:35:53] poke 但不是戳我: target=1755043403 self=2644176460
+[11-12 17:36:48] notice 到达: sub_type=poke notice_type=notify target_id=3225968736 self_id=2644176460 user_id=1755043403 group_id=238421055 msg_str=''
+[11-12 17:36:48] poke 但不是戳我: target=3225968736 self=2644176460
+[11-12 17:36:49] notice 到达: sub_type=poke notice_type=notify target_id=3442433621 self_id=2644176460 user_id=1755043403 group_id=238421055 msg_str=''
+[11-12 17:36:49] poke 但不是戳我: target=3442433621 self=2644176460
+[11-12 17:48:23] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=3367815398 group_id=868439011 msg_str=''
+[11-12 18:06:51] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1585824834 group_id=391634429 msg_str=''
+[11-12 18:46:21] notice 到达: sub_type=poke notice_type=notify target_id=747587789 self_id=2644176460 user_id=1132580373 group_id=391634429 msg_str=''
+[11-12 18:46:21] poke 但不是戳我: target=747587789 self=2644176460
+[11-12 18:46:28] notice 到达: sub_type=poke notice_type=notify target_id=747587789 self_id=2644176460 user_id=841233567 group_id=391634429 msg_str=''
+[11-12 18:46:28] poke 但不是戳我: target=747587789 self=2644176460
+[11-12 18:46:35] notice 到达: sub_type=poke notice_type=notify target_id=747587789 self_id=2644176460 user_id=1600753401 group_id=391634429 msg_str=''
+[11-12 18:46:35] poke 但不是戳我: target=747587789 self=2644176460
+[11-12 18:46:36] notice 到达: sub_type=poke notice_type=notify target_id=747587789 self_id=2644176460 user_id=1579936142 group_id=391634429 msg_str=''
+[11-12 18:46:36] poke 但不是戳我: target=747587789 self=2644176460
+[11-12 19:05:58] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1477994275 group_id=391634429 msg_str=''
+[11-12 20:44:03] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=1046310180 group_id=559797440 msg_str=''
+[11-12 21:01:35] notice 到达: sub_type=add notice_type=essence target_id=None self_id=2644176460 user_id=2765505078 group_id=413776331 msg_str=''
+[11-12 21:59:54] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-12 22:00:03] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-12 22:07:02] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=2775651023 group_id=391634429 msg_str=''
+[11-12 22:15:07] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1320044527 group_id=391634429 msg_str=''
+[11-12 22:18:57] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1758526785 group_id=413776331 msg_str=''
+[11-12 22:36:04] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=390734843 group_id=391634429 msg_str=''
+[11-12 22:40:44] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=853087138 group_id=391634429 msg_str=''
+[11-12 22:50:02] notice 到达: sub_type=poke notice_type=notify target_id=390734843 self_id=2644176460 user_id=2066207637 group_id=391634429 msg_str=''
+[11-12 22:50:02] poke 但不是戳我: target=390734843 self=2644176460
+[11-12 23:14:46] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1450582962 group_id=391634429 msg_str=''
+[11-12 23:35:58] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1579936142 group_id=391634429 msg_str=''
+[11-13 00:52:14] notice 到达: sub_type=None notice_type=group_card target_id=None self_id=2644176460 user_id=930801 group_id=413776331 msg_str=''
+[11-13 01:26:19] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=737696956 group_id=391634429 msg_str=''
+[11-13 07:39:12] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=425186384 group_id=868439011 msg_str=''
+[11-13 08:24:10] notice 到达: sub_type=poke notice_type=notify target_id=1208436467 self_id=2644176460 user_id=1755043403 group_id=238421055 msg_str=''
+[11-13 08:24:10] poke 但不是戳我: target=1208436467 self=2644176460
+[11-13 08:32:55] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=391634429 msg_str=''
+[11-13 09:31:02] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1602565159 group_id=391634429 msg_str=''
+[11-13 09:38:54] notice 到达: sub_type=poke notice_type=notify target_id=1755043403 self_id=2644176460 user_id=939277931 group_id=238421055 msg_str=''
+[11-13 09:38:54] poke 但不是戳我: target=1755043403 self=2644176460
+[11-13 09:39:10] notice 到达: sub_type=poke notice_type=notify target_id=939277931 self_id=2644176460 user_id=1755043403 group_id=238421055 msg_str=''
+[11-13 09:39:10] poke 但不是戳我: target=939277931 self=2644176460
+[11-13 09:55:00] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=402155582 group_id=315962846 msg_str=''
+[11-13 10:02:26] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1758526785 group_id=413776331 msg_str=''
+[11-13 10:22:43] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=595710040 group_id=551381811 msg_str=''
+[11-13 10:22:43] 进入处理 group=551381811 user=595710040
+[11-13 10:22:43] 回话成功 group=551381811 user=595710040
+[11-13 10:22:44] 反戳 group=551381811 user=595710040 ok=True
+[11-13 10:22:44] notice 到达: sub_type=poke notice_type=notify target_id=595710040 self_id=2644176460 user_id=2644176460 group_id=551381811 msg_str=''
+[11-13 10:22:44] poke 但不是戳我: target=595710040 self=2644176460
+[11-13 10:23:15] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=2426718183 group_id=559797440 msg_str=''
+[11-13 10:29:56] notice 到达: sub_type=add notice_type=group_msg_emoji_like target_id=None self_id=2644176460 user_id=345302947 group_id=559797440 msg_str=''
+[11-13 11:06:49] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=402155582 group_id=315962846 msg_str=''
+[11-13 11:30:20] notice 到达: sub_type=poke notice_type=notify target_id=1755043403 self_id=2644176460 user_id=3293725895 group_id=238421055 msg_str=''
+[11-13 11:30:20] poke 但不是戳我: target=1755043403 self=2644176460
+[11-13 11:52:34] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=891157572 group_id=559797440 msg_str=''
+[11-13 11:58:16] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=305485125 group_id=391634429 msg_str=''
+[11-13 13:00:12] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=891157572 group_id=559797440 msg_str=''
+[11-13 15:21:36] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=2238418299 group_id=868439011 msg_str=''
+[11-13 15:46:23] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=3990169446 group_id=559797440 msg_str=''
+[11-13 17:07:08] notice 到达: sub_type=poke notice_type=notify target_id=2426718183 self_id=2644176460 user_id=2240346522 group_id=559797440 msg_str=''
+[11-13 17:07:08] poke 但不是戳我: target=2426718183 self=2644176460
+[11-13 17:12:35] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=1127441062 group_id=391634429 msg_str=''
+[11-13 17:19:14] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=3060096188 group_id=559797440 msg_str=''
+[11-13 18:03:48] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=1282680750 group_id=559797440 msg_str=''
+[11-13 18:18:57] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=1719078854 group_id=868439011 msg_str=''
+[11-13 18:24:00] notice 到达: sub_type=None notice_type=group_recall target_id=None self_id=2644176460 user_id=747587789 group_id=559797440 msg_str=''
+[11-13 18:24:47] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=849962489 group_id=238421055 msg_str=''
+[11-13 18:24:47] 进入处理 group=238421055 user=849962489
+[11-13 18:24:47] 回话成功 group=238421055 user=849962489
+[11-13 18:34:35] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=2995147266 group_id=868439011 msg_str=''
+[11-13 19:43:05] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=393566330 group_id=868439011 msg_str=''
+[11-13 19:59:40] notice 到达: sub_type=None notice_type=group_card target_id=None self_id=2644176460 user_id=930801 group_id=413776331 msg_str=''
+[11-13 20:33:06] notice 到达: sub_type=leave notice_type=group_decrease target_id=None self_id=2644176460 user_id=3578246694 group_id=868439011 msg_str=''
+[11-13 21:05:12] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=891157572 group_id=238421055 msg_str=''
+[11-13 21:05:12] 进入处理 group=238421055 user=891157572
+[11-13 21:05:13] 回话成功 group=238421055 user=891157572
+[11-13 21:52:44] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=595710040 group_id=551381811 msg_str=''
+[11-13 21:52:44] 进入处理 group=551381811 user=595710040
+[11-13 21:52:44] 回话成功 group=551381811 user=595710040
+[11-13 22:03:10] notice 到达: sub_type=poke notice_type=notify target_id=2644176460 self_id=2644176460 user_id=595710040 group_id=551381811 msg_str=''
+[11-13 22:03:10] 进入处理 group=551381811 user=595710040
+[11-13 22:03:10] 回话成功 group=551381811 user=595710040
+[11-13 22:08:41] notice 到达: sub_type=lift_ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-13 22:08:52] notice 到达: sub_type=ban notice_type=group_ban target_id=None self_id=2644176460 user_id=0 group_id=868439011 msg_str=''
+[11-13 22:29:30] notice 到达: sub_type=approve notice_type=group_increase target_id=None self_id=2644176460 user_id=3314153848 group_id=868439011 msg_str=''

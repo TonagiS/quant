@@ -1,0 +1,7 @@
+﻿pool,cap,max_single_weight
+ext,100%,1.0
+ext,30%,0.3
+ext,40%,0.4
+base,100%,1.0
+base,30%,0.3
+base,40%,0.4

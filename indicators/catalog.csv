@@ -1,0 +1,24 @@
+id,名称,类别,公式或定义,默认参数,方向,证据等级,依据,代码位置
+mom_rm,动量综合(rm),动量,rank(mom20)+rank(mom60)+rank(mom120) 的截面 pct rank 均值,20/60/120日,排序取前k=5,A,P1-ROBUST-01,code/backtest_composite.py: xs_rank / ../position/live/shadow/engine.py: features
+mom20,20日动量,动量,close/close.shift(20)-1,20日,打分/诊断,A,P1-ROBUST-01,code/backtest_composite.py: build_features
+mom60,60日动量,动量,close/close.shift(60)-1,60日,打分/诊断,A,P1-ROBUST-01,同上
+mom120,120日动量,动量,close/close.shift(120)-1,120日,打分/诊断,A,P1-ROBUST-01,同上
+trend_ma60,60日线趋势过滤,趋势,close > MA60,60日,只买站上60日线,B,ETF正/指数负,同上
+trend_ma120,120日线趋势过滤,趋势,close > MA120,120日,敏感性对照,B,仅描述性,P1-GATE-01
+vol20,20日已实现波动,风险,日收益20日滚动标准差(min_periods=15),20日,逆波动权重/A,作为权重输入有效,P1-ROBUST-01,同上
+invvol,逆波动权重,仓位,w_i ∝ 1/vol20_i，归一化和为1,20日,k=5内部分配,B,仅ext有增益(P1-ROBUST-01),code/backtest_composite.py: run_portfolio
+vol_ratio,量能比,量能,"amount / mean(amount,20).shift(1)",20日,放量/缩量,D,45规则表无稳健项,code/backtest_composite.py: build_features
+crowd,拥挤度,量能,60日成交额历史分位(<=x[-1]).mean()*100,60日,>85回避,D,同上,同上
+rsi6,RSI6,超买超卖,"Wilder RSI, alpha=1/6",6日,<20买入,D,同上,同上
+macd_top,MACD顶部钝化/结构,结构,前低+DIF背离；结构形成=DIF拐头,120/5/5,顶部减仓,D,run b系列负,code/backtest_composite.py: structure_series / code/macd_structure.py
+macd_bottom,MACD底部钝化/结构,结构,同上取负,120/5/5,底部加仓/观察,C,样本内正负不稳定,code/macd_structure.py: analyze
+cash_gate_120,120日现金闸门,择时,等权指数 < MA120,120日,只记录/降回撤,B,回撤4/5改善、卡玛3/5未过预登记,P1-GATE-01 / ../position/live/shadow/engine.py: cash_gate
+vol_target,波动率目标,仓位,"clip(目标波动/60日已实现波动,0,1)",12%/15%,总敞口,A,POS-01 + P1 S3,../position/engine.py: VolTarget
+dd_throttle,回撤节流,仓位,-10%→70%仓、-15%→40%、-20%→0,10/15/20%,总敞口,D,POS-01 卡玛-0.32,../position/engine.py: DrawdownThrottle
+equity_ma,净值均线,仓位,净值<MA100/200→50%仓,100/200日,总敞口,D,POS-01 卡玛-0.08~-0.11,../position/engine.py: EquityMA
+stop_fixed,固定止损,风控,自成交价回撤x%卖出,12%,个股止损,D,POS-01 无改善,../position/engine.py: simulate(stop=)
+stop_ma60,跌破60日线止损,风控,close<MA60卖出,60日,个股止损,D,POS-01 卡玛-0.13~-0.18,同上
+kelly_half,半Kelly,仓位,"clip(0.5*μ/σ²,0,1)",120日,总敞口,D,POS-01 卡玛0.08~0.11,../position/engine.py: Kelly
+cap30,个券上限,仓位,单票权重≤30%，超出按比例分配,30%,集中度控制,C,POS-01 卡玛-0.03,../position/engine.py: _weights
+adx14,ADX趋势强度,择时,Wilder ADX(14)：+DM/-DM/TR 用 alpha=1/14 平滑，DX 再平滑；作用于池等权指数,14日,ADX<20 时敞口减半,D,POS-07 修正 base_ret 后未通过（卡玛 1.13，扰动最差 0.93，③④⑥ 不过）,work/indicator_sweep.py: adx
+adx_pct,ADX分位阈值,择时,ADX 处于过去 500 日（含当日）的后 q% 分位时敞口减半,ADX14/q30%/500日/minp250,低于 q 分位减半,D,POS-08 未通过（分位30% 卡玛 1.12，与固定20 的 1.13 基本无差；③④⑥ 不过）,work/pos08_adx_pct.py: pct_series

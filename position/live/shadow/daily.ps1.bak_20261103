@@ -1,0 +1,17 @@
+param([ValidateSet('1430','eod')][string]$phase = '1430')
+$ErrorActionPreference = 'Continue'
+Set-Location 'E:\Code\quant'
+$env:PYTHONIOENCODING = 'utf-8'
+$env:PYTHONUTF8 = '1'
+$py = 'E:\Code\quant\venv\Scripts\python.exe'
+$log = 'E:\Code\quant\shadow\run.log'
+"[{0}] phase={1} start" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $phase | Out-File -FilePath $log -Append -Encoding UTF8
+& $py 'shadow\run_shadow.py' --phase $phase *>> $log
+if ($phase -eq '1430') {
+    & $py 'paper_account.py' --execute *>> $log
+}
+if ($phase -eq 'eod') {
+    & $py 'shadow\v2_observ.py' *>> $log
+    & $py 'paper_account.py' --mark *>> $log
+}
+"[{0}] phase={1} done exit={2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $phase, $LASTEXITCODE | Out-File -FilePath $log -Append -Encoding UTF8
