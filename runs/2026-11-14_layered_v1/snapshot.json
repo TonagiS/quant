@@ -1,0 +1,47 @@
+{
+  "snapshot_date": "2026-11-13",
+  "eval_start": "2019-01-01",
+  "train_end": "2022-12-31",
+  "test_start": "2023-01-01",
+  "test_end": "2026-11-13",
+  "cost_one_way": 0.0005,
+  "delay": 1,
+  "min_bars_cross": 250,
+  "min_avg_amount": 5000000,
+  "universe_n": 1720,
+  "money_market_n": 27,
+  "evaluated_n": 1600,
+  "cross_section_n": 951,
+  "slow_n": 92,
+  "active_n": 859,
+  "missing_cache_n": 0,
+  "prereg": "runs/2026-11-14_layered_v1/PREREG.md",
+  "cache_path": "/workspace/quant/data/cache_ohlc_full",
+  "script": "work/layered_v1_backtest.py",
+  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "baseline_reconcile": {
+    "n_prior": 951,
+    "n_new": 951,
+    "n_overlap": 951,
+    "max_abs_test_cagr": 9.974659986866641e-17,
+    "max_abs_test_mdd": 9.71445146547012e-17,
+    "max_abs_test_avg_pos": 8.326672684688674e-17,
+    "ok": true
+  },
+  "frozen": {
+    "confirm_days": 3,
+    "slow_t4_pos": 0.5,
+    "state_coef": {
+      "UP": 1.0,
+      "SIDE": 0.7,
+      "DOWN": 0.5
+    },
+    "vol_target": 0.2,
+    "vol_floor": 0.5,
+    "g1_side": 0.5,
+    "g1_down": 0.0,
+    "mom_reduce": 0.0,
+    "mom_recover": 0.01,
+    "slope_th": -0.02
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "snapshot_date": "2026-11-13",
+  "eval_start": "2019-01-01",
+  "train_end": "2022-12-31",
+  "test_start": "2023-01-01",
+  "cost_one_way": 0.0005,
+  "delay": 1,
+  "amount_scale": 100,
+  "min_bars_cross": 250,
+  "min_avg_amount": 5000000,
+  "universe_n": 1720,
+  "money_market_n": 27,
+  "evaluated_n": 1600,
+  "cross_section_n": 951,
+  "prereg": "runs/2026-11-14_fullmkt_single_asset/PREREG.md"
+}

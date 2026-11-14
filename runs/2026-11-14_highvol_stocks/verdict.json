@@ -1,0 +1,134 @@
+{
+  "A-FC": {
+    "ashare": {
+      "c1_med_calmar_ge_A": false,
+      "c2_pct_calmar_gt_A_gt50": false,
+      "c3_dstatic_pos": false,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.131417,
+      "med_calmar_A": 0.151322,
+      "pct_calmar_gt_A": 0.3786324786324786,
+      "med_dstatic": -0.0304829,
+      "crash_mdd": {
+        "2007-2009": [
+          -0.309055,
+          -0.2045645
+        ],
+        "y2015": [
+          -0.248224,
+          -0.183472
+        ]
+      }
+    },
+    "xmkt": {
+      "c1_med_calmar_ge_A": true,
+      "c2_pct_calmar_gt_A_gt50": false,
+      "c3_dstatic_pos": true,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.247991,
+      "med_calmar_A": 0.238829,
+      "pct_calmar_gt_A": 0.4745762711864407,
+      "med_dstatic": 0.0136446,
+      "crash_mdd": {
+        "2000-2002": [
+          -0.41447500000000004,
+          -0.29928
+        ],
+        "2007-2009": [
+          -0.240191,
+          -0.166526
+        ]
+      }
+    },
+    "verdict": "不支持",
+    "role": "主判定"
+  },
+  "A-FC30": {
+    "ashare": {
+      "c1_med_calmar_ge_A": false,
+      "c2_pct_calmar_gt_A_gt50": false,
+      "c3_dstatic_pos": false,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.13077899999999998,
+      "med_calmar_A": 0.151322,
+      "pct_calmar_gt_A": 0.3786324786324786,
+      "med_dstatic": -0.034117850000000005,
+      "crash_mdd": {
+        "2007-2009": [
+          -0.30762350000000005,
+          -0.2045645
+        ],
+        "y2015": [
+          -0.248158,
+          -0.183472
+        ]
+      }
+    },
+    "xmkt": {
+      "c1_med_calmar_ge_A": true,
+      "c2_pct_calmar_gt_A_gt50": true,
+      "c3_dstatic_pos": true,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.258383,
+      "med_calmar_A": 0.238829,
+      "pct_calmar_gt_A": 0.5084745762711864,
+      "med_dstatic": 0.00845037,
+      "crash_mdd": {
+        "2000-2002": [
+          -0.41921949999999997,
+          -0.29928
+        ],
+        "2007-2009": [
+          -0.225227,
+          -0.166526
+        ]
+      }
+    },
+    "verdict": "不支持",
+    "role": "敏感性"
+  },
+  "A-FC20": {
+    "ashare": {
+      "c1_med_calmar_ge_A": false,
+      "c2_pct_calmar_gt_A_gt50": false,
+      "c3_dstatic_pos": false,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.1278965,
+      "med_calmar_A": 0.151322,
+      "pct_calmar_gt_A": 0.38974358974358975,
+      "med_dstatic": -0.0307282,
+      "crash_mdd": {
+        "2007-2009": [
+          -0.3040075,
+          -0.2045645
+        ],
+        "y2015": [
+          -0.247014,
+          -0.183472
+        ]
+      }
+    },
+    "xmkt": {
+      "c1_med_calmar_ge_A": true,
+      "c2_pct_calmar_gt_A_gt50": false,
+      "c3_dstatic_pos": true,
+      "c4_crash_mdd_within3pp": false,
+      "med_calmar": 0.266767,
+      "med_calmar_A": 0.238829,
+      "pct_calmar_gt_A": 0.4406779661016949,
+      "med_dstatic": 0.0181435,
+      "crash_mdd": {
+        "2000-2002": [
+          -0.41448799999999997,
+          -0.29928
+        ],
+        "2007-2009": [
+          -0.230409,
+          -0.166526
+        ]
+      }
+    },
+    "verdict": "不支持",
+    "role": "敏感性"
+  }
+}

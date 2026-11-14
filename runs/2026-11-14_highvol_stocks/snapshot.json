@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-14",
+  "prereg": "PREREG.md",
+  "end": "2026-11-13",
+  "cost_one_way": 0.0005,
+  "delay": 1,
+  "warmup": 250,
+  "min_eval": 500,
+  "min_bucket_days": 250,
+  "ashare_candidates": 3194,
+  "ashare_status": {
+    "listed_after_2005": 2024,
+    "ok": 1170
+  },
+  "xmkt_status": {
+    "ok": 59,
+    "fail": 1
+  },
+  "xmkt_failed": [
+    "JNPR"
+  ],
+  "sources": {
+    "ashare": "腾讯 newfqkline 不复权 × 新浪 hfq.js 后复权因子",
+    "xmkt": "Yahoo chart adjclose"
+  },
+  "scripts": [
+    "work/highvol_pull.py",
+    "work/highvol_stocks_backtest.py",
+    "work/highvol_stocks_summary.py"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+ "FAST-MKT": {
+  "per_panel": {
+   "index": {
+    "H1": false,
+    "H2": false,
+    "d_cagr_fast": 0.0188,
+    "d_cagr_slow": 0.0261,
+    "first60": 0.00380998,
+    "postpeak": -0.00482673,
+    "excess_on_share": [
+     0.9945994182769022,
+     1.0
+    ]
+   },
+   "etf_long": {
+    "H1": false,
+    "H2": false,
+    "d_cagr_fast": -0.0053,
+    "d_cagr_slow": -0.0009,
+    "first60": -0.00561682,
+    "postpeak": 0.0,
+    "excess_on_share": [
+     0.9948906459055182,
+     0.9976334899615549
+    ]
+   },
+   "hv_ashare": {
+    "H1": true,
+    "H2": false,
+    "d_cagr_fast": 0.0164,
+    "d_cagr_slow": 0.0135,
+    "first60": 0.009880475,
+    "postpeak": -0.00176499,
+    "excess_on_share": [
+     0.9961110754833551,
+     1.0
+    ]
+   },
+   "hv_xmkt": {
+    "H1": true,
+    "H2": false,
+    "d_cagr_fast": 0.0086,
+    "d_cagr_slow": 0.0026,
+    "first60": 0.00902842,
+    "postpeak": 0.0,
+    "excess_on_share": [
+     0.9988939684412328,
+     1.0
+    ]
+   }
+  },
+  "n_both": 0,
+  "supported": false
+ },
+ "FAST-OWN": {
+  "per_panel": {
+   "index": {
+    "H1": true,
+    "H2": false,
+    "d_cagr_fast": 0.0194,
+    "d_cagr_slow": 0.0187,
+    "first60": 0.0100081,
+    "postpeak": -0.005027,
+    "excess_on_share": [
+     0.9956491707224122,
+     0.9968825184181767
+    ]
+   },
+   "etf_long": {
+    "H1": false,
+    "H2": false,
+    "d_cagr_fast": -0.0025,
+    "d_cagr_slow": 0.0,
+    "first60": -0.0019203000000000002,
+    "postpeak": 0.0,
+    "excess_on_share": [
+     0.9965829164065625,
+     0.9988167449807774
+    ]
+   },
+   "hv_ashare": {
+    "H1": false,
+    "H2": false,
+    "d_cagr_fast": 0.0094,
+    "d_cagr_slow": 0.0095,
+    "first60": 0.0100468,
+    "postpeak": -0.0024117649999999997,
+    "excess_on_share": [
+     0.9971617460680282,
+     0.9974829999339804
+    ]
+   },
+   "hv_xmkt": {
+    "H1": true,
+    "H2": false,
+    "d_cagr_fast": 0.0154,
+    "d_cagr_slow": 0.0095,
+    "first60": 0.0136091,
+    "postpeak": -0.000389007,
+    "excess_on_share": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "n_both": 0,
+  "supported": false
+ }
+}

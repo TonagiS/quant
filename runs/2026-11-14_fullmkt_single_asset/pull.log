@@ -1,0 +1,130 @@
+21:45:52 待拉 1693 只（已排除货币 27）
+21:46:06 拉数 50/1693 成功 50 最近 sz159650 ok 
+21:46:29 拉数 100/1693 成功 100 最近 sh510910 ok 
+21:46:44 拉数 150/1693 成功 150 最近 sh530580 ok 
+21:46:55 拉数 200/1693 成功 200 最近 sh563500 ok 
+21:47:07 拉数 250/1693 成功 250 最近 sh588820 ok 
+21:47:15 拉数 300/1693 成功 300 最近 sz159215 ok 
+21:47:23 拉数 350/1693 成功 350 最近 sz159517 ok 
+21:47:41 拉数 400/1693 成功 400 最近 sz159780 ok 
+21:47:49 拉数 408/1693 成功 407 最近 sz159810 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159810,day,2017-01-01,2026-12-31,800,qfq')
+21:48:02 拉数 420/1693 成功 418 最近 sz159915 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159915,day,2017-01-01,2023-07-25,800,qfq')
+21:48:17 拉数 433/1693 成功 430 最近 sz159958 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159958,day,2017-01-01,2023-07-25,800,qfq')
+21:48:25 拉数 450/1693 成功 447 最近 sh515980 ok 
+21:48:27 拉数 453/1693 成功 449 最近 sh517800 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh517800,day,2017-01-01,2026-12-31,800,qfq')
+21:48:33 拉数 461/1693 成功 456 最近 sh588730 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh588730,day,2017-01-01,2026-12-31,800,qfq')
+21:48:34 拉数 466/1693 成功 460 最近 sh589010 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh589010,day,2017-01-01,2026-12-31,800,qfq')
+21:48:43 拉数 480/1693 成功 473 最近 sz158055 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158055,day,2017-01-01,2026-12-31,800,qfq')
+21:48:46 拉数 486/1693 成功 478 最近 sz159142 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159142,day,2017-01-01,2026-12-31,800,qfq')
+21:48:53 拉数 492/1693 成功 483 最近 sz159819 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159819,day,2017-01-01,2026-12-31,800,qfq')
+21:48:55 拉数 494/1693 成功 484 最近 sh512220 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512220,day,2017-01-01,2023-07-25,800,qfq')
+21:49:01 拉数 500/1693 成功 490 最近 sh561410 ok 
+21:49:04 拉数 504/1693 成功 493 最近 sh516230 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516230,day,2017-01-01,2026-12-31,800,qfq')
+21:49:06 拉数 507/1693 成功 495 最近 sh560230 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh560230,day,2017-01-01,2026-12-31,800,qfq')
+21:49:09 拉数 508/1693 成功 495 最近 sh515790 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh515790,day,2017-01-01,2023-07-25,800,qfq')
+21:49:12 拉数 510/1693 成功 496 最近 sz159618 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159618,day,2017-01-01,2023-07-25,800,qfq')
+21:49:15 拉数 511/1693 成功 496 最近 sh512450 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512450,day,2017-01-01,2026-12-31,800,qfq')
+21:49:15 拉数 512/1693 成功 496 最近 sh516670 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516670,day,2017-01-01,2026-12-31,800,qfq')
+21:49:18 拉数 513/1693 成功 496 最近 sh516760 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516760,day,2017-01-01,2026-12-31,800,qfq')
+21:49:21 拉数 514/1693 成功 496 最近 sh561400 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561400,day,2017-01-01,2026-12-31,800,qfq')
+21:49:22 拉数 515/1693 成功 496 最近 sh561470 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561470,day,2017-01-01,2026-12-31,800,qfq')
+21:49:24 拉数 516/1693 成功 496 最近 sz159007 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159007,day,2017-01-01,2026-12-31,800,qfq')
+21:49:25 拉数 517/1693 成功 496 最近 sz159011 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159011,day,2017-01-01,2026-12-31,800,qfq')
+21:49:27 拉数 518/1693 成功 496 最近 sz159020 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159020,day,2017-01-01,2026-12-31,800,qfq')
+21:49:31 拉数 519/1693 成功 496 最近 sz159023 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159023,day,2017-01-01,2026-12-31,800,qfq')
+21:49:31 拉数 520/1693 成功 496 最近 sz159027 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159027,day,2017-01-01,2026-12-31,800,qfq')
+21:49:34 拉数 521/1693 成功 496 最近 sz159165 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159165,day,2017-01-01,2026-12-31,800,qfq')
+21:49:34 拉数 522/1693 成功 496 最近 sz159172 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159172,day,2017-01-01,2026-12-31,800,qfq')
+21:49:37 拉数 523/1693 成功 496 最近 sz159865 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159865,day,2017-01-01,2023-07-25,800,qfq')
+21:49:41 拉数 524/1693 成功 496 最近 sz159867 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159867,day,2017-01-01,2026-12-31,800,qfq')
+21:49:43 拉数 525/1693 成功 496 最近 sh512560 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512560,day,2017-01-01,2023-07-25,800,qfq')
+21:49:43 拉数 526/1693 成功 496 最近 sh512660 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512660,day,2017-01-01,2026-12-31,800,qfq')
+21:49:43 拉数 527/1693 成功 496 最近 sh512670 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512670,day,2017-01-01,2026-12-31,800,qfq')
+21:49:47 拉数 529/1693 成功 497 最近 sh512680 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512680,day,2017-01-01,2026-12-31,800,qfq')
+21:49:50 拉数 530/1693 成功 497 最近 sh512810 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512810,day,2017-01-01,2026-12-31,800,qfq')
+21:49:52 拉数 531/1693 成功 497 最近 sh561660 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561660,day,2017-01-01,2026-12-31,800,qfq')
+21:49:53 拉数 532/1693 成功 497 最近 sh563320 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh563320,day,2017-01-01,2026-12-31,800,qfq')
+21:49:55 拉数 534/1693 成功 498 最近 sh563870 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh563870,day,2017-01-01,2026-12-31,800,qfq')
+21:49:56 拉数 535/1693 成功 498 最近 sz158009 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158009,day,2017-01-01,2026-12-31,800,qfq')
+21:49:59 拉数 538/1693 成功 500 最近 sz158013 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158013,day,2017-01-01,2026-12-31,800,qfq')
+21:50:05 拉数 540/1693 成功 501 最近 sz159230 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159230,day,2017-01-01,2026-12-31,800,qfq')
+21:50:05 拉数 541/1693 成功 501 最近 sz159231 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159231,day,2017-01-01,2026-12-31,800,qfq')
+21:50:08 拉数 543/1693 成功 502 最近 sz159255 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159255,day,2017-01-01,2026-12-31,800,qfq')
+21:50:09 拉数 544/1693 成功 502 最近 sz159257 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159257,day,2017-01-01,2026-12-31,800,qfq')
+21:50:10 拉数 545/1693 成功 502 最近 sz159267 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159267,day,2017-01-01,2026-12-31,800,qfq')
+21:50:14 拉数 546/1693 成功 502 最近 sz159283 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159283,day,2017-01-01,2026-12-31,800,qfq')
+21:50:18 拉数 547/1693 成功 502 最近 sz159392 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159392,day,2017-01-01,2026-12-31,800,qfq')
+21:50:18 拉数 548/1693 成功 502 最近 sz159638 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159638,day,2017-01-01,2026-12-31,800,qfq')
+21:50:18 拉数 549/1693 成功 502 最近 sh516020 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516020,day,2017-01-01,2026-12-31,800,qfq')
+21:50:19 拉数 550/1693 成功 502 最近 sh516120 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516120,day,2017-01-01,2026-12-31,800,qfq')
+21:50:23 拉数 551/1693 成功 502 最近 sh516220 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516220,day,2017-01-01,2026-12-31,800,qfq')
+21:50:27 拉数 553/1693 成功 503 最近 sh561620 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561620,day,2017-01-01,2026-12-31,800,qfq')
+21:50:27 拉数 554/1693 成功 503 最近 sz158006 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158006,day,2017-01-01,2026-12-31,800,qfq')
+21:50:28 拉数 555/1693 成功 503 最近 sz158017 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158017,day,2017-01-01,2026-12-31,800,qfq')
+21:50:29 拉数 558/1693 成功 505 最近 sz158032 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz158032,day,2017-01-01,2026-12-31,800,qfq')
+21:50:36 拉数 560/1693 成功 506 最近 sz159129 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159129,day,2017-01-01,2026-12-31,800,qfq')
+21:50:37 拉数 561/1693 成功 506 最近 sz159870 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159870,day,2017-01-01,2026-12-31,800,qfq')
+21:50:38 拉数 562/1693 成功 506 最近 sh510660 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh510660,day,2017-01-01,2026-12-31,800,qfq')
+21:50:41 拉数 563/1693 成功 506 最近 sh512010 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512010,day,2017-01-01,2023-07-25,800,qfq')
+21:50:43 拉数 564/1693 成功 506 最近 sh512120 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512120,day,2017-01-01,2026-12-31,800,qfq')
+21:50:46 拉数 565/1693 成功 506 最近 sh512170 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512170,day,2017-01-01,2026-12-31,800,qfq')
+21:50:46 拉数 566/1693 成功 506 最近 sh512290 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh512290,day,2017-01-01,2026-12-31,800,qfq')
+21:50:47 拉数 567/1693 成功 506 最近 sh515120 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh515120,day,2017-01-01,2026-12-31,800,qfq')
+21:50:50 拉数 568/1693 成功 506 最近 sh515950 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh515950,day,2017-01-01,2026-12-31,800,qfq')
+21:50:53 拉数 569/1693 成功 506 最近 sh516060 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516060,day,2017-01-01,2023-07-25,800,qfq')
+21:50:55 拉数 570/1693 成功 506 最近 sh516080 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516080,day,2017-01-01,2026-12-31,800,qfq')
+21:51:00 拉数 571/1693 成功 506 最近 sh516610 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516610,day,2017-01-01,2023-07-25,800,qfq')
+21:51:00 拉数 572/1693 成功 506 最近 sh516790 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516790,day,2017-01-01,2026-12-31,800,qfq')
+21:51:02 拉数 573/1693 成功 506 最近 sh516500 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516500,day,2017-01-01,2023-07-25,800,qfq')
+21:51:03 拉数 574/1693 成功 506 最近 sh516820 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516820,day,2017-01-01,2023-07-25,800,qfq')
+21:51:04 拉数 575/1693 成功 506 最近 sh516930 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh516930,day,2017-01-01,2026-12-31,800,qfq')
+21:51:09 拉数 576/1693 成功 506 最近 sh517120 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh517120,day,2017-01-01,2026-12-31,800,qfq')
+21:51:12 拉数 577/1693 成功 506 最近 sh517380 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh517380,day,2017-01-01,2023-07-25,800,qfq')
+21:51:14 拉数 578/1693 成功 506 最近 sh560080 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh560080,day,2017-01-01,2026-12-31,800,qfq')
+21:51:15 拉数 579/1693 成功 506 最近 sh517110 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh517110,day,2017-01-01,2023-07-25,800,qfq')
+21:51:19 拉数 581/1693 成功 507 最近 sh560260 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh560260,day,2017-01-01,2026-12-31,800,qfq')
+21:51:19 拉数 582/1693 成功 507 最近 sh517990 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh517990,day,2017-01-01,2023-07-25,800,qfq')
+21:51:21 拉数 583/1693 成功 507 最近 sh560900 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh560900,day,2017-01-01,2026-12-31,800,qfq')
+21:51:24 拉数 584/1693 成功 507 最近 sh561810 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561810,day,2017-01-01,2026-12-31,800,qfq')
+21:51:25 拉数 585/1693 成功 507 最近 sh561920 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh561920,day,2017-01-01,2026-12-31,800,qfq')
+21:51:28 拉数 587/1693 成功 508 最近 sh562390 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh562390,day,2017-01-01,2026-12-31,800,qfq')
+21:51:28 拉数 588/1693 成功 508 最近 sh562600 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh562600,day,2017-01-01,2026-12-31,800,qfq')
+21:51:31 拉数 589/1693 成功 508 最近 sh562860 fail HTTPError('501 Server Error: Not Implemented for url: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh562860,day,2017-01-01,2026-12-31,800,qfq')
+21:51:56 待拉 1693 只（已排除货币 27）
+21:51:56 拉数 50/1693 成功 50 最近 sz159700 cached 
+21:51:56 拉数 100/1693 成功 100 最近 sh510680 cached 
+21:51:56 拉数 150/1693 成功 150 最近 sh530680 cached 
+21:51:56 拉数 200/1693 成功 200 最近 sh563500 cached 
+21:51:56 拉数 250/1693 成功 250 最近 sh588840 cached 
+21:51:56 拉数 300/1693 成功 300 最近 sz159215 cached 
+21:51:57 拉数 350/1693 成功 350 最近 sz159517 cached 
+21:51:57 拉数 400/1693 成功 400 最近 sz159782 cached 
+21:51:59 拉数 450/1693 成功 450 最近 sh588730 ok 
+21:52:02 拉数 500/1693 成功 500 最近 sh561410 cached 
+21:52:15 拉数 550/1693 成功 550 最近 sh516120 ok 
+21:52:32 拉数 600/1693 成功 600 最近 sz159508 ok 
+21:52:53 拉数 650/1693 成功 650 最近 sh560880 ok 
+21:53:13 拉数 700/1693 成功 700 最近 sz159790 ok 
+21:53:32 拉数 750/1693 成功 750 最近 sz158028 ok 
+21:53:46 拉数 800/1693 成功 800 最近 sh560280 ok 
+21:54:03 拉数 850/1693 成功 850 最近 sz159689 ok 
+21:54:21 拉数 900/1693 成功 900 最近 sz158079 ok 
+21:54:36 拉数 950/1693 成功 950 最近 sh588920 ok 
+21:54:59 拉数 1000/1693 成功 1000 最近 sh515260 ok 
+21:55:18 拉数 1050/1693 成功 1050 最近 sh561320 ok 
+21:55:31 拉数 1100/1693 成功 1100 最近 sz159060 ok 
+21:55:46 拉数 1150/1693 成功 1150 最近 sz159786 ok 
+21:56:06 拉数 1200/1693 成功 1200 最近 sz159108 ok 
+21:56:28 拉数 1250/1693 成功 1250 最近 sz159695 ok 
+21:56:49 拉数 1300/1693 成功 1300 最近 sh513160 ok 
+21:57:10 拉数 1350/1693 成功 1350 最近 sh513900 ok 
+21:57:21 拉数 1400/1693 成功 1400 最近 sh520960 ok 
+21:57:31 拉数 1450/1693 成功 1450 最近 sz159202 ok 
+21:57:43 拉数 1500/1693 成功 1500 最近 sz159615 ok 
+21:58:04 拉数 1550/1693 成功 1550 最近 sz159098 ok 
+21:58:30 拉数 1600/1693 成功 1600 最近 sz159621 ok 
+21:58:49 拉数 1650/1693 成功 1650 最近 sh560520 ok 
+21:59:01 拉数完成:
+status
+ok        1185
+cached     508

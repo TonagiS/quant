@@ -1,0 +1,160 @@
+{
+  "end": "2026-11-13",
+  "cost_one_way": 0.0005,
+  "delay": 1,
+  "arms": [
+    "A",
+    "A-vol",
+    "A-taper",
+    "A-G1",
+    "F",
+    "M",
+    "L"
+  ],
+  "lowvol": {
+    "th": 0.18,
+    "win": 750,
+    "min": 500
+  },
+  "panels": {
+    "etf_long": 190,
+    "index": 19,
+    "cs951": 950,
+    "xmkt": 6,
+    "xmkt_tr": 4
+  },
+  "cs951_missing": 1,
+  "cross_market": [
+    {
+      "panel": "xmkt",
+      "code": "SOX",
+      "name": "费城半导体指数",
+      "ret_type": "价格",
+      "status": "ok",
+      "rows": 8189,
+      "start": "1994-05-04",
+      "eval_start": "1995-05-01",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt",
+      "code": "NDX",
+      "name": "纳斯达克100",
+      "ret_type": "价格",
+      "status": "ok",
+      "rows": 10361,
+      "start": "1985-10-01",
+      "eval_start": "1986-09-26",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt",
+      "code": "SP500TR",
+      "name": "标普500全收益",
+      "ret_type": "全收益",
+      "status": "ok",
+      "rows": 9791,
+      "start": "1988-01-04",
+      "eval_start": "1988-12-28",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt",
+      "code": "HSI",
+      "name": "恒生指数",
+      "ret_type": "价格",
+      "status": "ok",
+      "rows": 9840,
+      "start": "1986-12-31",
+      "eval_start": "1988-01-07",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt",
+      "code": "3033_HK",
+      "name": "南方恒生科技ETF(HSTECH代理)",
+      "ret_type": "ETF收盘(不派息)",
+      "status": "ok",
+      "rows": 1526,
+      "start": "2020-08-27",
+      "eval_start": "2021-09-01",
+      "end": "2026-11-12",
+      "info": ""
+    },
+    {
+      "panel": "xmkt",
+      "code": "N225",
+      "name": "日经225",
+      "ret_type": "价格",
+      "status": "ok",
+      "rows": 13981,
+      "start": "1970-01-05",
+      "eval_start": "1971-01-07",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt_tr",
+      "code": "SMH",
+      "name": "SMH 半导体ETF",
+      "ret_type": "复权",
+      "status": "ok",
+      "rows": 6652,
+      "start": "2000-06-05",
+      "eval_start": "2001-06-01",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt_tr",
+      "code": "QQQ",
+      "name": "QQQ",
+      "ret_type": "复权",
+      "status": "ok",
+      "rows": 6965,
+      "start": "1999-03-10",
+      "eval_start": "2000-03-06",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt_tr",
+      "code": "SPY",
+      "name": "SPY",
+      "ret_type": "复权",
+      "status": "ok",
+      "rows": 8507,
+      "start": "1993-01-29",
+      "eval_start": "1994-01-25",
+      "end": "2026-11-13",
+      "info": ""
+    },
+    {
+      "panel": "xmkt_tr",
+      "code": "2800_HK",
+      "name": "盈富基金",
+      "ret_type": "复权",
+      "status": "ok",
+      "rows": 4648,
+      "start": "2008-01-02",
+      "eval_start": "2009-01-09",
+      "end": "2026-11-12",
+      "info": ""
+    }
+  ],
+  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "prereg": "runs/2026-11-14_ablation_v3/PREREG.md",
+  "script": "work/ablation_v3_backtest.py",
+  "caches": [
+    "/workspace/quant/data/cache_ohlc_fullhist",
+    "/workspace/quant/data/cache_ohlc_full",
+    "/workspace/quant/data/cache_ohlc_fullhist_raw",
+    "/workspace/quant/data/cache_ohlc_raw_2017",
+    "/workspace/quant/data/cache_index_proxy",
+    "/workspace/quant/data/cache_cross_market"
+  ]
+}
