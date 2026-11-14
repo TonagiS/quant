@@ -1,0 +1,175 @@
+{
+  "end": "2026-11-13",
+  "warmup": 250,
+  "min_eval": 1250,
+  "cost_one_way": 0.0005,
+  "delay": 1,
+  "etf_n": 190,
+  "index_n": 19,
+  "etf_earliest_first": "2005-02-23",
+  "etf_earliest_eval": "2006-03-07",
+  "index_meta": [
+    {
+      "code": "H00300",
+      "name": "沪深300全收益",
+      "ret_type": "全收益",
+      "status": "ok",
+      "start": "2004-12-31",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "H00905",
+      "name": "中证500全收益",
+      "ret_type": "全收益",
+      "status": "ok",
+      "start": "2004-12-31",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "H00016",
+      "name": "上证50全收益",
+      "ret_type": "全收益",
+      "status": "ok",
+      "start": "2003-12-31",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "000852",
+      "name": "中证1000",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2005-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "sz399006",
+      "name": "创业板指",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2010-06-01",
+      "end": "2026-11-13"
+    },
+    {
+      "code": "H00922",
+      "name": "中证红利全收益",
+      "ret_type": "全收益",
+      "status": "ok",
+      "start": "2004-12-31",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "399986",
+      "name": "中证银行",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2005-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "H30184",
+      "name": "中证半导体",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2005-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "931865",
+      "name": "中证半导体产业",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2016-12-30",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "000685",
+      "name": "科创芯片",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2019-12-31",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "sz980017",
+      "name": "国证芯片",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2020-04-27",
+      "end": "2026-11-13"
+    },
+    {
+      "code": "931743",
+      "name": "半导体材料设备",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2018-12-28",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "H30590",
+      "name": "中证机器人",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2011-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "399971",
+      "name": "中证传媒",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2011-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "930707",
+      "name": "中证畜牧",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2012-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "931160",
+      "name": "中证通信设备(非CPO)",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2018-12-28",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "399967",
+      "name": "中证军工",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2005-01-04",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "930713",
+      "name": "CS人工智能",
+      "ret_type": "价格",
+      "status": "ok",
+      "start": "2012-07-02",
+      "end": "2026-11-11"
+    },
+    {
+      "code": "sh518880",
+      "name": "黄金ETF华安(代理)",
+      "ret_type": "ETF前复权",
+      "status": "ok",
+      "start": "2013-07-29",
+      "end": "2026-11-13"
+    }
+  ],
+  "caches": {
+    "qfq_new": "/workspace/quant/data/cache_ohlc_fullhist",
+    "qfq_old": "/workspace/quant/data/cache_ohlc_full",
+    "raw": "/workspace/quant/data/cache_ohlc_fullhist_raw",
+    "index": "/workspace/quant/data/cache_index_proxy"
+  },
+  "return_method": "ETF: 拆分日分段, k=median(Δqfq/Δraw), r=Δqfq/(k·raw_{t-1}); 拆分日用 qfq pct",
+  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "prereg": "runs/2026-11-14_long_history/PREREG.md",
+  "script": "work/long_history_backtest.py"
+}
