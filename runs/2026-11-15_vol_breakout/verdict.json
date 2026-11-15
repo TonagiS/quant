@@ -1,0 +1,86 @@
+{
+ "all_a": {
+  "panel": "all_a",
+  "trade_edge": false,
+  "port_pass": false,
+  "crit1_calmar": false,
+  "crit2_cagr_vs_static": false,
+  "cagr_gt_ew": false,
+  "skip_limitup_signals": 2303,
+  "full": {
+   "strategy": {
+    "cagr": -0.3216640568797874,
+    "vol": 0.3386417099284275,
+    "mdd": -0.999932036605362,
+    "calmar": -0.3216859197469006
+   },
+   "static": {
+    "cagr": 0.1623209164016181,
+    "vol": 0.2892500757947722,
+    "mdd": -0.6946671564280624,
+    "calmar": 0.2336671813250287
+   },
+   "ew": {
+    "cagr": 0.1664075378324454,
+    "vol": 0.2986569377983558,
+    "mdd": -0.7073141788728738,
+    "calmar": 0.2352667920465284
+   }
+  },
+  "extra": {
+   "k_main": 0.9685027842549746,
+   "k_intra": 0.9191013750272699,
+   "turnover_annual": 40.22923610283359,
+   "cost_drag_annual": 0.020114618051416792,
+   "turnover_annual_intra": 45.82781106786601,
+   "cost_drag_annual_intra": 0.02291390553393298,
+   "n_port_trades": 4991,
+   "n_port_trades_intra": 5574,
+   "avg_npos": 9.707124531280837,
+   "frac_days_full": 0.9180974935859483
+  }
+ },
+ "pre2006": {
+  "panel": "pre2006",
+  "trade_edge": false,
+  "port_pass": false,
+  "crit1_calmar": false,
+  "crit2_cagr_vs_static": false,
+  "cagr_gt_ew": false,
+  "skip_limitup_signals": 963,
+  "full": {
+   "strategy": {
+    "cagr": -0.1997327614417945,
+    "vol": 0.3345570134862375,
+    "mdd": -0.9979035241097084,
+    "calmar": -0.2001523760726153
+   },
+   "static": {
+    "cagr": 0.1491275566642997,
+    "vol": 0.27373633779824,
+    "mdd": -0.688773814555223,
+    "calmar": 0.2165116523202891
+   },
+   "ew": {
+    "cagr": 0.1545411143003996,
+    "vol": 0.2865504619265462,
+    "mdd": -0.7068957714159771,
+    "calmar": 0.2186193786261298
+   }
+  },
+  "extra": {
+   "k_main": 0.9552814396384015,
+   "k_intra": 0.9058494302275416,
+   "turnover_annual": 36.25999258327961,
+   "cost_drag_annual": 0.018129996291639826,
+   "turnover_annual_intra": 44.107427269658025,
+   "cost_drag_annual_intra": 0.022053713634829112,
+   "n_port_trades": 4438,
+   "n_port_trades_intra": 4997,
+   "avg_npos": 9.380501282810341,
+   "frac_days_full": 0.7702782711663706
+  }
+ },
+ "overall": "不达标：逐笔无优势（主面板），组合 Calmar/CAGR 均远低于静态对照；不采用",
+ "prereg_commit": "ad53488"
+}

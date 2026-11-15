@@ -1,0 +1,31 @@
+06:49:48 bench sh000300 5309 2005-01-04~2026-11-13
+06:49:51 bench sh000985 5309 2005-01-04~2026-11-13
+06:49:51 hs_a 5578，沪深A候选 5223
+06:49:52 0 {'code': 'sh600000', 'status': 'cached'}
+06:50:25 200 {'code': 'sh600269', 'status': 'ok', 'factor': 'sina', 'rows': 6333, 'first': '2000-05-18', 'last': '2026-11-13'}
+06:50:55 400 {'code': 'sh600549', 'status': 'ok', 'factor': 'sina', 'rows': 5768, 'first': '2002-11-07', 'last': '2026-11-13'}
+06:51:35 600 {'code': 'sh600793', 'status': 'ok', 'factor': 'sina', 'rows': 6935, 'first': '1997-02-20', 'last': '2026-11-13'}
+06:52:04 800 {'code': 'sh601133', 'status': 'ok', 'factor': 'sina', 'rows': 869, 'first': '2023-04-10', 'last': '2026-11-13'}
+06:52:24 1000 {'code': 'sh603030', 'status': 'ok', 'factor': 'sina', 'rows': 2815, 'first': '2015-03-20', 'last': '2026-11-13'}
+06:52:40 1200 {'code': 'sh603281', 'status': 'ok', 'factor': 'sina', 'rows': 920, 'first': '2023-01-31', 'last': '2026-11-13'}
+06:52:57 1400 {'code': 'sh603661', 'status': 'ok', 'factor': 'sina', 'rows': 2171, 'first': '2017-11-21', 'last': '2026-11-13'}
+06:53:21 1600 {'code': 'sh605033', 'status': 'ok', 'factor': 'sina', 'rows': 1247, 'first': '2021-09-16', 'last': '2026-11-13'}
+06:53:26 1800 {'code': 'sh688114', 'status': 'ok', 'factor': 'sina', 'rows': 1010, 'first': '2022-09-09', 'last': '2026-11-13'}
+06:53:38 2000 {'code': 'sh688348', 'status': 'ok', 'factor': 'sina', 'rows': 1077, 'first': '2022-06-08', 'last': '2026-11-13'}
+06:53:49 2200 {'code': 'sh688636', 'status': 'ok', 'factor': 'sina', 'rows': 1358, 'first': '2021-04-08', 'last': '2026-11-13'}
+06:54:14 2400 {'code': 'sz000428', 'status': 'ok', 'factor': 'sina', 'rows': 7133, 'first': '1996-08-08', 'last': '2026-11-13'}
+06:54:53 2600 {'code': 'sz000799', 'status': 'ok', 'factor': 'sina', 'rows': 6871, 'first': '1997-07-18', 'last': '2026-11-13'}
+06:55:19 2800 {'code': 'sz001316', 'status': 'ok', 'factor': 'sina', 'rows': 1065, 'first': '2022-06-24', 'last': '2026-11-13'}
+06:55:46 3000 {'code': 'sz002160', 'status': 'ok', 'factor': 'sina', 'rows': 4376, 'first': '2007-08-21', 'last': '2026-11-13'}
+06:56:12 3200 {'code': 'sz002371', 'status': 'ok', 'factor': 'sina', 'rows': 3966, 'first': '2010-03-16', 'last': '2026-11-13'}
+06:56:34 3400 {'code': 'sz002587', 'status': 'ok', 'factor': 'sina', 'rows': 3621, 'first': '2011-06-10', 'last': '2026-11-13'}
+06:56:55 3600 {'code': 'sz002815', 'status': 'ok', 'factor': 'sina', 'rows': 2452, 'first': '2016-10-12', 'last': '2026-11-13'}
+06:57:10 3800 {'code': 'sz003032', 'status': 'ok', 'factor': 'sina', 'rows': 1412, 'first': '2021-01-12', 'last': '2026-11-13'}
+06:57:33 4000 {'code': 'sz300206', 'status': 'ok', 'factor': 'sina', 'rows': 3777, 'first': '2011-04-21', 'last': '2026-11-13'}
+06:57:54 4200 {'code': 'sz300427', 'status': 'ok', 'factor': 'sina', 'rows': 2645, 'first': '2015-02-17', 'last': '2026-11-13'}
+06:58:14 4400 {'code': 'sz300634', 'status': 'ok', 'factor': 'sina', 'rows': 2097, 'first': '2018-03-23', 'last': '2026-11-13'}
+06:58:28 4600 {'code': 'sz300845', 'status': 'ok', 'factor': 'sina', 'rows': 1544, 'first': '2020-07-03', 'last': '2026-11-13'}
+06:58:40 4800 {'code': 'sz301056', 'status': 'ok', 'factor': 'sina', 'rows': 1254, 'first': '2021-09-07', 'last': '2026-11-13'}
+06:58:50 5000 {'code': 'sz301296', 'status': 'ok', 'factor': 'sina', 'rows': 1015, 'first': '2022-09-02', 'last': '2026-11-13'}
+06:59:11 5200 {'code': 'sz301662', 'status': 'ok', 'factor': 'sina', 'rows': 383, 'first': '2025-04-17', 'last': '2026-11-13'}
+06:59:11 {'ok': 5174, 'cached': 49}

@@ -1,0 +1,41 @@
+{
+ "panel": "pre2006",
+ "trade_edge": false,
+ "port_pass": false,
+ "crit1_calmar": false,
+ "crit2_cagr_vs_static": false,
+ "cagr_gt_ew": false,
+ "skip_limitup_signals": 963,
+ "full": {
+  "strategy": {
+   "cagr": -0.1997327614417945,
+   "vol": 0.3345570134862375,
+   "mdd": -0.9979035241097084,
+   "calmar": -0.2001523760726153
+  },
+  "static": {
+   "cagr": 0.1491275566642997,
+   "vol": 0.27373633779824,
+   "mdd": -0.688773814555223,
+   "calmar": 0.2165116523202891
+  },
+  "ew": {
+   "cagr": 0.1545411143003996,
+   "vol": 0.2865504619265462,
+   "mdd": -0.7068957714159771,
+   "calmar": 0.2186193786261298
+  }
+ },
+ "extra": {
+  "k_main": 0.9552814396384015,
+  "k_intra": 0.9058494302275416,
+  "turnover_annual": 36.25999258327961,
+  "cost_drag_annual": 0.018129996291639826,
+  "turnover_annual_intra": 44.107427269658025,
+  "cost_drag_annual_intra": 0.022053713634829112,
+  "n_port_trades": 4438,
+  "n_port_trades_intra": 4997,
+  "avg_npos": 9.380501282810341,
+  "frac_days_full": 0.7702782711663706
+ }
+}

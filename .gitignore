@@ -21,3 +21,4 @@ torchinductor_*/
 # 杂项
 =ro
 *.tmp
+runs/2026-11-15_vol_breakout/*/random_trades.csv.gz

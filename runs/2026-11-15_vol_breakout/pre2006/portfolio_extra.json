@@ -1,0 +1,12 @@
+{
+ "k_main": 0.9552814396384015,
+ "k_intra": 0.9058494302275416,
+ "turnover_annual": 36.25999258327961,
+ "cost_drag_annual": 0.018129996291639826,
+ "turnover_annual_intra": 44.107427269658025,
+ "cost_drag_annual_intra": 0.022053713634829112,
+ "n_port_trades": 4438,
+ "n_port_trades_intra": 4997,
+ "avg_npos": 9.380501282810341,
+ "frac_days_full": 0.7702782711663706
+}
