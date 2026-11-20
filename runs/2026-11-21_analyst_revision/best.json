@@ -1,0 +1,7 @@
+{
+ "REV|": "REV|W60|mrev|MA60|R10",
+ "FILT@S2": "FILT@S2|W180|diff|thr-0.25",
+ "FILT@S4": "FILT@S4|W60|mrev|thr-0.25",
+ "BLEND@S2": "BLEND@S2|W90|diff|lam3",
+ "BLEND@S4": "BLEND@S4|W60|mrev|lam1"
+}
