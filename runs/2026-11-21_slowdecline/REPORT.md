@@ -1,6 +1,6 @@
 # slowdecline 报告：S2/S4 对付阴跌 + 新指标（2026-11-21）
 
-> **全部是样本内网格结果**（用户 pt65u 允许），walk-forward 只供参考，不构成投资建议。口径同 ideas_v1：总收益面板，PIT 前 40，滞后 1 日，只做多、无杠杆、现金 0，主成本 5bp，另报 20bp。FREEZE：d43dc84。
+> **全部是样本内网格结果**（用户允许），walk-forward 只供参考，不构成投资建议。口径同 ideas_v1：总收益面板，PIT 前 40，滞后 1 日，只做多、无杠杆、现金 0，主成本 5bp，另报 20bp。FREEZE：cd96eff（重写前本地号 d43dc84）。
 > 复现命令：`python3 work/slowdecline.py check|single|combo|greedy`；`python3 work/slowdecline_greedy_eval.py`。宏观数据在 data/cache_ideas（akshare + FRED，gitignored）。
 > 自检：复制出来的引擎（新增"自入场后最高点回撤止损"）在 stop=None 时与原引擎逐日一致；VTX 默认参数 = VolTarget；S4 与 components_core.sat_run 一致（最大差都是 0）。
 
