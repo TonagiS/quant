@@ -1,0 +1,98 @@
+{
+ "S4": {
+  "TERM_MED": {
+   "avg": 0.631291751892443,
+   "wins": 2,
+   "family": "TERM"
+  },
+  "OFF11": {
+   "avg": 0.589553253944825,
+   "wins": 3,
+   "family": "SEAS"
+  },
+  "THRUST": {
+   "avg": 0.5393537770651,
+   "wins": 2,
+   "family": "THRUST"
+  },
+  "COR80_5": {
+   "avg": 0.5219271671565405,
+   "wins": 3,
+   "family": "COR"
+  },
+  "SDG_0": {
+   "avg": 0.5068568217057902,
+   "wins": 3,
+   "family": "SDG"
+  },
+  "EWT60_5": {
+   "avg": 0.49590344166279604,
+   "wins": 3,
+   "family": "EWT"
+  },
+  "BR40_5": {
+   "avg": 0.4936466539273927,
+   "wins": 3,
+   "family": "BR"
+  },
+  "VTLOCK": {
+   "avg": 0.4905939084717814,
+   "wins": 2,
+   "family": "VT"
+  }
+ },
+ "S4+CREDIT": {
+  "OFF09": {
+   "avg": 0.7462967093574558,
+   "wins": 3,
+   "family": "SEAS"
+  },
+  "CNY_1P": {
+   "avg": 0.7242277693175024,
+   "wins": 2,
+   "family": "CNY"
+  },
+  "COR80_5": {
+   "avg": 0.7071476479392876,
+   "wins": 2,
+   "family": "COR"
+  },
+  "TS12": {
+   "avg": 0.7055701914164417,
+   "wins": 2,
+   "family": "STOP"
+  }
+ },
+ "S2+CREDIT": {
+  "CNY_1P": {
+   "avg": 0.6068044185928487,
+   "wins": 2,
+   "family": "CNY"
+  },
+  "TS10": {
+   "avg": 0.5684618932029201,
+   "wins": 3,
+   "family": "STOP"
+  },
+  "OFF08": {
+   "avg": 0.5676428197891056,
+   "wins": 3,
+   "family": "SEAS"
+  },
+  "COR80_5": {
+   "avg": 0.5562862510770091,
+   "wins": 2,
+   "family": "COR"
+  },
+  "BR40_5": {
+   "avg": 0.526695946207585,
+   "wins": 2,
+   "family": "BR"
+  },
+  "SDG_5": {
+   "avg": 0.5246779958854386,
+   "wins": 2,
+   "family": "SDG"
+  }
+ }
+}
