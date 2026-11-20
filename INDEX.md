@@ -8,6 +8,8 @@
 
 **2026-11-21 总结**：11-15 → 11-21 各 run（rate_cycle … analyst_revision）的问题、数字、判定与当前候选见根目录 `SUMMARY_20261121.md`。
 
+**2026-11-21 parts_v2**：9 个新零件（VIX/美债/中债2Y/动态动量/离散度/波动的波动/特质波动/隔夜跳空/底仓时序动量，另有北向资金一项仅作信息）两道关检验；主臂没有一个两关都过，见 `runs/2026-11-21_parts_v2/REPORT.md`（样本内）。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。

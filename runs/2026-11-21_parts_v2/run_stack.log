@@ -1,0 +1,67 @@
+19:59:55 0 60
+20:00:26 10 60
+20:01:19 20 60
+20:02:04 30 60
+20:02:45 40 60
+20:03:37 50 60
+                              stack             base   cagr    mdd  calmar  roll_med_calmar  share_up  med_d  n_seg_pos  pass1  p_rand  pass2
+105         DISP80H+VOV80H+US10Y30H         C3_60+S4  0.090 -0.087   1.030            1.044     1.000  0.346          3   True   0.030   True
+73                  VOV80H+US10Y30H         C3_60+S4  0.093 -0.087   1.070            1.030     1.000  0.316          2  False   0.040   True
+113  IVOL30+DISP80H+VOV80H+US10Y30H         C3_60+S4  0.088 -0.089   0.979            0.964     1.000  0.259          2  False   0.010   True
+65                 DISP80H+US10Y30H         C3_60+S4  0.094 -0.095   0.988            0.972     1.000  0.249          3   True   0.010   True
+89          IVOL30+DISP80H+US10Y30H         C3_60+S4  0.094 -0.096   0.983            0.950     1.000  0.236          2  False   0.030   True
+97           IVOL30+VOV80H+US10Y30H         C3_60+S4  0.092 -0.093   0.988            0.916     1.000  0.220          2  False   0.020   True
+49                  IVOL30+US10Y30H         C3_60+S4  0.100 -0.099   1.007            0.907     1.000  0.207          2  False   0.020   True
+57                   DISP80H+VOV80H         C3_60+S4  0.089 -0.103   0.864            0.857     1.000  0.152          3   True   0.228  False
+25                         US10Y30H         C3_60+S4  0.099 -0.108   0.913            0.838     0.891  0.122          2  False   0.040   True
+21                           VOV80H         C3_60+S4  0.092 -0.107   0.862            0.810     1.000  0.114          2  False   0.149  False
+81            IVOL30+DISP80H+VOV80H         C3_60+S4  0.087 -0.106   0.816            0.781     1.000  0.085          2  False   0.119  False
+33                   IVOL30+DISP80H         C3_60+S4  0.094 -0.113   0.829            0.779     1.000  0.078          2  False   0.099   True
+7                            IVOL30         C3_60+S4  0.100 -0.118   0.849            0.749     0.975  0.060          3   True   0.119  False
+41                    IVOL30+VOV80H         C3_60+S4  0.091 -0.111   0.826            0.756     0.992  0.056          2  False   0.149  False
+3                           DISP80H         C3_60+S4  0.092 -0.117   0.793            0.770     1.000  0.054          3   True   0.228  False
+107         DISP80H+VOV80H+US10Y30H  C3_60+S4+CREDIT  0.090 -0.072   1.245            1.410     0.874  0.337          2  False   0.010   True
+69                 DISP80H+US10Y30H  C3_60+S4+CREDIT  0.096 -0.073   1.309            1.359     0.874  0.281          2  False   0.010   True
+75                  VOV80H+US10Y30H  C3_60+S4+CREDIT  0.095 -0.083   1.137            1.272     0.756  0.204          1  False   0.059   True
+59                   DISP80H+VOV80H  C3_60+S4+CREDIT  0.090 -0.072   1.256            1.269     0.857  0.171          2  False   0.040   True
+1                           DISP80H  C3_60+S4+CREDIT  0.097 -0.078   1.242            1.227     0.765  0.144          2  False   0.050   True
+19                           VOV80H  C3_60+S4+CREDIT  0.095 -0.083   1.139            1.130     0.723  0.065          1  False   0.109  False
+27                         US10Y30H  C3_60+S4+CREDIT  0.103 -0.090   1.145            1.165     0.756  0.023          2  False   0.208  False
+91          IVOL30+DISP80H+US10Y30H  C3_60+S4+CREDIT  0.089 -0.079   1.125            1.050     0.328 -0.055          1  False   0.297  False
+99           IVOL30+VOV80H+US10Y30H  C3_60+S4+CREDIT  0.088 -0.084   1.048            1.005     0.034 -0.073          1  False   0.307  False
+115  IVOL30+DISP80H+VOV80H+US10Y30H  C3_60+S4+CREDIT  0.082 -0.079   1.045            0.997     0.000 -0.090          1  False   0.347  False
+83            IVOL30+DISP80H+VOV80H  C3_60+S4+CREDIT  0.083 -0.080   1.046            0.976     0.000 -0.112          1  False   0.446  False
+43                    IVOL30+VOV80H  C3_60+S4+CREDIT  0.089 -0.084   1.060            0.956     0.000 -0.119          1  False   0.535  False
+51                  IVOL30+US10Y30H  C3_60+S4+CREDIT  0.096 -0.088   1.087            0.964     0.000 -0.126          1  False   0.545  False
+35                   IVOL30+DISP80H  C3_60+S4+CREDIT  0.090 -0.085   1.059            0.977     0.000 -0.141          1  False   0.515  False
+5                            IVOL30  C3_60+S4+CREDIT  0.097 -0.088   1.097            0.951     0.000 -0.144          2  False   0.703  False
+104         DISP80H+VOV80H+US10Y30H               S4  0.092 -0.143   0.643            0.671     1.000  0.339          3   True   0.010   True
+88          IVOL30+DISP80H+US10Y30H               S4  0.102 -0.157   0.653            0.625     1.000  0.279          2  False   0.020   True
+48                  IVOL30+US10Y30H               S4  0.116 -0.170   0.680            0.563     1.000  0.236          2  False   0.020   True
+112  IVOL30+DISP80H+VOV80H+US10Y30H               S4  0.086 -0.151   0.569            0.566     1.000  0.233          2  False   0.010   True
+96           IVOL30+VOV80H+US10Y30H               S4  0.096 -0.171   0.559            0.547     1.000  0.215          2  False   0.020   True
+72                  VOV80H+US10Y30H               S4  0.099 -0.179   0.552            0.493     1.000  0.164          2  False   0.050   True
+56                   DISP80H+VOV80H               S4  0.089 -0.187   0.474            0.481     1.000  0.144          3   True   0.099   True
+32                   IVOL30+DISP80H               S4  0.100 -0.194   0.518            0.471     1.000  0.139          2  False   0.059   True
+64                 DISP80H+US10Y30H               S4  0.101 -0.208   0.483            0.468     1.000  0.131          3   True   0.020   True
+80            IVOL30+DISP80H+VOV80H               S4  0.084 -0.173   0.485            0.466     1.000  0.123          2  False   0.030   True
+6                            IVOL30               S4  0.116 -0.217   0.535            0.429     0.992  0.102          3   True   0.079   True
+20                           VOV80H               S4  0.095 -0.202   0.471            0.406     1.000  0.092          2  False   0.129  False
+40                    IVOL30+VOV80H               S4  0.094 -0.195   0.484            0.402     0.975  0.075          2  False   0.059   True
+24                         US10Y30H               S4  0.111 -0.242   0.458            0.379     0.866  0.050          2  False   0.059   True
+2                           DISP80H               S4  0.096 -0.234   0.413            0.388     0.975  0.044          3   True   0.099   True
+106         DISP80H+VOV80H+US10Y30H        S4+CREDIT  0.091 -0.143   0.636            0.966     0.765  0.314          2  False   0.020   True
+26                         US10Y30H        S4+CREDIT  0.122 -0.169   0.721            0.877     0.756  0.227          2  False   0.010   True
+68                 DISP80H+US10Y30H        S4+CREDIT  0.106 -0.146   0.728            0.860     0.874  0.182          2  False   0.010   True
+74                  VOV80H+US10Y30H        S4+CREDIT  0.102 -0.169   0.605            0.821     0.723  0.146          1  False   0.089   True
+58                   DISP80H+VOV80H        S4+CREDIT  0.093 -0.143   0.648            0.751     0.765  0.101          2  False   0.129  False
+18                           VOV80H        S4+CREDIT  0.103 -0.169   0.606            0.640     0.429 -0.014          0  False   0.386  False
+0                           DISP80H        S4+CREDIT  0.107 -0.162   0.661            0.661     0.361 -0.040          2  False   0.495  False
+50                  IVOL30+US10Y30H        S4+CREDIT  0.105 -0.167   0.626            0.537     0.000 -0.171          1  False   0.584  False
+98           IVOL30+VOV80H+US10Y30H        S4+CREDIT  0.085 -0.171   0.501            0.463     0.000 -0.210          1  False   0.564  False
+34                   IVOL30+DISP80H        S4+CREDIT  0.090 -0.151   0.597            0.499     0.000 -0.216          1  False   0.584  False
+90          IVOL30+DISP80H+US10Y30H        S4+CREDIT  0.088 -0.151   0.581            0.504     0.000 -0.216          1  False   0.574  False
+4                            IVOL30        S4+CREDIT  0.107 -0.174   0.612            0.464     0.000 -0.220          2  False   0.891  False
+42                    IVOL30+VOV80H        S4+CREDIT  0.087 -0.170   0.512            0.436     0.000 -0.221          1  False   0.634  False
+114  IVOL30+DISP80H+VOV80H+US10Y30H        S4+CREDIT  0.073 -0.151   0.481            0.446     0.000 -0.231          1  False   0.495  False
+82            IVOL30+DISP80H+VOV80H        S4+CREDIT  0.075 -0.151   0.497            0.431     0.000 -0.241          1  False   0.535  False
