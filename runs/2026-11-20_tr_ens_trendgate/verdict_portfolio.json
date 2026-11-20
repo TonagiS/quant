@@ -1,0 +1,105 @@
+{
+  "starts": {
+    "W2013": {
+      "PIT-S2": "2013-01-04",
+      "PIT-VT15": "2013-01-04",
+      "PIT-VT15-5d": "2013-01-04",
+      "VT15-TG": "2013-01-04",
+      "VT15-TG-300": "2013-01-04",
+      "S2-ENS": "2013-01-04",
+      "S2ENS-VT15": "2013-01-04",
+      "S2ENS-VT15TG": "2013-01-04"
+    },
+    "W2017": {
+      "PIT-S2": "2017-01-03",
+      "PIT-VT15": "2017-01-03",
+      "PIT-VT15-5d": "2017-01-03",
+      "VT15-TG": "2017-01-03",
+      "VT15-TG-300": "2017-01-03",
+      "S2-ENS": "2017-01-03",
+      "S2ENS-VT15": "2017-01-03",
+      "S2ENS-VT15TG": "2017-01-03"
+    },
+    "W2019": {
+      "PIT-S2": "2019-01-02",
+      "PIT-VT15": "2019-01-02",
+      "PIT-VT15-5d": "2019-01-02",
+      "VT15-TG": "2019-01-02",
+      "VT15-TG-300": "2019-01-02",
+      "S2-ENS": "2019-01-02",
+      "S2ENS-VT15": "2019-01-02",
+      "S2ENS-VT15TG": "2019-01-02"
+    }
+  },
+  "n_naive_in_pit_ever": 0,
+  "pit_ever": 189,
+  "gate_nav_start": {
+    "s2": "2011-03-01",
+    "ens": "2011-03-01"
+  },
+  "arms": {
+    "VT15-TG": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S2ENS-VT15": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S2ENS-VT15TG": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    }
+  }
+}

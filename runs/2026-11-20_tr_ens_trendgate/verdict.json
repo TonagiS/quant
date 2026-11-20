@@ -1,0 +1,130 @@
+{
+  "prereg_commit": "89acace",
+  "step0": {
+    "tr_method": "r_t = Δqfq_t/(k·raw_{t-1})，按拆分日分段，k=median(Δqfq/Δraw)；raw 来自 fullhist_raw / raw_2017 / raw_extra（本次补拉 670 只）；全部 1693 只 ETF 均已用总收益，无 qfq_naive 回退",
+    "files": [
+      "step0_single.csv",
+      "step0_portfolio.csv"
+    ]
+  },
+  "portfolio": {
+    "VT15-TG": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S2ENS-VT15": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S2ENS-VT15TG": {
+      "c1_calmar_ge_incumbent": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_crash_mdd_within_3pp": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c2_ok": true,
+      "c3_beats_static": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "adopt": false
+    }
+  },
+  "portfolio_secondary": {
+    "VT15-TG-300": {
+      "report_only": true,
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "would_meet_numerically": true,
+      "note": "二级定义，按预登记只报告、不进判定；W2017 卡玛 0.2907 vs 0.2905 几乎持平"
+    }
+  },
+  "A-ENS": {
+    "c1_crash_years_ok": false,
+    "c2_full_median_calmar_ge_A": {
+      "index": {
+        "A_ENS": 0.3449051434432011,
+        "A": 0.3702334268301319,
+        "ok": false
+      },
+      "etf_long": {
+        "A_ENS": 0.2076607243606403,
+        "A": 0.2230342296687137,
+        "ok": false
+      }
+    },
+    "c2_ok": false,
+    "c3_beats_static_ok": true,
+    "c4_xmkt_ok": false,
+    "xmkt_calmar": [
+      0.2146574374447268,
+      0.2197733652924849
+    ],
+    "adopt": false
+  },
+  "trials_this_run": {
+    "judged": 4,
+    "report_only": 2
+  },
+  "summary": {
+    "VT15-TG": "not_adopted",
+    "S2ENS-VT15": "not_adopted",
+    "S2ENS-VT15TG": "not_adopted",
+    "A-ENS": "not_adopted"
+  }
+}
