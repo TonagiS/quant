@@ -1,0 +1,46 @@
+{
+  "id": "ABL-01",
+  "title": "消融：动量选股 / 逆波动权重 / VT15 择时的分层归因（7 臂）",
+  "date": "2026-11-20",
+  "prereg": "runs/2026-11-20_ablation/PREREG.md",
+  "prereg_frozen_before_run": true,
+  "prereg_deviations": [],
+  "engine": "position/engine.py::simulate / run_with_base",
+  "cost": {"one_way_bp": 5, "note": "buy_cost = sell_cost = 0.0005；H/I 无策略臂零成本"},
+  "delay": 1,
+  "execution": "t 日收盘出信号，t+1 日收盘成交",
+  "pools": [
+    {"name": "宽ETF池", "source": "data/cache_ohlc_fullhist", "n_names": 92,
+     "span": "2013-01-04 ~ 2026-11-13", "snapshot": "2026-11-13", "years": 13.35},
+    {"name": "实盘ext池", "source": "data/cache2019", "n_names": 52,
+     "span": "2019-08-13 ~ 2026-11-19", "snapshot": "2026-11-19", "years": 6.99}
+  ],
+  "params": {
+    "reb": 10, "reb_mode": "rolling", "min_names": 8, "k_mom": 5, "k_all": 10000,
+    "vt": {"target": 0.15, "window": 60, "every": 1},
+    "arms": {
+      "A 等权满仓": {"univ": "all", "weight": "equal", "expo": "Fixed(1.0)"},
+      "B 等权+VT": {"univ": "all", "weight": "equal", "expo": "VolTarget(0.15,60,1)"},
+      "C 等权65%": {"univ": "all", "weight": "equal", "expo": "Fixed(0.65)"},
+      "D S2 满仓": {"univ": "mom5", "weight": "invvol", "expo": "Fixed(1.0)"},
+      "E VT15": {"univ": "mom5", "weight": "invvol", "expo": "VolTarget(0.15,60,1)"},
+      "F 动量等权": {"univ": "mom5", "weight": "equal", "expo": "Fixed(1.0)"},
+      "G 动量等权+VT": {"univ": "mom5", "weight": "equal", "expo": "VolTarget(0.15,60,1)"}
+    },
+    "all_univ_note": "全池臂候选 = bar≥150 且 120 日动量就绪的有效标的，不套 MA60（MA60 属选股层）"
+  },
+  "criteria": {
+    "AB1": "两池 卡玛(B)-卡玛(A) ≥ +0.05 且 回撤浅 ≥5pp",
+    "AB2": "两池 卡玛(B) ≥ 卡玛(C)+0.03",
+    "AB3": "宽池 年化(D)-年化(A) < 0 且 ext > 0",
+    "AB4": "逆波动相对等权卡玛差不低于 -0.03；≥+0.03 记正贡献",
+    "AB5": "只报不判"
+  },
+  "verdicts": {"AB1": "fail(pool-dependent)", "AB2": "fail(pool-dependent)",
+               "AB3": "pass", "AB4": "pass", "AB5": "reported"},
+  "bootstrap": {"method": "monthly stationary", "n_boot": 2000, "p": 0.1666667, "seed": 7},
+  "artifacts": ["ablation.csv", "diffs.csv", "bootstrap.csv", "REPORT.md", "_run.log"],
+  "script_sha256": "0DEF77B9466416CAABCDEB0EAFAE37F8A156B36FEF63E9735F789C99BDFBDD8E",
+  "trial_count_after": 344,
+  "out_of_sample": false
+}

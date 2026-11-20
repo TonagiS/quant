@@ -1,0 +1,39 @@
+{
+  "id": "ROLL-01",
+  "title": "滚动起点对比：策略 vs 等权基座（每月一个起点，窗口≥3年）",
+  "date": "2026-11-20",
+  "prereg": "runs/2026-11-20_roll_starts/PREREG.md",
+  "prereg_frozen_before_run": true,
+  "prereg_deviations": [
+    "首跑误把 ext 池起点网格设为 2019-01，与预登记（2019-09）不符；已按登记改回重跑，报告与登记数字均来自修正后的运行。"
+  ],
+  "engine": "position/engine.py::simulate / run_with_base",
+  "cost": {"one_way_bp": 5, "note": "buy_cost = sell_cost = 0.0005；BH 臂零成本（口径同既有报告）"},
+  "delay": 1,
+  "execution": "t 日收盘出信号，t+1 日收盘成交",
+  "pools": [
+    {"name": "宽ETF池", "source": "data/cache_ohlc_fullhist", "n_names": 92,
+     "span": "2013-01-04 ~ 2026-11-13", "snapshot": "2026-11-13",
+     "n_starts": 129, "start_grid": "2013-01 ~ 2023-09 每月首个交易日", "engine_start": "2010-09-13"},
+    {"name": "实盘ext池", "source": "data/cache2019", "n_names": 52,
+     "span": "2019-08-13 ~ 2026-11-19", "snapshot": "2026-11-19",
+     "n_starts": 50, "start_grid": "2019-09 ~ 2023-10 每月首个交易日", "engine_start": "2019-08-13"}
+  ],
+  "params": {
+    "k": 5, "reb": 10, "reb_mode": "rolling", "weight_mode": "invvol", "min_names": 8,
+    "vt": {"target": 0.15, "window": 60, "every": 1},
+    "arms": ["S2", "VT15", "BH(等权每日再平衡零成本)", "BH漂移(等权买入后漂移零成本)"],
+    "min_window_bars": 756
+  },
+  "criteria": {
+    "R1": "宽池 S2−BH 年化中位 < 0",
+    "R2": "ext S2−BH 年化中位 > 0",
+    "R3": "两池 VT15 回撤更浅的起点比例 ≥ 80%",
+    "R4": "两池 VT15 卡玛更高的起点比例 ≥ 70%"
+  },
+  "verdicts": {"R1": "pass", "R2": "pass", "R3": "pass", "R4": "pass"},
+  "artifacts": ["roll_starts.csv", "roll_summary.csv", "REPORT.md", "_run.log"],
+  "script_sha256": "E5F2B619E25B99798109FDA10320F9461777295C3E431DAC7E2054E441389CBB",
+  "trial_count_after": 338,
+  "out_of_sample": false
+}

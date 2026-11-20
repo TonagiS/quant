@@ -1,0 +1,51 @@
+{
+  "id": "SPLIT-01",
+  "date": "2026-11-20",
+  "purpose": "按 2013-2018 / 2019+ 切段，检查『打不过等权』是否只出现在 2019+ 段；指数池做无选池偏差对照",
+  "window_alignment": "两池统一截到共同末日 2026-11-13（宽池数据止 11-13、指数池止 11-19）",
+  "cost_one_way_bp": 5,
+  "delay": 1,
+  "params": {
+    "k": 5,
+    "reb": 10,
+    "reb_mode": "rolling",
+    "weight_mode": "invvol",
+    "min_names": 8,
+    "vt": {
+      "target": 0.15,
+      "window": 60,
+      "every": 1
+    }
+  },
+  "arms": [
+    "S2",
+    "VT15",
+    "等权"
+  ],
+  "pools": [
+    {
+      "name": "宽ETF池92",
+      "source": "data/cache_ohlc_fullhist",
+      "n": 92,
+      "snapshot": "2026-11-13"
+    },
+    {
+      "name": "指数代理15",
+      "source": "data/cache2007 idx_*",
+      "n": 15,
+      "snapshot": "2026-11-19"
+    }
+  ],
+  "starts": [
+    "2013-01-01",
+    "2017-01-01"
+  ],
+  "split": "2019-01-01",
+  "label_rule": "2019+ 一律标『样本内/开发期』；2025-01 起为留出段、仅用过一次",
+  "artifacts": [
+    "era_split.csv",
+    "era_diff.csv",
+    "REPORT.md"
+  ],
+  "out_of_sample": false
+}
