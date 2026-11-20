@@ -28,6 +28,9 @@ from position.engine import Config, Fixed, VolTarget, features, perf, run_with_b
 COST = 0.0005
 BIG_K = 10_000
 SPLIT = pd.Timestamp("2019-01-01")
+# 两池共同末日。宽池 cache_ohlc_fullhist 止于 2026-11-13，指数池 cache2007 止于 2026-11-19；
+# 跨池比较必须同一末日 → 统一截到 2026-11-13。（2026-11-20 修正：上一版没对齐，指数池多了 4 个交易日。）
+END = pd.Timestamp("2026-11-13")
 
 ARMS = {
     "S2": dict(univ="mom", wmode="invvol", rule=lambda: Fixed(1.0)),
@@ -54,6 +57,8 @@ def main() -> None:
     os.makedirs(OUT, exist_ok=True)
     etf, bad = bt.clean(bt.load_etf_panel())
     idx = bt.load_idx_panel()
+    # 对齐窗口：两池都截到共同末日 END
+    etf, idx = etf.loc[:END], idx.loc[:END]
     pools = [("宽ETF池92", etf), ("指数代理15", idx)]
     starts = [("2013起", "2013-01-01"), ("2017起", "2017-01-01")]
 
@@ -118,6 +123,7 @@ def main() -> None:
     meta = dict(
         id="SPLIT-01", date="2026-11-20",
         purpose="按 2013-2018 / 2019+ 切段，检查『打不过等权』是否只出现在 2019+ 段；指数池做无选池偏差对照",
+        window_alignment="两池统一截到共同末日 2026-11-13（宽池数据止 11-13、指数池止 11-19）",
         cost_one_way_bp=5, delay=1,
         params=dict(k=5, reb=10, reb_mode="rolling", weight_mode="invvol", min_names=8,
                     vt=dict(target=0.15, window=60, every=1)),
