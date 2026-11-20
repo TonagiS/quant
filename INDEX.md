@@ -39,9 +39,11 @@
 | `runs/2026-11-04_SIG-01_crossasset` | 跨资产 | `python work/cross_asset_test.py` | 2026-11-02 | 69 只长周期 10.05%/0.27，52 只 V2 16.03%/0.70；不扩池、不改信号 | `REPORT.md` |
 | `position/live/shadow/` | 影子运行 | `position\live\shadow\daily.ps1 -phase 1430\|eod` | 逐日 | v1 归档、v2（14 自然日 + 场外分档）运行；原计划任务迁移后查询不到，需重新注册 | `shadow_log.csv`, `v2_observ.csv`, `FROZEN_v2.json` |
 | `position/live/decision_1430.py` | 主脚本 | — | — | 2026-11-03 改版：删拥挤度/顶部结构/量能确认，保留动量/60日线/逆波动 | sha 065002b9… |
-| `position/live/paper/` | 模拟盘 | `python position\live\paper_account.py --execute\|--mark` | 每交易日 | s2 / vt15 双账本各 10 万，场外分档费；vt15_adx 账本已归档撤下 | `books/s2`, `books/vt15` |
+| `position/live/paper/` | 模拟盘 | `python position\live\paper_account.py --execute\|--mark`；`python position\live\paper_book5d.py --execute\|--mark` | 每交易日 | 三账本各 10 万：s2 / vt15（场外分档费，14 自然日）、vt15_5d（场内 5bp，5 交易日，去跨境）；vt15_adx 已归档撤下 | `books/s2`, `books/vt15`, `books/vt15_5d` |
 | `position/live/shadow/v2_observ.csv` | 观察臂 | 每日 15:10 由 daily.ps1 调用 | 逐日 | 只记换手/滑点；首日换手 1.0、滑点 +31.5bp | `v2_observ.csv` |
 | `runs/2026-11-02_T4-SHARE-COVER` | 数据可行性 | `python work/t4_share_cover.py` | 2026-11-02 | 沪市 40 只 ETF 份额覆盖 90%、20/40 全样本可用；深市无可用源 | `share_cover.csv`, `share_code_coverage.csv` |
+| `runs/2026-11-20_roll_starts` | 预登记（ROLL-01） | `venv\Scripts\python.exe runs\2026-11-20_roll_starts\roll.py` | 2026-11-13 / 11-19 | 129/50 个滚动起点：宽池 S2−等权 −3.11pp/年（仅 1.6% 起点为正）、ext +12.10pp（100%）；VT15 回撤更浅 100%/100%、卡玛更高 100%/100% | `PREREG.md`, `REPORT.md`, `roll_starts.csv`, `roll_summary.csv` |
+| `runs/2026-11-20_ablation` | 预登记（ABL-01） | `venv\Scripts\python.exe runs\2026-11-20_ablation\ablate.py` | 2026-11-13 / 11-19 | 7 臂分层归因：逆波动权重是唯一两池两档全正的一层（卡玛 +0.06~+0.15）；VT15 在等权基座上池依赖（宽 +0.060 / ext −0.066）；动量选股宽 −2.3pp / ext +11.2pp | `PREREG.md`, `REPORT.md`, `ablation.csv`, `diffs.csv`, `bootstrap.csv` |
 
 **运行环境**
 - Python：`venv\Scripts\python.exe`（3.11.8，akshare 1.20.1）。
