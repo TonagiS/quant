@@ -1,0 +1,129 @@
+{
+  "S2_windows": {
+    "W2013": {
+      "calmar_vt>ew": true,
+      "calmar_vt>static": true,
+      "cagr_not_below_ew_2pp": true,
+      "pass": true,
+      "vt": [
+        0.0793,
+        -0.3662,
+        0.217
+      ],
+      "ew": [
+        0.0557,
+        -0.4143,
+        0.134
+      ],
+      "static": [
+        0.0442,
+        -0.3092,
+        0.143,
+        0.714
+      ]
+    },
+    "W2017": {
+      "calmar_vt>ew": true,
+      "calmar_vt>static": true,
+      "cagr_not_below_ew_2pp": true,
+      "pass": true,
+      "vt": [
+        0.09,
+        -0.3099,
+        0.291
+      ],
+      "ew": [
+        0.035,
+        -0.3902,
+        0.09
+      ],
+      "static": [
+        0.0287,
+        -0.2908,
+        0.099,
+        0.711
+      ]
+    },
+    "W2019": {
+      "calmar_vt>ew": true,
+      "calmar_vt>static": true,
+      "cagr_not_below_ew_2pp": true,
+      "pass": true,
+      "vt": [
+        0.099,
+        -0.2168,
+        0.457
+      ],
+      "ew": [
+        0.067,
+        -0.3902,
+        0.172
+      ],
+      "static": [
+        0.0473,
+        -0.2638,
+        0.179,
+        0.637
+      ]
+    }
+  },
+  "DIV_windows": {
+    "W2013": {
+      "pass": true,
+      "div_iv": [
+        0.0824,
+        -0.0829,
+        0.993
+      ]
+    },
+    "W2017": {
+      "pass": true,
+      "div_iv": [
+        0.0739,
+        -0.0829,
+        0.892
+      ]
+    },
+    "W2019": {
+      "pass": true,
+      "div_iv": [
+        0.089,
+        -0.0829,
+        1.073
+      ]
+    }
+  },
+  "DIV_secondary": {
+    "W2013": {
+      "DIV-EW": true,
+      "DIV-IV-A": true
+    },
+    "W2017": {
+      "DIV-EW": true,
+      "DIV-IV-A": true
+    },
+    "W2019": {
+      "DIV-EW": true,
+      "DIV-IV-A": true
+    }
+  },
+  "S2_momentum_selection": "kept",
+  "S2_pass_count": 3,
+  "DIV_IV_core": "recommended_as_core",
+  "DIV_pass_count": 3,
+  "div_etf_first_used": {
+    "sh510300": "2012-06-27",
+    "sh510500": "2013-04-17",
+    "sz159915": "2012-01-11",
+    "sh588000": "2020-12-15",
+    "sh511010": "2013-04-25",
+    "sh518880": "2013-08-27",
+    "sh513100": "2013-06-18",
+    "sh513500": "2014-02-20"
+  },
+  "engine_starts": {
+    "W2013": "2013-01-04",
+    "W2017": "2017-01-03",
+    "W2019": "2019-01-02"
+  }
+}
