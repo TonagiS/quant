@@ -1,0 +1,377 @@
+{
+  "verdicts": {
+    "C1": {
+      "incumbent": "DIV-IV",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "C2": {
+      "incumbent": "DIV-IV",
+      "c1": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "C3": {
+      "incumbent": "DIV-IV",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "S1": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": false,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S2r": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "S3": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": false,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": false
+    },
+    "S4": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "R1@S2+VT15": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "R1@MIX": {
+      "incumbent": "MIX80/20",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": false,
+      "adopt": false
+    },
+    "R2@S2+VT15": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "R2@MIX": {
+      "incumbent": "MIX80/20",
+      "c1": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": false
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "c2_ok": true,
+      "c3_ok": false,
+      "adopt": false
+    },
+    "ALL-IN": {
+      "incumbent": "MIX80/20",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "ALLIN-core": {
+      "incumbent": "DIV-IV",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "ALLIN-sat": {
+      "incumbent": "S2+VT15",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    },
+    "ADOPTED-ONLY": {
+      "incumbent": "MIX80/20",
+      "c1": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c2": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c1_ok": true,
+      "c2_ok": true,
+      "c3_ok": true,
+      "adopt": true
+    }
+  },
+  "adopted_components": [
+    "C1",
+    "C2",
+    "C3",
+    "S2r",
+    "S4",
+    "R1@S2+VT15",
+    "R2@S2+VT15"
+  ],
+  "extras": {
+    "W2013": {
+      "r1_share_S2VT": 0.2600297176820208,
+      "r1_share_MIX": 0.0,
+      "r2_share_S2VT": 0.1800891530460624,
+      "r2_avgcorr_median": 0.6048822171417731,
+      "c3_k_mean": 1.0216800029063435,
+      "lo": "2013-01-04"
+    },
+    "W2017": {
+      "r1_share_S2VT": 0.195906432748538,
+      "r1_share_MIX": 0.0,
+      "r2_share_S2VT": 0.14578111946532998,
+      "r2_avgcorr_median": 0.5672101847502431,
+      "c3_k_mean": 1.0229769070888013,
+      "lo": "2017-01-03"
+    },
+    "W2019": {
+      "r1_share_S2VT": 0.1882538017829051,
+      "r1_share_MIX": 0.0,
+      "r2_share_S2VT": 0.13791295228106976,
+      "r2_avgcorr_median": 0.561622536756126,
+      "c3_k_mean": 1.0920217218581658,
+      "lo": "2019-01-02"
+    }
+  },
+  "first_etf_dates": {
+    "sh511380": "2020-05-11",
+    "sh511360": "2020-11-03",
+    "sh513520": "2019-07-24",
+    "sh513030": "2014-10-14",
+    "sz162411_info": "tr(jump_days=0;k_segs=1)",
+    "sz162411": "2012-07-11"
+  }
+}
