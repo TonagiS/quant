@@ -1,0 +1,52 @@
+det 0.0005 9
+det 0.001 19
+det 0.002 28
+rand 0 600 34
+rand 50 600 52
+rand 100 600 70
+rand 150 600 88
+rand 200 600 106
+rand 250 600 126
+rand 300 600 146
+rand 350 600 164
+rand 400 600 187
+rand 450 600 206
+rand 500 600 227
+rand 550 600 260
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+/workspace/quant/work/prereg_satellite.py:146: PerformanceWarning: indexing past lexsort depth may impact performance.
+  s4 = det.loc[("S4", core, cb)]
+/workspace/quant/work/prereg_satellite.py:147: PerformanceWarning: indexing past lexsort depth may impact performance.
+  ctrls = {"vs_BROAD_MA60": det.loc[("BROAD_MA60", core, cb)], "vs_RANDOM_median": rnd.loc[(core, cb)],
+/workspace/quant/work/prereg_satellite.py:148: PerformanceWarning: indexing past lexsort depth may impact performance.
+  "vs_PURE_CORE(次要)": det.loc[("PURE_CORE", core, cb)]}
+done 291

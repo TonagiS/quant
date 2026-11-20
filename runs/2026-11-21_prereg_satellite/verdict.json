@@ -1,0 +1,11 @@
+{
+ "primary_5bp": {
+  "C3": true,
+  "DIV-IV": true
+ },
+ "cost_20bp": {
+  "C3": false,
+  "DIV-IV": false
+ },
+ "overall_pass_5bp": true
+}
