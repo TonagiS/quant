@@ -169,7 +169,8 @@
     "index": "/workspace/quant/data/cache_index_proxy"
   },
   "return_method": "ETF: 拆分日分段, k=median(Δqfq/Δraw), r=Δqfq/(k·raw_{t-1}); 拆分日用 qfq pct",
-  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "git_commit": "1af0a1dd3dc2c8963e61d447041091b772a282db",
+  "git_commit_before_rewrite": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
   "prereg": "runs/2026-11-14_long_history/PREREG.md",
   "script": "work/long_history_backtest.py"
 }

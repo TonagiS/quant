@@ -1,6 +1,6 @@
 # 红利-科技跷跷板 回测报告
 
-- 预登记：`PREREG.md`（冻结于 commit 2778e79，回测前）。脚本：`work/div_tech_pull.py`、`work/div_tech_backtest.py`、`work/div_tech_summary.py`。
+- 预登记：`PREREG.md`（冻结于 commit c2306eb，回测前）。脚本：`work/div_tech_pull.py`、`work/div_tech_backtest.py`、`work/div_tech_summary.py`。
 - 视频 BV1wqba6uEXd（土豆看财报）本身没看，规则是我们自己的量化版本。**不构成投资建议**。
 - 成本单边 5bp，只做多，不加杠杆，2025+ 不是 holdout。
 

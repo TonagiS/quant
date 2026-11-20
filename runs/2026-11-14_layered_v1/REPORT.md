@@ -7,7 +7,7 @@
 - 慢速组（债券 / 银行 / 风格-红利/低波）92 只；主动组 859 只。分类用已有 category/sector 标签，不按历史收益挑选。
 - 对照臂：A = 旧定稿 G1×volcap(15%,下限0.4)×taper；B = 本分层规则 v1。满仓为 BH。不开网格，不把仓位乘回 S2+VT15。
 - 预登记：本目录 `PREREG.md`。本报告不是投资建议。
-- git commit：`488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb`
+- git commit：`1af0a1dd3dc2c8963e61d447041091b772a282db`
 
 ## 过滤
 剔除原因（只数，含仅不进截面但仍可能附录评估的标的）：

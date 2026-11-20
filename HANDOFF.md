@@ -1,7 +1,8 @@
 # quant 交接说明（给外部协作者 / Grok）
 
 > 生成：2026-11-14 · 负责人：鱼片 · 执行：DSH（公开仓库：不写 QQ/群号，联系走 Issue）
-> 仓库：https://github.com/TonagiS/quant （**公开**，分支 `main`，711 个文件 ≈ 10 MB，起点提交 `bbeab65`）
+> 仓库：https://github.com/TonagiS/quant （**公开**，分支 `main`，711 个文件 ≈ 10 MB，起点提交 `9a04eba`）
+> 历史重写（2026-11-20）：旧提交号 → 新提交号对照见 `work/HISTORY_REWRITE_20261120.md`。
 
 ---
 

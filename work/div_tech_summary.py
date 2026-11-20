@@ -46,7 +46,7 @@ def verdict(r, label="main"):
 def main():
     r = pd.read_csv(RUN / "results_long.csv")
     v = {"main": verdict(r), "chk_510880": verdict(r, "chk_510880"), "chk_sig000922": verdict(r, "chk_sig000922")}
-    v["rule_frozen_commit"] = "2778e79"
+    v["rule_frozen_commit"] = "c2306eb"
     (RUN / "verdict.json").write_text(json.dumps(v, ensure_ascii=False, indent=1, default=str))
     arms = ["SEESAW", "SEESAW-BOND", "REVERSE", "50/50", "BH-tech", "BH-div", "A", "RATIO"]
     full = r[(r.label == "main") & (r.window == "full") & r.arm.isin(arms)]

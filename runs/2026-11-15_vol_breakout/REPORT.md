@@ -1,6 +1,6 @@
 # 缩量回踩 + 放量突破：全 A 股回测报告
 
-- 规则按用户 t38 原文冻结，见 `PREREG.md`。冻结时间 2026-11-15 14:55（UTC+8），在写回测代码之前；冻结 commit `ad53488`。没有做参数网格或调参。
+- 规则按用户 t38 原文冻结，见 `PREREG.md`。冻结时间 2026-11-15 14:55（UTC+8），在写回测代码之前；冻结 commit `b911663`。没有做参数网格或调参。
 - 数据截至 2026-11-13；信号区间 2006-01-04 ~ 2026-11-12。2025 年以后不是 holdout。**不是投资建议。**
 - 脚本：`work/vol_breakout_pull.py`（拉数）、`work/vol_breakout_backtest.py`（回测）、`work/vol_breakout_summary.py`（汇总/判定）、`work/vol_breakout_diag.py`（事后诊断，不进判定）。
 

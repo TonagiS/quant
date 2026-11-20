@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""红利-科技跷跷板回测。口径见 runs/2026-11-15_div_tech_seesaw/PREREG.md（冻结于 commit 2778e79）。"""
+"""红利-科技跷跷板回测。口径见 runs/2026-11-15_div_tech_seesaw/PREREG.md（冻结于 commit c2306eb）。"""
 from __future__ import annotations
 import json, sys
 from pathlib import Path

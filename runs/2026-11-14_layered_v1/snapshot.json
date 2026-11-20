@@ -18,7 +18,8 @@
   "prereg": "runs/2026-11-14_layered_v1/PREREG.md",
   "cache_path": "/workspace/quant/data/cache_ohlc_full",
   "script": "work/layered_v1_backtest.py",
-  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "git_commit": "1af0a1dd3dc2c8963e61d447041091b772a282db",
+  "git_commit_before_rewrite": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
   "baseline_reconcile": {
     "n_prior": 951,
     "n_new": 951,

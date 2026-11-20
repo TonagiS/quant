@@ -136,7 +136,8 @@
       "info": ""
     }
   ],
-  "git_commit": "89acace77123ecb5fe189f86759333826bb5ec6a",
+  "git_commit": "537637681276b6fce63f0c17aec16a268138a284",
+  "git_commit_before_rewrite": "89acace77123ecb5fe189f86759333826bb5ec6a",
   "prereg": "runs/2026-11-20_tr_ens_trendgate/PREREG.md",
   "script": "work/tr_ens_single.py",
   "caches": [

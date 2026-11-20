@@ -13,7 +13,8 @@
   "missing_cache_n": 0,
   "cache_path": "/workspace/quant/data/cache_ohlc_full",
   "script": "work/candidates_v2_backtest.py",
-  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "git_commit": "1af0a1dd3dc2c8963e61d447041091b772a282db",
+  "git_commit_before_rewrite": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
   "prereg": "runs/2026-11-14_candidates_v2/PREREG.md",
   "reconcile": {
     "A": {

@@ -1,5 +1,5 @@
 {
-  "prereg_commit": "89acace",
+  "prereg_commit": "5376376",
   "step0": {
     "tr_method": "r_t = Δqfq_t/(k·raw_{t-1})，按拆分日分段，k=median(Δqfq/Δraw)；raw 来自 fullhist_raw / raw_2017 / raw_extra（本次补拉 670 只）；全部 1693 只 ETF 均已用总收益，无 qfq_naive 回退",
     "files": [

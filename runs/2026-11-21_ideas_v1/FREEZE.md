@@ -6,7 +6,7 @@
 ## 共同口径（沿用）
 总收益面板 panel_tr2；PIT 池（月末按 60 日均成交额前 40，剔除货币/债券 ETF，≥250 日历史，次日生效）；信号滞后 1 日；只做多、无杠杆、现金收益 0。
 窗口 W2013 / W2017 / W2019 → 2026-11-13；危机段 2015、2018、2021-02-18→2024-02-02；2023→今（短样本）。2025+ 不是留出样本。
-成本 5bp（主），10bp / 20bp 敏感性。S4 规则冻结于 position/frozen_candidates/FROZEN_S4.md（bf50dbb），本轮只 import components_core / components_bt，不修改。
+成本 5bp（主），10bp / 20bp 敏感性。S4 规则冻结于 position/frozen_candidates/FROZEN_S4.md（8fff4d4），本轮只 import components_core / components_bt，不修改。
 
 ## 想法与网格（每个单独加在 S2+VT15 与 S4 上）
 1. 拥挤度否决：20 日均成交额在自身过去 756 日（≥252 日）中的分位 ≥ {0.80, 0.90, 0.95} → 不入候选。

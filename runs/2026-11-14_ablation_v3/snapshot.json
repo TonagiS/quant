@@ -146,7 +146,8 @@
       "info": ""
     }
   ],
-  "git_commit": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
+  "git_commit": "1af0a1dd3dc2c8963e61d447041091b772a282db",
+  "git_commit_before_rewrite": "488abcdc5af0eb1afe0cd7ecdc993625ecaf19cb",
   "prereg": "runs/2026-11-14_ablation_v3/PREREG.md",
   "script": "work/ablation_v3_backtest.py",
   "caches": [

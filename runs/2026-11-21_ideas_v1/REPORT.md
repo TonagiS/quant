@@ -1,7 +1,7 @@
 # ideas_v1 报告（2026-11-21）
 
 > **全部是样本内结果**（用户 pt62u 允许不考虑过拟合，做了网格）。walk-forward 只作参考。2025+ 不是留出样本。不构成投资建议。
-> 口径：总收益面板 panel_tr2，PIT 前 40 池，信号滞后 1 日，只做多、无杠杆、现金 0；主成本 5bp，另报 10/20bp。规则见 FREEZE.md（24dabc9）。
+> 口径：总收益面板 panel_tr2，PIT 前 40 池，信号滞后 1 日，只做多、无杠杆、现金 0；主成本 5bp，另报 10/20bp。规则见 FREEZE.md（8c599b0）。
 > 复现：`python3 work/ideas_v1_pull.py shares`；`/workspace/venv_ak/bin/python work/ideas_v1_pull.py credit`；`python3 work/ideas_v1.py`。
 > 基线核对：本脚本的 S2+VT15 / S4 与 components_core.sat_run 逐日收益完全一致（最大差 0）。
 

@@ -1,6 +1,6 @@
 # 总收益口径统一 + VT15 趋势门 + 参数取平均（2026-11-20）
 
-规则见 `PREREG.md`（回测前冻结，commit 89acace）。单边 5bp、delay=1、只做多、不加杠杆（VolTarget cap=1，已核对）、现金收益 0。不是投资建议。
+规则见 `PREREG.md`（回测前冻结，commit 5376376）。单边 5bp、delay=1、只做多、不加杠杆（VolTarget cap=1，已核对）、现金收益 0。不是投资建议。
 
 ## 一句话结论
 
