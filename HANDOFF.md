@@ -30,6 +30,7 @@
 | 最新一轮结项（≈330 次） | `https://raw.githubusercontent.com/TonagiS/quant/main/work/STATUS_20261116_round2.md` |
 | 目录地图 | `https://raw.githubusercontent.com/TonagiS/quant/main/README.md` |
 | 全部 run 索引 | `https://raw.githubusercontent.com/TonagiS/quant/main/INDEX.md` |
+| 11-15→11-21 研究总结 | `https://raw.githubusercontent.com/TonagiS/quant/main/SUMMARY_20261121.md` |
 | 试验登记簿 | `https://raw.githubusercontent.com/TonagiS/quant/main/registry.csv` |
 | 单支定稿报告 | `https://raw.githubusercontent.com/TonagiS/quant/main/runs/2026-11-15_single_asset_state/REPORT.md` |
 

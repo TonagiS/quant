@@ -6,6 +6,8 @@
 
 **2026-11-03 目录迁移**：研究代码 → `indicators/code/`，指标结果 → `indicators/results/`，预登记只读副本 → `indicators/frozen/`；实盘/模拟盘 → `position/live/`；行情缓存/每日快照 → `data/`。下表“命令”列是历史 run 的原始命令；现在从 run 目录执行时，脚本路径换成 `..\..\indicators\code\xxx.py`，实盘脚本换成 `position\live\...`。
 
+**2026-11-21 总结**：11-15 → 11-21 各 run（rate_cycle … analyst_revision）的问题、数字、判定与当前候选见根目录 `SUMMARY_20261121.md`。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。
