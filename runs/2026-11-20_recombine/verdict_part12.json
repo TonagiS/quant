@@ -1,0 +1,159 @@
+{
+  "part1": {
+    "ABL-noMA60": {
+      "c1": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "tie_within_0.02_all3": false,
+      "c2": {
+        "Y2015": false,
+        "Y2018": false,
+        "S2021_24": true
+      },
+      "c2_ok": false,
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "verdict": "不采用",
+      "calmar": {
+        "W2013": 0.2018,
+        "W2017": 0.2164,
+        "W2019": 0.3325
+      },
+      "calmar_inc": {
+        "W2013": 0.2167,
+        "W2017": 0.2905,
+        "W2019": 0.4566
+      }
+    },
+    "ABL-EW": {
+      "c1": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "tie_within_0.02_all3": false,
+      "c2": {
+        "Y2015": true,
+        "Y2018": false,
+        "S2021_24": true
+      },
+      "c2_ok": false,
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "verdict": "不采用",
+      "calmar": {
+        "W2013": 0.2065,
+        "W2017": 0.2585,
+        "W2019": 0.3636
+      },
+      "calmar_inc": {
+        "W2013": 0.2167,
+        "W2017": 0.2905,
+        "W2019": 0.4566
+      }
+    },
+    "ABL-M60": {
+      "c1": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "c1_ok": false,
+      "tie_within_0.02_all3": false,
+      "c2": {
+        "Y2015": false,
+        "Y2018": false,
+        "S2021_24": true
+      },
+      "c2_ok": false,
+      "c3": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "c3_ok": true,
+      "verdict": "不采用",
+      "calmar": {
+        "W2013": 0.1859,
+        "W2017": 0.146,
+        "W2019": 0.2933
+      },
+      "calmar_inc": {
+        "W2013": 0.2167,
+        "W2017": 0.2905,
+        "W2019": 0.4566
+      }
+    }
+  },
+  "part2": {
+    "MIX80/20": {
+      "a_vs_sat_calmar": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "a_crash": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "a_ok": true,
+      "b_vs_div_calmar": {
+        "W2013": false,
+        "W2017": true,
+        "W2019": true
+      },
+      "b_ok": true
+    },
+    "MIX70/30": {
+      "a_vs_sat_calmar": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "a_crash": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "a_ok": true,
+      "b_vs_div_calmar": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": true
+      },
+      "b_ok": false
+    },
+    "MIX60/40": {
+      "a_vs_sat_calmar": {
+        "W2013": true,
+        "W2017": true,
+        "W2019": true
+      },
+      "a_crash": {
+        "Y2015": true,
+        "Y2018": true,
+        "S2021_24": true
+      },
+      "a_ok": true,
+      "b_vs_div_calmar": {
+        "W2013": false,
+        "W2017": false,
+        "W2019": false
+      },
+      "b_ok": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "part1": {
+    "ABL-noMA60": "不采用",
+    "ABL-EW": "不采用",
+    "ABL-M60": "不采用"
+  },
+  "part2": {
+    "MIX80/20": {
+      "优于单独卫星": true,
+      "优于纯DIV-IV(5bp)": true
+    },
+    "MIX70/30": {
+      "优于单独卫星": true,
+      "优于纯DIV-IV(5bp)": false
+    },
+    "MIX60/40": {
+      "优于单独卫星": true,
+      "优于纯DIV-IV(5bp)": false
+    }
+  },
+  "part3": {
+    "n_combos": 1458,
+    "winner": "M3|MA60|N8|IV|R10|VT15-TG-300|C80",
+    "PBO_calmar": 0.03667443667443668,
+    "DSR_daily": {
+      "DSR_N1458": 0.793749495252698,
+      "DSR_N_eff": 0.9999491559217375,
+      "DSR_N1458+25": 0.7923000530402591
+    },
+    "n_eff": 1.2991605967427204,
+    "WF_calmar": 0.7222511411958291,
+    "verdict_literal": {
+      "c1_PBO_lt_0.5": true,
+      "c2_DSR_Neff_ge_0.95(daily)": true,
+      "c2_monthly_ref": true,
+      "c3_WF_ge_inc_and_mix70": true,
+      "credible": true
+    },
+    "note": "N_eff估计失效；N=1458时DSR<0.95；赢家≈DIV-IV，15bp以上输给纯DIV-IV"
+  }
+}
