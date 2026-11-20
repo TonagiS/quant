@@ -1,0 +1,20 @@
+## FROZEN_v1.json
+OK_CRLF indicators/frozen/run_shadow_v1.py exp=e7a8e9b0fbbdcf6e lf=c752827d4642c6d4 crlf=e7a8e9b0fbbdcf6e
+OK indicators/frozen/RULES_v1.md exp=46912b5d41e0430d lf=46912b5d41e0430d crlf=40041545f493fac3
+OK_CRLF indicators/frozen/universe_v1.csv exp=0539ca147dbb6dc8 lf=d0f069fd34cfbce4 crlf=0539ca147dbb6dc8
+## FROZEN_v1_legacy.json
+OK position/live/shadow/RULES_v1.md exp=46912b5d41e0430d lf=46912b5d41e0430d crlf=40041545f493fac3
+OK position/live/shadow/engine.py exp=74d4c154c7fdb0ac lf=74d4c154c7fdb0ac crlf=edf0eca955286709
+MISMATCH position/live/shadow/run_shadow.py exp=f82e47ad0d5c0f3c lf=ec14851350a5a4c8 crlf=2b4f3a0c2a2eb593
+OK_CRLF position/live/shadow/universe_v1.csv exp=0539ca147dbb6dc8 lf=d0f069fd34cfbce4 crlf=0539ca147dbb6dc8
+## FROZEN_v2.json
+MISMATCH position/live/shadow/RULES_v2.md exp=09221143852c05de lf=4ea676c74659dd89 crlf=db9873eefd8862ea
+OK position/live/shadow/rules_v2.json exp=acd6996af3835f88 lf=acd6996af3835f88 crlf=38f9099a920442a0
+OK_CRLF position/live/shadow/run_shadow.py exp=2b4f3a0c2a2eb593 lf=ec14851350a5a4c8 crlf=2b4f3a0c2a2eb593
+OK position/live/shadow/engine.py exp=74d4c154c7fdb0ac lf=74d4c154c7fdb0ac crlf=edf0eca955286709
+OK_CRLF position/live/shadow/universe_v1.csv exp=0539ca147dbb6dc8 lf=d0f069fd34cfbce4 crlf=0539ca147dbb6dc8
+## FROZEN_S4.md
+OK work/components_bt.py exp=819647d90f62e56d lf=819647d90f62e56d crlf=9b5a949b5ca43432
+OK work/components_core.py exp=3146eb133dd836f0 lf=3146eb133dd836f0 crlf=6f03ba7fc9d98703
+## RULES_v2.md 去掉 2026-11-05 口径核对注后
+09221143852c05de (期望 09221143852c05de)
