@@ -22,3 +22,8 @@ torchinductor_*/
 =ro
 *.tmp
 runs/2026-11-15_vol_breakout/*/random_trades.csv.gz
+
+# runtime logs with QQ ids / chat dumps -- never in the public repo
+position/live/shadow/run.log*
+work/poke_debug.log
+work/history_inspect.txt

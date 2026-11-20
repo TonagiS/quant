@@ -38,7 +38,7 @@ $env:PYTHONIOENCODING='utf-8'
 第 20/40/60 个交易日各出一份小结：数据质量（失败只数/原因）、滑点分布（均值、95 分位）、与回测口径的一致性；**不用收益改规则**。
 
 ## 14:30 群播报（2026-11-03 上线）
-`daily.ps1 -phase 1430` 在模拟盘成交后调用 `E:\Code\dsh-agent\group_brief.py`，把当日操作 / 持仓 / 板块 20 日涨跌以 QQ 合并消息发到群 [redacted-group]。
+`daily.ps1 -phase 1430` 在模拟盘成交后调用 `E:\Code\dsh-agent\group_brief.py`，把当日操作 / 持仓 / 板块 20 日涨跌以 QQ 合并消息发到群（群号见本地 `E:\Code\dsh-agent\group.json`，仓库里不写）。
 - 发送走 dsh_bridge 的 HTTP `/notify`（`forward: true`，每组一行一个 node）；群号在 `E:\Code\dsh-agent\group.json`。
 - 非交易日没有 `data/daily/YYYYMMDD.json` 时自动跳过；同一天只发一次（`E:\Code\dsh-agent\state\sent_YYYYMMDD.txt`）。
 - 播报只用 14:30 快照价，不代表收盘净值；不改规则、不写 shadow 数值列。
