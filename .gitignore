@@ -27,3 +27,5 @@ runs/2026-11-15_vol_breakout/*/random_trades.csv.gz
 position/live/shadow/run.log*
 work/poke_debug.log
 work/history_inspect.txt
+position/live/shadow_s4/run.log*
+position/live/shadow_s4/__pycache__/

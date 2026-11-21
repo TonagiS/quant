@@ -1,0 +1,21 @@
+{
+ "frozen_at": "2026-11-21",
+ "note": "S4 影子盘代码指纹（LF 口径 sha256：CRLF 先换成 LF）。运行器每次启动比对；不一致→日志 fingerprint_ok=0，按提案 K3 处理（作废当期记录、修复后重新计时）。规则来源 position/frozen_candidates/FROZEN_S4.md",
+ "files": {
+  "position/live/shadow_s4/run_s4_shadow.py": "23878169f0c3e6e9c0523b1501c1bedefe5a95078873407ac02fa1067bcabce7",
+  "position/live/shadow_s4/s4lib.py": "616463e1750ba175edd9b606c71c527283f1073e41e38a5e35a6ce799b97ff58",
+  "work/components_core.py": "3146eb133dd836f076860d2a1f02d8d2b3257bc8e3984915f460eff442c44f41",
+  "work/components_bt.py": "819647d90f62e56d724b4280600ee9e9c843d52e8b748de81b89173657aa1495",
+  "work/prereg_satellite.py": "c362d280ffd53d1d4364db0196f4dbbacba8865929a3a43bf30fe2e3f2d8d51e",
+  "work/sat_vt15_control.py": "5c871d95ab1ca585ea1512c2a083eb125edcf45c8f1bdc958c0ca1acf8ed8f6d",
+  "work/recombine_core.py": "522e86562659257f66c1ac1c23dd27085ee394e1cfa3f22d1a32eaf99d0771f0",
+  "work/pit_pool_backtest.py": "01f1f2eda47bf277e2031b89ace34c6b5f75c03d7b905230559ad97a4289d883",
+  "work/pit_pool_data.py": "bc9a404f1239326dee8a751625e123a4f7e5db034c7991ceb6fee33c4ae181bb",
+  "work/tr_ens_data.py": "c251fd873edd62b806590d026ad93114ce634abbb7eb972bec52a5c56af1e35c",
+  "work/long_history_backtest.py": "161a556d6b8ee968ab929a57b9f96a66b4b55550ded94d1aea85f8cf79011082",
+  "work/fullmkt_single_asset.py": "4f3f723ba464239499acdd65669ce4b7a63119e09e2a953048aa6c6895bb7a5e",
+  "work/s4_random_null.py": "12ba59b6b8787cb78f6625da7f4132cfb1531878633ff42f6e0466478c7bb8e8",
+  "work/tr_ens_portfolio.py": "4fa68e1877cb4da59e51b4adabdf7e7543f8632a921a4fd3b0449db96c53508d",
+  "position/engine.py": "a3f50ea1d57afbcb67352b5751dbfee2c7e275fa5d5a0cefedd97e1b4f11bd4f"
+ }
+}

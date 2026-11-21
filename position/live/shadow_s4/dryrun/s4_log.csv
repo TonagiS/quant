@@ -1,0 +1,2 @@
+date,phase,status,pool_n,n_valid,n_cand,signal_day,exec_day,vt_scale,next_signal_in_days,holdings_json,orders_json,ret_close_fill_5bp,ret_close_fill_20bp,fill1430_adj_bp,failed,fingerprint_ok,data_last,notes,nav_5bp,nav_20bp,turn_today_5bp,dd_5bp,mdd_5bp,K1_flag(mdd<=-25%)
+2026-11-20,eod,pre-start,40,40,1,0,0,0.5841,1,"{""sh512800"": 0.5688}",{},0.006838508127876823,0.006854633963063174,,{},1,2026-11-20,000300_pe_last=2026-11-20;cgb10y_last=2026-11-20,1.0,1.0,0.0,0.0,0.0,0

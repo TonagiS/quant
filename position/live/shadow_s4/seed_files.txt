@@ -1,0 +1,12 @@
+# 在一台没有研究缓存的机器（例如 Windows 的 E:\Code\quant）上运行影子盘前，需要从 box 复制这些研究期输入（均 gitignored）：
+data/cache_pit/panel_tr2.pkl
+data/cache_components/
+data/cache_index_proxy/H00300.csv
+data/cache_index_proxy/H00905.csv
+data/cache_cross_market/QQQ.csv
+data/cache_cross_market/N225.csv
+data/cache_cross_market/SP500TR.csv
+data/cache_div_tech/H11001.csv
+data/cache_div_tech/sz399606.csv
+data/cache_div_tech/000688.csv
+data/cache_pv2/
