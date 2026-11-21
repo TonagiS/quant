@@ -1,0 +1,19 @@
+{
+ "primary_5bp": {
+  "C3": false,
+  "DIV-IV": false
+ },
+ "vs_S2_VT15_5bp": {
+  "C3": true,
+  "DIV-IV": false
+ },
+ "primary_20bp": {
+  "C3": false,
+  "DIV-IV": false
+ },
+ "vs_S2_VT15_20bp": {
+  "C3": true,
+  "DIV-IV": true
+ },
+ "overall_pass_5bp": false
+}
