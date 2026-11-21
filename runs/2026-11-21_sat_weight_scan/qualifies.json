@@ -1,0 +1,42 @@
+[
+ {
+  "sat": "S4+CREDIT",
+  "core": "DIV-IV",
+  "cost_bp": 5,
+  "w_sat": 0.1,
+  "share_both": 0.9912280701754386,
+  "seg_both": 3
+ },
+ {
+  "sat": "S4+CREDIT",
+  "core": "DIV-IV",
+  "cost_bp": 5,
+  "w_sat": 0.2,
+  "share_both": 0.9912280701754386,
+  "seg_both": 3
+ },
+ {
+  "sat": "S4+CREDIT",
+  "core": "DIV-IV",
+  "cost_bp": 5,
+  "w_sat": 0.3,
+  "share_both": 0.9210526315789473,
+  "seg_both": 3
+ },
+ {
+  "sat": "S4+CREDIT",
+  "core": "DIV-IV",
+  "cost_bp": 5,
+  "w_sat": 0.4,
+  "share_both": 0.8157894736842105,
+  "seg_both": 3
+ },
+ {
+  "sat": "S4+CREDIT",
+  "core": "DIV-IV",
+  "cost_bp": 20,
+  "w_sat": 0.1,
+  "share_both": 0.8947368421052632,
+  "seg_both": 3
+ }
+]
