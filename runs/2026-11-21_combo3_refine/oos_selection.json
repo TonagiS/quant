@@ -1,0 +1,40 @@
+[
+ {
+  "cost_bp": 5,
+  "A_top5": [
+   "P10_LOWCORR|TSM|NOCAP|VT10",
+   "P10_LOWCORR|S2|CAP2|VT10",
+   "P10_LOWCORR|DONCH|CAP2|VT10",
+   "P12_HYST60|DONCH|CAP2|VT10",
+   "P10_LOWCORR|TSM|CAP2|VT10"
+  ],
+  "B_top5": [
+   "P12_HYST60|DONCH|CAP2|BRD_VT15",
+   "BASE|DONCH|CAP2|BRD_VT15",
+   "P12_HYST60|DONCH|CAP2|VT10",
+   "P12_HYST60|DONCH|CAP2|TSS_VT15",
+   "BASE|RAM|CAP2|BRD_VT15"
+  ],
+  "best_rank_in_A": 4,
+  "best_rank_in_B": 3
+ },
+ {
+  "cost_bp": 20,
+  "A_top5": [
+   "P10_LOWCORR|TSM|NOCAP|VT10",
+   "P10_LOWCORR|DONCH|CAP2|VT10",
+   "P10_LOWCORR|S2|CAP2|VT10",
+   "P10_LOWCORR|TSM|CAP2|VT10",
+   "P10_LOWCORR|TSM|NOCAP|VT15"
+  ],
+  "B_top5": [
+   "P12_HYST60|DONCH|CAP2|VT10",
+   "P12_HYST60|DONCH|CAP2|VT15",
+   "P12_HYST60|DONCH|CAP2|ERC_VT15",
+   "BASE|RIBBON|CAP2|TSS_VT15",
+   "P10_LOWCORR|DONCH|CAP2|VT10"
+  ],
+  "best_rank_in_A": 7,
+  "best_rank_in_B": 1
+ }
+]

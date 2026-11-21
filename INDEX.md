@@ -16,6 +16,8 @@
 
 **2026-11-21 combo3**：4 池 × 6 信号 × 板块上限 × 8 仓位 = 384 组合的全因子网格；26 个稳健胜过 S4 和宽基VT15，最佳 P12_HYST60|DONCH|CAP2|VT10（5bp 卡玛 0.879 vs 0.433）。信号层解释约 59% 的方差；PBO 0.082；交互作用强。列为候选、并行影子运行，见 `runs/2026-11-21_combo3/REPORT.md`（样本内）。
 
+**2026-11-21 combo3_refine**：时间切分重做 combo3 选择——2014–19 选出的第 1 名（P10|TSM|NOCAP|VT10）在 2020–26 卡玛 0.174 < S4 0.340，反向第 1 名也输 S4；B（P12|DONCH|CAP2|VT10）两向 IS 排 3–7 名、OOS 卡玛 0.905 / 1.078；逐年重选 5bp 胜 S4、20bp 输。14 个单因素细化对 B 通过 0 个，保留 B，见 `runs/2026-11-21_combo3_refine/REPORT.md`。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。

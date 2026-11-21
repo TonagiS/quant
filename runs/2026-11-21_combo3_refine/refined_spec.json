@@ -1,0 +1,20 @@
+{
+ "passed": {
+  "BAND2": false,
+  "BAND5": false,
+  "BLEND3": false,
+  "BUF10": false,
+  "BUF8": false,
+  "DCH20_EXIT": false,
+  "DONCH_AVG": false,
+  "REB15": false,
+  "REB20": false,
+  "TRAIL12": false,
+  "VOTE2": false,
+  "VT10_REGIME200": false,
+  "VT12": false,
+  "VT8": false
+ },
+ "chosen": [],
+ "spec": {}
+}
