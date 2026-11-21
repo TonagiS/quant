@@ -1,0 +1,32 @@
+build pool TOG20
+  TOG20 done 0.2s
+build pool SHR4
+  SHR4 done 0.3s
+build pool SECROT
+  SECROT done 1.7s
+build pool XBCM
+  XBCM done 0.2s
+simulate_st vs E.simulate maxabs=0.000e+00
+MIN3_P12 vs champion cache maxabs=3.173e-09 lo=729
+S4 vs S4 cache maxabs=1.823e-09 lo=729
+  pool TOG20: n_months=191 mean_n=36.1 min=7 max=40
+  pool SHR4: n_months=191 mean_n=36.1 min=7 max=40
+  pool SECROT: n_months=191 mean_n=36.1 min=7 max=40
+  pool XBCM: n_months=191 mean_n=36.1 min=7 max=40
+CHECK FAIL
+build pool TOG20
+  TOG20 done 0.2s
+build pool SHR4
+  SHR4 done 0.3s
+build pool SECROT
+  SECROT done 1.7s
+build pool XBCM
+  XBCM done 0.2s
+simulate_st vs E.simulate maxabs=0.000e+00
+MIN3_P12 vs champion cache maxabs=3.173e-09 lo=729
+S4 vs S4 cache maxabs=1.823e-09 lo=729
+  pool TOG20: n_months=191 mean_n=36.1 min=7 max=40
+  pool SHR4: n_months=191 mean_n=36.1 min=7 max=40
+  pool SECROT: n_months=191 mean_n=36.1 min=7 max=40
+  pool XBCM: n_months=191 mean_n=36.1 min=7 max=40
+CHECK PASS

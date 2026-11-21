@@ -1,0 +1,123 @@
+{
+  "n_configs": 43,
+  "n_rnd": 20,
+  "n_trials": 126,
+  "replace_champion": false,
+  "replace_names": [],
+  "min3": {
+    "MIN3_P12": {
+      "5": {
+        "s4_pass": true,
+        "br_pass": true,
+        "ch_pass": false,
+        "vs_s4_struct": true,
+        "vs_br_struct": true,
+        "vs_ch_struct": false,
+        "calmar": 0.8794616848140069,
+        "cagr": 0.1219773694265247,
+        "mdd": -0.13869549013078508,
+        "P1_calmar": 1.0779899189614321,
+        "P2_calmar": 0.9054394069343229
+      },
+      "20": {
+        "s4_pass": true,
+        "br_pass": true,
+        "ch_pass": false,
+        "vs_s4_struct": true,
+        "vs_br_struct": true,
+        "vs_ch_struct": false,
+        "calmar": 0.6034594975284739,
+        "cagr": 0.08852529552431343,
+        "mdd": -0.14669633320359898,
+        "P1_calmar": 0.7423737440245444,
+        "P2_calmar": 0.6179518983267229
+      }
+    },
+    "MIN3_BASE": {
+      "5": {
+        "s4_pass": true,
+        "br_pass": true,
+        "ch_pass": false,
+        "vs_s4_struct": true,
+        "vs_br_struct": true,
+        "vs_ch_struct": false,
+        "calmar": 0.591578753749452,
+        "cagr": 0.10113244727824267,
+        "mdd": -0.1709534810661485,
+        "P1_calmar": 0.8350412752858918,
+        "P2_calmar": 0.4542591534461834
+      },
+      "20": {
+        "s4_pass": true,
+        "br_pass": true,
+        "ch_pass": false,
+        "vs_s4_struct": true,
+        "vs_br_struct": true,
+        "vs_ch_struct": false,
+        "calmar": 0.389600370218885,
+        "cagr": 0.06829208903846218,
+        "mdd": -0.17528753630314664,
+        "P1_calmar": 0.5443149108976544,
+        "P2_calmar": 0.28963523767129457
+      }
+    }
+  },
+  "useful_classes": [
+    {
+      "cls": "pool_mean_new20_vs_P12_HYST60",
+      "cost_bp": 5,
+      "d_P1": 0.00937013439574648,
+      "d_P2": 0.031037586876233415,
+      "same_sign": true,
+      "both_pos": true,
+      "flip": false,
+      "useful": true,
+      "note": "pool track mean_new20 vs P12_HYST60"
+    },
+    {
+      "cls": "size_new_vs_vt10_mdd",
+      "cost_bp": 5,
+      "d_P1": 0.0044299220635583,
+      "d_P2": 0.010723100869912017,
+      "same_sign": true,
+      "both_pos": true,
+      "flip": false,
+      "useful": true,
+      "note": "new sizing mean MDD vs VT10 (positive=shallower)"
+    },
+    {
+      "cls": "size_new_vs_vt10_mdd",
+      "cost_bp": 20,
+      "d_P1": 0.0011178917841099627,
+      "d_P2": 0.0048198820547323456,
+      "same_sign": true,
+      "both_pos": true,
+      "flip": false,
+      "useful": true,
+      "note": "new sizing mean MDD vs VT10 (positive=shallower)"
+    }
+  ],
+  "ensemble_members": {
+    "A": {
+      "members": [
+        "NONE|P10_LOWCORR|T120|DONCH|CAP2|VT10|HYST10",
+        "NONE|P10_LOWCORR|T120|S2|NOCAP|VT10|TS12",
+        "NONE|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10"
+      ],
+      "rule": "robust",
+      "n_robust": 318,
+      "n_is_pool": 318
+    },
+    "B": {
+      "members": [
+        "TREND_BEAR30|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10",
+        "TREND_SWITCH|P10_LOWCORR|NONE|TSM|CAP2|VT15|NONE",
+        "TREND_BEAR30|P12_HYST60|W30|TSM|CAP2|ERC_VT15|HYST10",
+        "TREND_BEAR30|P10_LOWCORR|NONE|DONCH|CAP2|ERC_VT15|TIME30"
+      ],
+      "rule": "robust",
+      "n_robust": 1466,
+      "n_is_pool": 1466
+    }
+  }
+}

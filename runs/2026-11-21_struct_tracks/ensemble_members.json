@@ -1,0 +1,23 @@
+{
+  "A": {
+    "members": [
+      "NONE|P10_LOWCORR|T120|DONCH|CAP2|VT10|HYST10",
+      "NONE|P10_LOWCORR|T120|S2|NOCAP|VT10|TS12",
+      "NONE|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10"
+    ],
+    "rule": "robust",
+    "n_robust": 318,
+    "n_is_pool": 318
+  },
+  "B": {
+    "members": [
+      "TREND_BEAR30|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10",
+      "TREND_SWITCH|P10_LOWCORR|NONE|TSM|CAP2|VT15|NONE",
+      "TREND_BEAR30|P12_HYST60|W30|TSM|CAP2|ERC_VT15|HYST10",
+      "TREND_BEAR30|P10_LOWCORR|NONE|DONCH|CAP2|ERC_VT15|TIME30"
+    ],
+    "rule": "robust",
+    "n_robust": 1466,
+    "n_is_pool": 1466
+  }
+}

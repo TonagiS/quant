@@ -1,0 +1,26 @@
+cls,cost_bp,d_P1,d_P2,same_sign,both_pos,flip,useful,note
+pool_new_vs_min3,5,-0.4071470559289465,-0.5393941880384275,True,False,False,False,new pools mean Calmar vs min3
+pool_mean_fwd20_vs_BASE,5,0.0011139750988601645,-0.0007641605419746678,False,False,True,False,pool track mean_fwd20 vs BASE
+pool_mean_fwd60_vs_BASE,5,0.0012181550324992171,-0.0021646693583066818,False,False,True,False,pool track mean_fwd60 vs BASE
+pool_mean_new20_vs_BASE,5,0.007902629862060945,-0.003000092526884542,False,False,True,False,pool track mean_new20 vs BASE
+pool_mean_fwd20_vs_P12_HYST60,5,-0.00031332342413466045,-0.0015726642813822054,True,False,False,False,pool track mean_fwd20 vs P12_HYST60
+pool_mean_fwd60_vs_P12_HYST60,5,-0.0011881896125880212,-0.004064066349412516,True,False,False,False,pool track mean_fwd60 vs P12_HYST60
+pool_mean_new20_vs_P12_HYST60,5,0.00937013439574648,0.031037586876233415,True,True,False,True,pool track mean_new20 vs P12_HYST60
+signal_new_vs_min3_calmar,5,-0.48757348658352406,-0.5551992061122484,True,False,False,False,new signals mean Calmar vs DONCH min3
+signal_n20_mean_vs_donch,5,0.0007478981182416286,-0.003705742120258938,False,False,True,False,signal track n20_mean vs DONCH
+signal_n20_win_vs_donch,5,0.01934464552155124,-0.022813899021293382,False,False,True,False,signal track n20_win vs DONCH
+signal_n60_mean_vs_donch,5,-0.013909482919996385,-0.011449318840883245,True,False,False,False,signal track n60_mean vs DONCH
+cap_new_vs_cap2_calmar,5,-0.30290790809257184,-0.34604816254796367,True,False,False,False,new caps mean Calmar vs CAP2
+size_new_vs_vt10_calmar,5,-0.054928121434107934,-0.010745999388265667,True,False,False,False,new sizing mean Calmar vs VT10
+size_new_vs_vt10_mdd,5,0.0044299220635583,0.010723100869912017,True,True,False,True,new sizing mean MDD vs VT10 (positive=shallower)
+stack_vs_min3_calmar,5,-0.29372983863710883,-0.7041149058349223,True,False,False,False,pre-specified stacks mean vs min3
+cost_MIN3_vs_cal10_calmar,5,-0.19115065071509127,-0.3873463079602145,True,False,False,False,cost-aware mean vs MIN3_P12 calendar
+cost_S4_vs_cal10_calmar,5,-0.22290743898531043,-0.014383166448473728,True,False,False,False,cost-aware mean vs S4 calendar
+pool_new_vs_min3,20,-0.30885817469225335,-0.4894047426140044,True,False,False,False,new pools mean Calmar vs min3
+signal_new_vs_min3_calmar,20,-0.35556148344881955,-0.4134525465139444,True,False,False,False,new signals mean Calmar vs DONCH min3
+cap_new_vs_cap2_calmar,20,-0.20824503397783498,-0.3379592349236512,True,False,False,False,new caps mean Calmar vs CAP2
+size_new_vs_vt10_calmar,20,-0.044636838813026124,-0.0493341239917127,True,False,False,False,new sizing mean Calmar vs VT10
+size_new_vs_vt10_mdd,20,0.0011178917841099627,0.0048198820547323456,True,True,False,True,new sizing mean MDD vs VT10 (positive=shallower)
+stack_vs_min3_calmar,20,-0.22396886775556266,-0.5468174400845514,True,False,False,False,pre-specified stacks mean vs min3
+cost_MIN3_vs_cal10_calmar,20,-0.20423125257338545,-0.34364689410263943,True,False,False,False,cost-aware mean vs MIN3_P12 calendar
+cost_S4_vs_cal10_calmar,20,-0.198150878089221,-0.034587631940479535,True,False,False,False,cost-aware mean vs S4 calendar

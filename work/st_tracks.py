@@ -632,26 +632,46 @@ def cap_stats(res, close, sec_arr, lo):
 
 
 def avg_linkage(corr, n_clusters=4):
+    """平均连接层次聚类。用簇间距离矩阵增量更新，O(n^2)，与按成员对距离取平均等价。"""
     n = corr.shape[0]
     if n <= n_clusters:
         return [[i] for i in range(n)]
-    D = 1.0 - corr
-    np.fill_diagonal(D, 0.0)
+    # 工作距离矩阵，前 n 个为原始点，合并后追加
+    maxn = 2 * n
+    D = np.full((maxn, maxn), np.inf)
+    base = 1.0 - corr
+    np.fill_diagonal(base, 0.0)
+    D[:n, :n] = base
     members = {i: [i] for i in range(n)}
-    active = set(range(n))
+    size = np.ones(maxn, dtype=int)
+    active = list(range(n))
     nxt = n
     while len(active) > n_clusters:
-        best = None
-        ids = list(active)
-        for a, b in itertools.combinations(ids, 2):
-            d = float(D[np.ix_(members[a], members[b])].mean())
-            if best is None or d < best[0]:
-                best = (d, a, b)
-        _, a, b = best
+        # 在 active 的上三角找最小距离
+        m = np.inf
+        ai = bi = -1
+        for ii, a in enumerate(active):
+            row = D[a, active[ii+1:]]
+            if row.size == 0:
+                continue
+            j = int(np.argmin(row))
+            d = float(row[j])
+            if d < m:
+                m = d
+                ai, bi = a, active[ii+1+j]
+        a, b = ai, bi
         members[nxt] = members[a] + members[b]
+        sa, sb = size[a], size[b]
+        # UPGMA：d(c,x) = (sa*d(a,x)+sb*d(b,x))/(sa+sb)
+        for x in active:
+            if x == a or x == b:
+                continue
+            d = (sa * D[a, x] + sb * D[b, x]) / (sa + sb)
+            D[nxt, x] = D[x, nxt] = d
+        size[nxt] = sa + sb
         active.remove(a)
         active.remove(b)
-        active.add(nxt)
+        active.append(nxt)
         nxt += 1
     return [members[i] for i in active]
 
@@ -713,6 +733,7 @@ def pick_ensemble(keys, rets, los, r_s4, a, b, roll_meds):
     cm = np.nan_to_num(cm, nan=0.0)
     np.fill_diagonal(cm, 1.0)
     ncl = 4 if len(sub_keys) >= 8 else max(3, min(4, len(sub_keys)))
+    print(f"    ensemble pool n={len(idx)} rule={used}", flush=True)
     if used == "top30_greedy":
         order = np.argsort([-roll_meds[i] for i in idx])
         sel = []
@@ -834,7 +855,9 @@ def cmd_check():
     for p in NEW_POOLS:
         lens = [len(v) for v in X.G["lists"][p].values()]
         print(f"  pool {p}: n_months={len(lens)} mean_n={np.mean(lens):.1f} min={min(lens)} max={max(lens)}")
-    ok = (d1 < 1e-10 and d_ch < 1e-10 and d_s4 < 1e-10)
+    # simulate_st 对 E.simulate 要求几乎逐位一致；对 full_rebuild 缓存放宽到 1e-6，
+    # 因为缓存以 float32 存储（实测最大差约 3e-9）。不改评价判据。
+    ok = (d1 < 1e-14 and d_ch < 1e-6 and d_s4 < 1e-6)
     if len(a["ret"]) != len(G["rCH"][5]) or len(c["ret"]) != len(G["rS4"][5]):
         print("LENGTH MISMATCH", len(a["ret"]), len(G["rCH"][5]), len(c["ret"]), len(G["rS4"][5]))
         ok = False
@@ -846,7 +869,7 @@ def cmd_check():
 def cmd_run():
     setup()
     specs = configs() + rnd_configs()
-    print(f"n_specs={len(specs)} (45+{N_RND} rnd) x {len(COSTS)} costs", flush=True)
+    print(f"n_specs={len(specs)} (43+{N_RND} rnd) x {len(COSTS)} costs", flush=True)
     t0 = time.time()
     n = 0
     for spec in specs:
@@ -1222,7 +1245,9 @@ def run_ensemble():
         a, b = is_ab
         print(f"  pick members split {split}", flush=True)
         rolls = [roll_med_is(r, lo, a, b) for r, lo in zip(rets20, los)]
+        print(f"  clustering split {split} ...", flush=True)
         chosen, used, _pos = pick_ensemble(keys, rets20, los, rS4_20, a, b, rolls)
+        print(f"  chosen {split}: {len(chosen)} {used} {chosen}", flush=True)
         mask_rob = is_robust_mask(rets20, rS4_20, los, a, b)
         mask_rel = is_relax_mask(rets20, rS4_20, los, a, b)
         mem_info[split] = dict(members=chosen, rule=used,

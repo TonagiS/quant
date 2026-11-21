@@ -1,0 +1,74 @@
+build pool TOG20
+  TOG20 done 0.2s
+build pool SHR4
+  SHR4 done 0.3s
+build pool SECROT
+  SECROT done 1.7s
+build pool XBCM
+  XBCM done 0.2s
+n_specs=63 (45+20 rnd) x 2 costs
+  sim 10/126 6.5s last=POOL_SHR4 20bp
+  sim 20/126 10.9s last=POOL_SHR4_S2VT15 20bp
+  sim 30/126 14.7s last=SIG_VOL_BO 20bp
+  sim 40/126 18.4s last=CAP_SECW40 20bp
+  sim 50/126 22.5s last=SIZE_DSVOL10 20bp
+  sim 60/126 28.5s last=STK_PB_SECW 20bp
+  sim 70/126 34.9s last=COST_MIN3_DEAD2 20bp
+  sim 80/126 39.7s last=COST_S4_DEAD2 20bp
+  sim 90/126 42.8s last=RND_01 20bp
+  sim 100/126 45.6s last=RND_06 20bp
+  sim 110/126 48.6s last=RND_11 20bp
+  sim 120/126 51.6s last=RND_16 20bp
+simulate done 126 in 53.5s
+  weights CAP_CORRCAP
+  weights CAP_NOCAP
+  weights CAP_SECW40
+  weights MIN3_P12
+  weights SIG_BB_SQ
+  weights SIG_PB_BO
+  weights SIG_RS_PERS
+  weights SIG_S2
+  weights SIG_TREND_STAB
+  weights SIG_VOL_BO
+  weights SIZE_CVAR95_15
+  weights SIZE_DSVOL10
+  weights SIZE_EQ
+  weights SIZE_INVVOL
+  weights SIZE_K358
+  weights SIZE_VT15
+weights done
+build pool TOG20
+  TOG20 done 0.2s
+build pool SHR4
+  SHR4 done 0.3s
+build pool SECROT
+  SECROT done 1.7s
+build pool XBCM
+  XBCM done 0.2s
+pool universe stats
+signal/cap tracks from weights
+A2 ensemble
+  load 4608 ret series @20bp
+  pick members split A
+  pick members split B
+build pool TOG20
+  TOG20 done 0.2s
+build pool SHR4
+  SHR4 done 0.3s
+build pool SECROT
+  SECROT done 1.6s
+build pool XBCM
+  XBCM done 0.2s
+pool universe stats
+signal/cap tracks from weights
+A2 ensemble
+  load 4608 ret series @20bp
+  pick members split A
+  clustering split A ...
+    ensemble pool n=318 rule=robust
+  chosen A: 3 robust ['NONE|P10_LOWCORR|T120|DONCH|CAP2|VT10|HYST10', 'NONE|P10_LOWCORR|T120|S2|NOCAP|VT10|TS12', 'NONE|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10']
+  pick members split B
+  clustering split B ...
+    ensemble pool n=1466 rule=robust
+  chosen B: 4 robust ['TREND_BEAR30|P12_HYST60|NONE|DONCH|CAP2|VT10|HYST10', 'TREND_SWITCH|P10_LOWCORR|NONE|TSM|CAP2|VT15|NONE', 'TREND_BEAR30|P12_HYST60|W30|TSM|CAP2|ERC_VT15|HYST10', 'TREND_BEAR30|P10_LOWCORR|NONE|DONCH|CAP2|ERC_VT15|TIME30']
+post done
