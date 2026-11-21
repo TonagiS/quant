@@ -1,0 +1,67 @@
+{
+ "n_trials": 40,
+ "trials": [
+  "B1|L0=-|L1=-|L2=-",
+  "B1|L0=-|L1=-|L2=DCL20",
+  "B1|L0=-|L1=-|L2=HYST10",
+  "B1|L0=-|L1=-|L2=TIME30",
+  "B1|L0=-|L1=-|L2=TS12",
+  "B1|L0=-|L1=-|L2=TS15",
+  "B1|L0=-|L1=-|L2=TS8",
+  "B1|L0=-|L1=T120|L2=-",
+  "B1|L0=-|L1=W30_BO|L2=-",
+  "B1|L0=-|L1=W30_PB|L2=-",
+  "B1|L0=-|L1=W30|L2=-",
+  "B1|L0=RG_BREADTH|BEAR30|L1=-|L2=-",
+  "B1|L0=RG_BREADTH|BEARCASH|L1=-|L2=-",
+  "B1|L0=RG_BREADTH|SWITCH|L1=-|L2=-",
+  "B1|L0=RG_COMBO|BEAR30|L1=-|L2=-",
+  "B1|L0=RG_COMBO|BEARCASH|L1=-|L2=-",
+  "B1|L0=RG_COMBO|SWITCH|L1=-|L2=-",
+  "B1|L0=RG_TREND|BEAR30|L1=-|L2=-",
+  "B1|L0=RG_TREND|BEARCASH|L1=-|L2=-",
+  "B1|L0=RG_TREND|SWITCH|L1=-|L2=-",
+  "B2|L0=-|L1=-|L2=-",
+  "B2|L0=-|L1=-|L2=DCL20",
+  "B2|L0=-|L1=-|L2=HYST10",
+  "B2|L0=-|L1=-|L2=TIME30",
+  "B2|L0=-|L1=-|L2=TS12",
+  "B2|L0=-|L1=-|L2=TS15",
+  "B2|L0=-|L1=-|L2=TS8",
+  "B2|L0=-|L1=T120|L2=-",
+  "B2|L0=-|L1=W30_BO|L2=-",
+  "B2|L0=-|L1=W30_PB|L2=-",
+  "B2|L0=-|L1=W30|L2=-",
+  "B2|L0=RG_BREADTH|BEAR30|L1=-|L2=-",
+  "B2|L0=RG_BREADTH|BEARCASH|L1=-|L2=-",
+  "B2|L0=RG_BREADTH|SWITCH|L1=-|L2=-",
+  "B2|L0=RG_COMBO|BEAR30|L1=-|L2=-",
+  "B2|L0=RG_COMBO|BEARCASH|L1=-|L2=-",
+  "B2|L0=RG_COMBO|SWITCH|L1=-|L2=-",
+  "B2|L0=RG_TREND|BEAR30|L1=-|L2=-",
+  "B2|L0=RG_TREND|BEARCASH|L1=-|L2=-",
+  "B2|L0=RG_TREND|SWITCH|L1=-|L2=-"
+ ],
+ "pbo_sharpe_S16": 0.19463869463869463,
+ "lambda_median": 1.0033021088637848,
+ "dsr::B1|L0=-|L1=-|L2=-": {
+  "dsr": 0.9869940977244478,
+  "sharpe_ann": 1.0846466626478932,
+  "sr0_ann": 0.4289616643938282
+ },
+ "dsr::B2|L0=-|L1=-|L2=-": {
+  "dsr": 0.8365358484211766,
+  "sharpe_ann": 0.7135003592459401,
+  "sr0_ann": 0.4289616643938282
+ },
+ "dsr_incl_combo3::B1|L0=-|L1=-|L2=-": {
+  "dsr": 0.9346139682217204,
+  "n": 424,
+  "sr0_ann": 0.6395584268068708
+ },
+ "dsr_incl_combo3::B2|L0=-|L1=-|L2=-": {
+  "dsr": 0.600542587738636,
+  "n": 424,
+  "sr0_ann": 0.6395584268068708
+ }
+}

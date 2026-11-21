@@ -18,6 +18,8 @@
 
 **2026-11-21 combo3_refine**：时间切分重做 combo3 选择——2014–19 选出的第 1 名（P10|TSM|NOCAP|VT10）在 2020–26 卡玛 0.174 < S4 0.340，反向第 1 名也输 S4；B（P12|DONCH|CAP2|VT10）两向 IS 排 3–7 名、OOS 卡玛 0.905 / 1.078；逐年重选 5bp 胜 S4、20bp 输。14 个单因素细化对 B 通过 0 个，保留 B，见 `runs/2026-11-21_combo3_refine/REPORT.md`。
 
+**2026-11-21 framework_layers**：在 B1（combo3 最佳）和 S4 上逐层加市场状态 L0、两级趋势 L1、独立离场 L2（19 个变体，顺序闸门）。0 个通过，最终框架等于底座。S4 上大盘趋势择时只赢后两段，见 `runs/2026-11-21_framework_layers/REPORT.md`（样本内）。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。

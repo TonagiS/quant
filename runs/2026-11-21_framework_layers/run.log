@@ -1,0 +1,53 @@
+0    B1    L0      RG_TREND|SWITCH    0.026 -0.197      1     0.026  -0.315       1           False
+1    B1    L0      RG_TREND|BEAR30    0.491 -0.005      2     0.070  -0.054       1           False
+2    B1    L0    RG_TREND|BEARCASH    0.149 -0.102      1     0.044  -0.194       1           False
+3    B1    L0    RG_BREADTH|SWITCH    0.035 -0.511      0     0.000  -0.633       0           False
+4    B1    L0    RG_BREADTH|BEAR30    0.404 -0.067      3     0.035  -0.214       1           False
+5    B1    L0  RG_BREADTH|BEARCASH    0.061 -0.174      1     0.026  -0.390       0           False
+6    B1    L0      RG_COMBO|SWITCH    0.061 -0.555      0     0.000  -0.601       0           False
+7    B1    L0      RG_COMBO|BEAR30    0.228 -0.202      2     0.009  -0.297       0           False
+8    B1    L0    RG_COMBO|BEARCASH    0.000 -0.382      0     0.000  -0.468       0           False
+9    B1    L1                  W30    0.000 -0.654      0     0.000  -0.464       0           False
+10   B1    L1                 T120    0.088 -0.485      0     0.096  -0.342       1           False
+11   B1    L1               W30_BO    0.000 -0.613      0     0.000  -0.413       0           False
+12   B1    L1               W30_PB    0.000 -0.918      0     0.000  -0.651       0           False
+13   B1    L2                  TS8    0.053 -0.217      2     0.000  -0.161       1           False
+14   B1    L2                 TS12    0.000 -0.127      0     0.000  -0.155       0           False
+15   B1    L2                 TS15    0.000 -0.078      1     0.000  -0.048       1           False
+16   B1    L2                DCL20    0.000 -0.245      0     0.000  -0.266       0           False
+17   B1    L2               TIME30    0.667  0.000      2     0.272  -0.002       2           False
+18   B1    L2               HYST10    0.246 -0.175      2     0.316  -0.109       2           False
+19   B2    L0      RG_TREND|SWITCH    1.000  0.428      2     1.000   0.200       2           False
+20   B2    L0      RG_TREND|BEAR30    1.000  0.190      2     1.000   0.130       2           False
+21   B2    L0    RG_TREND|BEARCASH    1.000  0.301      2     1.000   0.194       2           False
+22   B2    L0    RG_BREADTH|SWITCH    0.930  0.067      1     0.096  -0.169       0           False
+23   B2    L0    RG_BREADTH|BEAR30    1.000  0.216      2     0.816   0.057       2           False
+24   B2    L0  RG_BREADTH|BEARCASH    0.886  0.263      2     0.807   0.070       2           False
+25   B2    L0      RG_COMBO|SWITCH    0.404 -0.037      2     0.123  -0.166       1           False
+26   B2    L0      RG_COMBO|BEAR30    0.965  0.071      2     0.500   0.000       2           False
+27   B2    L0    RG_COMBO|BEARCASH    0.816  0.033      2     0.395  -0.018       1           False
+28   B2    L1                  W30    0.000 -0.212      0     0.009  -0.097       0           False
+29   B2    L1                 T120    0.096 -0.090      2     0.219  -0.039       2           False
+30   B2    L1               W30_BO    0.851  0.119      2     0.886   0.173       2           False
+31   B2    L1               W30_PB    0.000 -0.323      0     0.000  -0.195       0           False
+32   B2    L2                  TS8    0.158 -0.019      3     0.035  -0.033       2           False
+33   B2    L2                 TS12    0.000 -0.059      1     0.000  -0.045       1           False
+34   B2    L2                 TS15    0.000 -0.027      2     0.026  -0.006       2           False
+35   B2    L2                DCL20    0.000 -0.083      1     0.000  -0.065       0           False
+36   B2    L2               TIME30    0.000 -0.013      2     0.000  -0.007       2           False
+37   B2    L2               HYST10    0.184 -0.054      2     0.588   0.009       2           False
+0   B1     L0      NaN  单独未通过，不叠加                NaN
+1   B1     L1      NaN  单独未通过，不叠加                NaN
+2   B1     L2      NaN  单独未通过，不叠加                NaN
+3   B1  FINAL      NaN        NaN  B1|L0=-|L1=-|L2=-
+4   B2     L0      NaN  单独未通过，不叠加                NaN
+5   B2     L1      NaN  单独未通过，不叠加                NaN
+6   B2     L2      NaN  单独未通过，不叠加                NaN
+7   B2  FINAL      NaN        NaN  B2|L0=-|L1=-|L2=-
+Traceback (most recent call last):
+    ~~~~^^^^^^^^^^^^^
+    ~~~~^^^^
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+pandas.errors.EmptyDataError: No columns to parse from file

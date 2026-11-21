@@ -301,7 +301,22 @@ def main(mode):
                 rows.append(r)
                 if i % 50 == 0:
                     print("null", i, len(tasks), round(time.time() - t0), flush=True)
-        pd.DataFrame(rows).to_csv(RUN / "null_long.csv", index=False)
+        if rows:
+            pd.DataFrame(rows).to_csv(RUN / "null_long.csv", index=False)
+        else:
+            print("最终框架都等于底座，没有可做零假设的层")
+        return
+    if mode == "explore":   # 冻结后追加（非闸门）：未通过但改善最大的几个层，在随机底座上是否仍有改善
+        ts = [tag("B2", "RG_TREND|SWITCH", None, None), tag("B2", "RG_TREND|BEARCASH", None, None),
+              tag("B2", None, "W30_BO", None), tag("B1", "RG_TREND|BEAR30", None, None)]
+        tasks = [(t, s) for t in ts for s in range(50000, 50000 + N_NULL)]
+        rows = []
+        with Pool(8) as pl:
+            for i, r in enumerate(pl.imap_unordered(task_null, tasks)):
+                rows.append(r)
+                if i % 100 == 0:
+                    print("explore", i, len(tasks), round(time.time() - t0), flush=True)
+        pd.DataFrame(rows).to_csv(RUN / "explore_null_long.csv", index=False)
         return
     if mode == "post":
         post(t0)
@@ -384,7 +399,7 @@ def post(t0):
         dv, sr0 = X.dsr(srd[j], sra, len(r), X.skew(r), X.kurtosis(r))
         out[f"dsr_incl_combo3::{nm}"] = dict(dsr=dv, n=len(sra), sr0_ann=float(sr0 * np.sqrt(252)))
     json.dump(out, open(RUN / "overfit.json", "w"), ensure_ascii=False, indent=1)
-    if (RUN / "null_long.csv").exists():
+    if (RUN / "null_long.csv").exists() and (RUN / "null_long.csv").stat().st_size > 0:
         N = pd.read_csv(RUN / "null_long.csv"); fc = pd.read_csv(RUN / "final_compare.csv")
         rr = []
         for t, g in N.groupby("combo"):
