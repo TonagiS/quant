@@ -1,4 +1,4 @@
-param([ValidateSet('1430','eod')][string]$phase = '1430')
+﻿param([ValidateSet('1430','eod')][string]$phase = '1430')
 # 每日流水线：1430 影子→调仓→群播报；eod 观测→计净值
 # 2026-11-17 修：① 日志统一 UTF-8（原来 UTF-16 混写，tail 全是乱码）② 群发前等桥就绪 + 失败重试
 #                ③ 每步记录退出码，出错发 TG/QQ 通知 ④ 末尾非 0 退出，让计划任务的失败看得见
