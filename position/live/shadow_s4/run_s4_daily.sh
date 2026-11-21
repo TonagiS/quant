@@ -25,6 +25,9 @@ if [[ "${PUSH:-0}" == "1" && "${DRY:-0}" != "1" ]]; then
   git add position/live/shadow_s4/weekly_*.md 2>/dev/null || true
   if ! git diff --cached --quiet; then
     git -c user.name="Tonagi quant bot" -c user.email=bot@localhost commit -q -m "shadow_s4: eod log $(date +%F)"
-    git fetch -q origin && git rebase -q origin/main && git push -q origin HEAD:main
+    # 有 GH_TOKEN 时用临时凭据助手（不打印 token）；否则用本机已有的 git 凭据
+    CH=()
+    [[ -n "${GH_TOKEN:-}" ]] && CH=(-c 'credential.helper=!f() { echo username=x-access-token; echo "password=$GH_TOKEN"; }; f')
+    git "${CH[@]}" fetch -q origin && git rebase -q origin/main && git "${CH[@]}" push -q origin HEAD:main
   fi
 fi
