@@ -1,17 +1,19 @@
 {
-  "version": "v2.1",
+  "version": "v2.2",
   "created": "2026-11-03",
-  "updated": "2026-11-04",
-  "reason": "场外基金赎回费分档：<7自然日 1.5%、7~30 自然日 0.5%、≥30 自然日 0.1~0.2%；场内 ETF 只有佣金（万5），没有赎回费",
+  "updated": "2026-11-17",
+  "reason": "场外 C 类指数基金口径：<7 自然日 1.5%（惩罚性）、>=7 自然日 0 赎回费；C 类 0.4%/年销售服务费含在净值里不重复收。场内 ETF 只有佣金（万5）。(v2.1 误按 7~30 天 0.5% 计，2026-11-17 更正)",
   "reb_calendar_days": 14,
   "min_hold_calendar_days": 7,
   "buy_cost": 0.0005,
+  "fee_config": "../paper/fees.json",
+  "fee_tiers_note": "实际费率只认 paper/fees.json 的 tiers / per_code（max-lower-bound 匹配）；下面三个 redeem_fee_* 仅留作 v2.1 旧口径记录，代码不再读",
   "redeem_fee_short": 0.015,
   "redeem_fee_mid": 0.005,
   "redeem_fee_long": 0.0015,
   "tier_days": { "short": 7, "long": 30 },
   "reference_arm": {
-    "note": "5 交易日一调（≈7 自然日）保留为参考臂：仅场内口径（佣金万5、无赎回费）成立；场外口径这一档吃 0.5% 赎回费",
+    "note": "5 交易日一调（≈7 自然日）保留为参考臂：C 类 >=7 天已无赎回费，这一档只在 <7 天时被 1.5% 罚金卡住",
     "cadence_calendar_days": 7,
     "sell_cost": 0.0005
   }

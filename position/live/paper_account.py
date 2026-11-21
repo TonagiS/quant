@@ -5,10 +5,16 @@
   s2     —— S2 满仓（动量+60日线+逆波动），敞口 100%
   vt15   —— S2 + 波动率目标 15%（60 日窗口，敞口 = min(1, 15%/vol60)）
 
-成本：买入佣金 5bp；卖出佣金 5bp + 赎回费（按该笔实际持有自然日分档：
-<7 天 1.5% / 7~30 天 0.5% / >=30 天 0.15%）。VENUE="场内" 时无赎回费。
+成本：买入佣金 5bp；卖出佣金 5bp + 赎回费（按该笔实际持有自然日分档）。
+分档表在 paper/fees.json，默认按场外 C 类份额口径：<7 天 1.5%、>=7 天 0
+（C 类 0.4%/年销售服务费已含在净值里，不重复收）；venue="场内" 时无赎回费。
+改了 2026-11-17：原口径把 7~30 天一刀切收 0.5%，与实际 C 类不符，见 fees.json 注释。
 调仓规则：调仓日只卖出"不在新目标"的名字；仍在目标内的超配名字不主动减持，
 只补低配（need<=0 跳过）。这是为避免赎回费的刻意设计，权重会随行情漂移。
+例外（2026-11-17 加）：波动率目标账本（vt15）实际敞口高出目标 5pp 以上时，
+把超配名字按超出幅度砍回目标——只补低配会让敞口单向上漂，波动率目标失效
+（回测 ext 池 14 日口径：卡玛 0.74→0.60、回撤 -19.2%→-22.9%）。调仓日持仓
+都 >=14 天，赎回费 0，砍仓只花 5bp 佣金。
 
 用法：
   python paper_account.py --init 2026-11-03   # 按该日 14:30 价建仓（两个账本）
@@ -44,9 +50,10 @@ LEDGER_COLS = ["date", "time", "phase", "book", "nav", "cash", "pos_value", "n_p
                "day_ret", "total_ret", "exposure", "notes"]
 
 COST, LOT, INIT = 0.0005, 100, 100000.0
-VENUE = "场外"
-REDEEM_SHORT, REDEEM_MID, REDEEM_LONG = 0.015, 0.005, 0.0015
-MIN_HOLD_DAYS, TIER_LONG_DAYS = 7, 30
+FEES = os.path.join(PAPER, "fees.json")
+FEES_DEFAULT = {"venue": "场外", "tiers": [[0, 0.015], [7, 0.0]], "per_code": {}}
+MIN_HOLD_DAYS = 7          # <7 天赎回 1.5%，卖出一律顺延到满 7 天
+TRIM_GAP = 0.05            # 只对 vt 账本：实际敞口超目标 5pp 以上才砍回目标（2026-11-17）
 
 BOOKS = [("s2", "S2满仓", None, False),
          ("vt15", "VT15", 0.15, False)]
@@ -73,14 +80,26 @@ def append_rows(path, cols, row):
     df.to_csv(path, mode="a", header=not os.path.exists(path), index=False, encoding="utf-8-sig")
 
 
-def redeem_fee(amount, held_days):
-    if VENUE == "场内":
+def fee_conf():
+    """读费率口径（paper/fees.json）；缺失时用默认：场内无费，场外 >=7 天 0 赎回费。"""
+    return load(FEES, FEES_DEFAULT)
+
+
+def venue():
+    return str(fee_conf().get("venue") or "场外")
+
+
+def redeem_fee(amount, held_days, code=None):
+    """按持有自然日查分档表：tiers = [[下限天数, 费率], ...]，取命中的最大下限。"""
+    conf = fee_conf()
+    if str(conf.get("venue") or "场外") == "场内":
         return 0.0
-    if held_days < MIN_HOLD_DAYS:
-        return amount * REDEEM_SHORT
-    if held_days < TIER_LONG_DAYS:
-        return amount * REDEEM_MID
-    return amount * REDEEM_LONG
+    tiers = (conf.get("per_code") or {}).get(code) or conf.get("tiers") or [[0, 0.015]]
+    rate = 0.0
+    for lo, r in sorted(tiers, key=lambda x: float(x[0])):
+        if held_days >= float(lo):
+            rate = float(r)
+    return amount * rate
 
 
 def book_dir(name):
@@ -220,6 +239,7 @@ def trade_book(name, label, vt, use_adx=False, ds=None, quiet=False):
               f"目标 {len(targets)} 只，敞口 {expo:.0%}")
 
     trades = []
+    trimmed = 0.0
     for c in list(acc["positions"]):
         if c in targets:
             continue
@@ -230,17 +250,67 @@ def trade_book(name, label, vt, use_adx=False, ds=None, quiet=False):
             continue
         od = v.get("open_date") or acc.get("start")
         held = (ds - date.fromisoformat(str(od))).days if od else MIN_HOLD_DAYS
-        if VENUE != "场内" and held < MIN_HOLD_DAYS:
+        if venue() != "场内" and held < MIN_HOLD_DAYS:
             print(f"  顺延卖出 {c}: 持有 {held} 天 < {MIN_HOLD_DAYS}（避开 1.5%）")
             continue
         amt = v["shares"] * p
-        redeem = redeem_fee(amt, held)
+        redeem = redeem_fee(amt, held, c)
         comm = amt * COST
         acc["cash"] += amt - comm - redeem
         trades.append({"date": dstr, "time": datetime.now().strftime("%H:%M:%S"), "code": c,
                        "side": "sell", "shares": v["shares"], "price": round(p, 4),
                        "amount": round(amt, 2), "fee": round(comm + redeem, 2)})
         del acc["positions"][c]
+
+    # 敞口回收：只对波动率目标账本。只补低配会让敞口单向上漂（跌得少的名字越占越大），
+    # 目标敞口就压不住；这里把超配名字按超出幅度从大到小砍回目标。调仓日持仓都 >=14 天，
+    # 赎回费 0，只花 5bp 佣金，所以不心疼。
+    if vt is not None and acc["positions"]:
+        pos_now = sum(v["shares"] * px.get(c, last.get(c, v["cost"]))
+                      for c, v in acc["positions"].items())
+        expo_now = pos_now / nav0 if nav0 > 0 else 0.0
+        if expo_now > expo + TRIM_GAP:
+            need = pos_now - expo * nav0
+            if not quiet:
+                print(f"[{label}] 敞口 {expo_now:.1%} > 目标 {expo:.1%} + {TRIM_GAP:.0%}，"
+                      f"回收 {need:,.0f} 元")
+            over = []
+            for c, w in targets.items():
+                v = acc["positions"].get(c)
+                p = px.get(c)
+                if not v or p is None or p <= 0:
+                    continue
+                diff = v["shares"] * p - w * nav0
+                if diff > 0:
+                    over.append((diff, c, p))
+            over.sort(reverse=True)
+            for diff, c, p in over:
+                if need <= 0:
+                    break
+                v = acc["positions"][c]
+                od = v.get("open_date") or acc.get("start")
+                held = (ds - date.fromisoformat(str(od))).days if od else MIN_HOLD_DAYS
+                if venue() != "场内" and held < MIN_HOLD_DAYS:
+                    print(f"  顺延回收 {c}: 持有 {held} 天 < {MIN_HOLD_DAYS}（避开 1.5%）")
+                    continue
+                cut = int(min(diff, need) / p // LOT) * LOT
+                if cut <= 0:
+                    continue
+                if cut >= v["shares"]:      # 还在目标内，别清空，留一手
+                    cut = (v["shares"] // LOT - 1) * LOT
+                if cut <= 0:
+                    continue
+                amt = cut * p
+                redeem = redeem_fee(amt, held, c)
+                comm = amt * COST
+                acc["cash"] += amt - comm - redeem
+                v["shares"] -= cut
+                need -= amt
+                trimmed += amt
+                trades.append({"date": dstr, "time": datetime.now().strftime("%H:%M:%S"),
+                               "code": c, "side": "sell", "shares": cut,
+                               "price": round(p, 4), "amount": round(amt, 2),
+                               "fee": round(comm + redeem, 2)})
 
     for c, w in sorted(targets.items(), key=lambda kv: -kv[1]):
         p = px.get(c)
@@ -281,7 +351,8 @@ def trade_book(name, label, vt, use_adx=False, ds=None, quiet=False):
                  "book": label, "nav": round(nav, 2), "cash": round(acc["cash"], 2),
                  "pos_value": round(pos_val, 2), "n_pos": len(acc["positions"]),
                  "day_ret": "", "total_ret": round(nav / acc["initial"] - 1, 6),
-                 "exposure": round(expo, 4), "notes": "14:30 成交"})
+                 "exposure": round(expo, 4),
+                 "notes": "14:30 成交" + (f"（敞口回收 {trimmed:,.0f} 元）" if trimmed > 0 else "")})
     print(f"[{label}] 成交 {len(trades)} 笔，净值 {nav:,.2f}（{nav/acc['initial']-1:+.2%}），"
           f"持仓 {len(acc['positions'])} 只，现金 {acc['cash']/nav:.1%}")
     return nav
