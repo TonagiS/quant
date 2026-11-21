@@ -1,0 +1,12 @@
+{
+ "n_trials": 384,
+ "best_sharpe_combo": "P10_LOWCORR|DONCH|CAP2|VT10",
+ "best_sharpe_ann": 1.1588087669462954,
+ "sr0_ann": 0.6110225730094594,
+ "dsr_best": 0.9670915813751305,
+ "s4_sharpe_ann": 0.7135003592459401,
+ "dsr_s4": 0.6379805983796373,
+ "pbo_sharpe_S16": 0.08197358197358197,
+ "lambda_median": 3.2054528045360597,
+ "n_splits": 12870
+}

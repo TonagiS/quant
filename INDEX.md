@@ -14,6 +14,8 @@
 
 **2026-11-21 pool_variants**：20 个 PIT 池选法变体 × S4/S2+VT15/C3 60%+S4；只有滞后带 P12_HYST60 在 S2+VT15（稳健）和组合（仅 5bp）上通过，S4 无一通过，不改池，见 `runs/2026-11-21_pool_variants/REPORT.md`（样本内）。
 
+**2026-11-21 combo3**：4 池 × 6 信号 × 板块上限 × 8 仓位 = 384 组合的全因子网格；26 个稳健胜过 S4 和宽基VT15，最佳 P12_HYST60|DONCH|CAP2|VT10（5bp 卡玛 0.879 vs 0.433）。信号层解释约 59% 的方差；PBO 0.082；交互作用强。列为候选、并行影子运行，见 `runs/2026-11-21_combo3/REPORT.md`（样本内）。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。

@@ -393,7 +393,7 @@ def post(t0):
     T = pd.DataFrame(allrows)
     T["pass_both"] = T.s4_pass & T.br_pass
     w = T.pivot_table(index="combo", columns="cost_bp", values="pass_both")
-    T["robust"] = T.combo.map((w[5] & w[20]).to_dict())
+    T["robust"] = T.combo.map(((w[5] > 0.5) & (w[20] > 0.5)).to_dict())
     T.to_csv(RUN / "grid_results.csv", index=False)
     # 主效应（ANOVA 式）
     me_rows, ss_rows = [], []

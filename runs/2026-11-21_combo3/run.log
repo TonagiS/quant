@@ -1,0 +1,116 @@
+cell 0 ('BASE', 'RIBBON', 'CAP2', 5) 11
+cell 1 ('BASE', 'RIBBON', 'NOCAP', 5) 11
+cell 2 ('BASE', 'REG', 'CAP2', 5) 12
+cell 3 ('BASE', 'S2', 'NOCAP', 5) 12
+cell 4 ('BASE', 'REG', 'NOCAP', 5) 12
+cell 5 ('BASE', 'S2', 'CAP2', 5) 12
+cell 6 ('BASE', 'RAM', 'NOCAP', 5) 12
+cell 7 ('BASE', 'RAM', 'CAP2', 5) 13
+cell 8 ('BASE', 'TSM', 'CAP2', 5) 17
+cell 9 ('BASE', 'TSM', 'NOCAP', 5) 17
+cell 10 ('BASE', 'DONCH', 'NOCAP', 5) 17
+cell 11 ('BASE', 'DONCH', 'CAP2', 5) 17
+cell 12 ('P12_HYST60', 'RAM', 'CAP2', 5) 17
+cell 13 ('P12_HYST60', 'S2', 'NOCAP', 5) 18
+cell 14 ('P12_HYST60', 'S2', 'CAP2', 5) 18
+cell 15 ('P12_HYST60', 'RAM', 'NOCAP', 5) 20
+cell 16 ('P12_HYST60', 'RIBBON', 'CAP2', 5) 22
+cell 17 ('P12_HYST60', 'REG', 'CAP2', 5) 22
+cell 18 ('P12_HYST60', 'REG', 'NOCAP', 5) 22
+cell 19 ('P12_HYST60', 'RIBBON', 'NOCAP', 5) 23
+cell 20 ('P12_HYST60', 'DONCH', 'NOCAP', 5) 23
+cell 21 ('P12_HYST60', 'DONCH', 'CAP2', 5) 24
+cell 22 ('P12_HYST60', 'TSM', 'CAP2', 5) 24
+cell 23 ('P12_HYST60', 'TSM', 'NOCAP', 5) 25
+cell 24 ('P5_N20', 'S2', 'CAP2', 5) 27
+cell 25 ('P5_N20', 'S2', 'NOCAP', 5) 27
+cell 26 ('P5_N20', 'RAM', 'NOCAP', 5) 28
+cell 27 ('P5_N20', 'RIBBON', 'CAP2', 5) 28
+cell 28 ('P5_N20', 'RAM', 'CAP2', 5) 28
+cell 29 ('P5_N20', 'REG', 'CAP2', 5) 28
+cell 30 ('P5_N20', 'REG', 'NOCAP', 5) 28
+cell 31 ('P5_N20', 'RIBBON', 'NOCAP', 5) 29
+cell 32 ('P5_N20', 'DONCH', 'CAP2', 5) 32
+cell 33 ('P5_N20', 'DONCH', 'NOCAP', 5) 32
+cell 34 ('P5_N20', 'TSM', 'NOCAP', 5) 32
+cell 35 ('P5_N20', 'TSM', 'CAP2', 5) 32
+cell 36 ('P10_LOWCORR', 'S2', 'NOCAP', 5) 33
+cell 37 ('P10_LOWCORR', 'S2', 'CAP2', 5) 33
+cell 38 ('P10_LOWCORR', 'RAM', 'CAP2', 5) 34
+cell 39 ('P10_LOWCORR', 'RAM', 'NOCAP', 5) 34
+cell 40 ('P10_LOWCORR', 'REG', 'CAP2', 5) 37
+cell 41 ('P10_LOWCORR', 'RIBBON', 'CAP2', 5) 37
+cell 42 ('P10_LOWCORR', 'RIBBON', 'NOCAP', 5) 37
+cell 43 ('P10_LOWCORR', 'REG', 'NOCAP', 5) 37
+cell 44 ('P10_LOWCORR', 'DONCH', 'CAP2', 5) 39
+cell 45 ('P10_LOWCORR', 'TSM', 'CAP2', 5) 39
+cell 46 ('P10_LOWCORR', 'DONCH', 'NOCAP', 5) 39
+cell 47 ('P10_LOWCORR', 'TSM', 'NOCAP', 5) 40
+cell 48 ('BASE', 'S2', 'CAP2', 20) 42
+cell 49 ('BASE', 'S2', 'NOCAP', 20) 42
+cell 50 ('BASE', 'RAM', 'NOCAP', 20) 42
+cell 51 ('BASE', 'RAM', 'CAP2', 20) 43
+cell 52 ('BASE', 'REG', 'NOCAP', 20) 43
+cell 53 ('BASE', 'RIBBON', 'CAP2', 20) 43
+cell 54 ('BASE', 'REG', 'CAP2', 20) 44
+cell 55 ('BASE', 'RIBBON', 'NOCAP', 20) 44
+cell 56 ('BASE', 'DONCH', 'CAP2', 20) 47
+cell 57 ('BASE', 'TSM', 'CAP2', 20) 47
+cell 58 ('BASE', 'TSM', 'NOCAP', 20) 48
+cell 59 ('BASE', 'DONCH', 'NOCAP', 20) 48
+cell 60 ('P12_HYST60', 'S2', 'CAP2', 20) 48
+cell 61 ('P12_HYST60', 'S2', 'NOCAP', 20) 48
+cell 62 ('P12_HYST60', 'RAM', 'CAP2', 20) 49
+cell 63 ('P12_HYST60', 'RAM', 'NOCAP', 20) 49
+cell 64 ('P12_HYST60', 'REG', 'CAP2', 20) 51
+cell 65 ('P12_HYST60', 'RIBBON', 'CAP2', 20) 52
+cell 66 ('P12_HYST60', 'RIBBON', 'NOCAP', 20) 52
+cell 67 ('P12_HYST60', 'REG', 'NOCAP', 20) 52
+cell 68 ('P12_HYST60', 'DONCH', 'CAP2', 20) 53
+cell 69 ('P12_HYST60', 'TSM', 'CAP2', 20) 53
+cell 70 ('P12_HYST60', 'DONCH', 'NOCAP', 20) 54
+cell 71 ('P12_HYST60', 'TSM', 'NOCAP', 20) 54
+cell 72 ('P5_N20', 'S2', 'CAP2', 20) 56
+cell 73 ('P5_N20', 'S2', 'NOCAP', 20) 56
+cell 74 ('P5_N20', 'RAM', 'CAP2', 20) 57
+cell 75 ('P5_N20', 'REG', 'CAP2', 20) 57
+cell 76 ('P5_N20', 'RIBBON', 'CAP2', 20) 57
+cell 77 ('P5_N20', 'REG', 'NOCAP', 20) 57
+cell 78 ('P5_N20', 'RAM', 'NOCAP', 20) 57
+cell 79 ('P5_N20', 'RIBBON', 'NOCAP', 20) 57
+cell 80 ('P5_N20', 'DONCH', 'CAP2', 20) 61
+cell 81 ('P5_N20', 'TSM', 'CAP2', 20) 61
+cell 82 ('P5_N20', 'DONCH', 'NOCAP', 20) 61
+cell 83 ('P5_N20', 'TSM', 'NOCAP', 20) 61
+cell 84 ('P10_LOWCORR', 'S2', 'NOCAP', 20) 62
+cell 85 ('P10_LOWCORR', 'S2', 'CAP2', 20) 62
+cell 86 ('P10_LOWCORR', 'RAM', 'NOCAP', 20) 63
+cell 87 ('P10_LOWCORR', 'RAM', 'CAP2', 20) 63
+cell 88 ('P10_LOWCORR', 'RIBBON', 'CAP2', 20) 65
+cell 89 ('P10_LOWCORR', 'RIBBON', 'NOCAP', 20) 65
+cell 90 ('P10_LOWCORR', 'REG', 'NOCAP', 20) 65
+cell 91 ('P10_LOWCORR', 'REG', 'CAP2', 20) 66
+cell 92 ('P10_LOWCORR', 'DONCH', 'CAP2', 20) 68
+cell 93 ('P10_LOWCORR', 'TSM', 'CAP2', 20) 68
+cell 94 ('P10_LOWCORR', 'DONCH', 'NOCAP', 20) 68
+cell 95 ('P10_LOWCORR', 'TSM', 'NOCAP', 20) 68
+GRIDDONE
+post 5 8
+post 20 9
+Traceback (most recent call last):
+TypeError: ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+TypeError: unsupported operand type(s) for &: 'float' and 'float'
+post 5 6
+post 20 7
+post done 22
+null 0 300 6
+null 50 300 11
+null 100 300 16
+null 150 300 21
+null 200 300 26
+null 250 300 30
+NULLDONE
