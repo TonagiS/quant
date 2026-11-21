@@ -341,6 +341,8 @@ def task_null(args):
 def main(mode):
     RUN.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
+    setup()
+    K.core_returns(); K.erp_mult()       # 父进程先建好底仓缓存，fork 后子进程共用（避免并发拷贝 162411 文件的竞态）
     if mode == "check":
         setup()
         bl = lists_of("BASE")

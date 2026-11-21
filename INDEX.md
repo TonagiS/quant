@@ -10,6 +10,10 @@
 
 **2026-11-21 parts_v2**：9 个新零件（VIX/美债/中债2Y/动态动量/离散度/波动的波动/特质波动/隔夜跳空/底仓时序动量，另有北向资金一项仅作信息）两道关检验；主臂没有一个两关都过，见 `runs/2026-11-21_parts_v2/REPORT.md`（样本内）。
 
+**2026-11-21 trfix**：总收益面板 v2，补认按比例前复权的分红/份额合并（510500、159934 等 23 只），S4 卡玛 0.428→0.417，方向不变，见 `runs/2026-11-21_trfix/REPORT.md`。
+
+**2026-11-21 pool_variants**：20 个 PIT 池选法变体 × S4/S2+VT15/C3 60%+S4；只有滞后带 P12_HYST60 在 S2+VT15（稳健）和组合（仅 5bp）上通过，S4 无一通过，不改池，见 `runs/2026-11-21_pool_variants/REPORT.md`（样本内）。
+
 **目录约定**
 - 每个 run 只保留 6 个核心文件（脚本 / 控制台全文 / meta.json / rules.csv / portfolio.csv / 该轮主结果 csv），其余在 `extra/`。
 - `indicators/frozen/`：v1 runner 归档 + 预登记只读副本（r10 / robust / gate）；v1 哈希见 `FROZEN_v1.json`；v2 见 `position/live/shadow/FROZEN_v2.json`。
