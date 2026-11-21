@@ -74,24 +74,23 @@ def fetch_sse_shares() -> tuple[str, dict[str, float]]:
     return stat_date, out
 
 
-def fetch_index_close() -> dict[str, float]:
-    url = "https://hq.sinajs.cn/list=sh000001,sh000300,sh000905"
-    req = urllib.request.Request(
-        url, headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.sina.com.cn/"}
-    )
-    body = urllib.request.urlopen(req, timeout=20).read().decode("gbk", "replace")
+def fetch_index_close(stat_date: str) -> dict[str, float]:
+    """取 stat_date 当天的指数收盘价（腾讯日线，避免用实时价错标日期）。"""
     out: dict[str, float] = {}
-    for line in body.splitlines():
-        if "=" not in line:
-            continue
-        head, _, rest = line.partition("=")
-        code = head.split("_")[-1].strip()
-        fields = rest.strip().strip(";").strip('"').split(",")
-        if len(fields) < 4:
-            continue
+    for code in ("sh000001", "sh000300", "sh000905"):
+        url = (
+            "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param="
+            f"{code},day,{stat_date},{stat_date},10,qfq"
+        )
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         try:
-            out[code] = float(fields[3])  # 当前价（收盘后即收盘价）
-        except ValueError:
+            data = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "replace"))
+            node = data["data"][code]
+            klines = node.get("day") or node.get("qfqday") or []
+            rows = [k for k in klines if k[0] <= stat_date]
+            if rows:
+                out[code] = float(rows[-1][2])
+        except Exception:
             continue
     return out
 
@@ -119,7 +118,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     stat_date, shares = fetch_sse_shares()
     stat_date = stat_date or date.today().isoformat()
-    index_close = fetch_index_close()
+    index_close = fetch_index_close(stat_date)
 
     # 份额
     old = read_csv(SHARES_CSV)
@@ -140,15 +139,16 @@ def main() -> None:
         )
     append_rows(SHARES_CSV, ["date", "code", "name", "shares_wan", "shares"], new_rows)
 
-    # 指数
+    # 指数（按 (date, code) 覆盖写，避免盘中跑一次留下半截收盘价）
     old_idx = read_csv(INDEX_CSV)
-    existing_idx = {(r["date"], r["code"]) for r in old_idx}
-    idx_rows = [
-        {"date": stat_date, "code": code, "close": round(close, 3)}
-        for code, close in sorted(index_close.items())
-        if (stat_date, code) not in existing_idx
-    ]
-    append_rows(INDEX_CSV, ["date", "code", "close"], idx_rows)
+    idx_map = {(r["date"], r["code"]): r["close"] for r in old_idx}
+    for code, close in index_close.items():
+        idx_map[(stat_date, code)] = str(round(close, 3))
+    with INDEX_CSV.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["date", "code", "close"])
+        writer.writeheader()
+        for (dt, code) in sorted(idx_map):
+            writer.writerow({"date": dt, "code": code, "close": idx_map[(dt, code)]})
 
     # 与上一交易日对比
     rows = read_csv(SHARES_CSV)
