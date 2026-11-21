@@ -1,0 +1,5 @@
+SDATE 2013-01-04 cal 2010-01-04 -> 2026-11-13 hi 4094
+standard S4 start 729 2013-01-04
+  5bp S4=1.823e-09 champ=3.173e-09 C3=0.000e+00 mix=1.233e-09 loS4=729 loCH=729
+  20bp S4=3.387e-09 champ=3.173e-09 C3=0.000e+00 mix=1.238e-09 loS4=729 loCH=729
+CHECK PASS
