@@ -1,0 +1,1 @@
+﻿2026-11-16 00:04:25 start pid=8872 title=甘雨全本上色 log=E:\AI\DSH-Works\agent-workspace\ai-art\runs\20261115_qwen2511_bw2c\batch_ref.log

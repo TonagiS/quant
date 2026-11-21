@@ -1,0 +1,46 @@
+== 1. 快照 data/daily ==
+  最新: 20261117.json | 文件数 11
+  codes 52 failed 0
+== 2. 缓存 cache_ohlc ==
+  文件 91 | 最新日期最大 sz002415 | 最旧 2016-06-13 | 池内缺文件 0 []
+  池内末日期分布: [('2026-11-16', 52)]
+  池内落后于 11-16 的: 0 []
+== 3. 全市场缓存 cache_ohlc_full ==
+  文件 1693 | 抽样最新 2026-11-13 | 抽样最旧 2026-11-12
+== 4. 国家队数据 ==
+  etf_shares.csv: 末行 2026-11-16，63 行
+  etf_shares_hist.csv: 末行 2026-11-16，16266 行
+  index_close.csv: 末行 2026-11-16，5724 行
+  latest.md mtime 11-17 15:35
+== 5. shadow_log 最近 ==
+  2026-11-13 15:11:42   eod n_cand=nan fails=0 targets=0 notes=fill-to-close 口径
+  2026-11-16 14:32:37  1430 n_cand=nan fails=0 targets=5 notes=非调仓日（v2 每 14 自然日调仓，上次 2026-11-03）
+  2026-11-16 15:11:52   eod n_cand=nan fails=0 targets=0 notes=fill-to-close 口径
+  2026-11-17 14:39:13  1430 n_cand=4.0 fails=17 targets=4 notes=数据缺口 17 只（腾讯 ifzq SSL/超时），残缺池导致误调仓；已回滚重挂，正确目标见 state.json
+  2026-11-17 15:11:44   eod n_cand=nan fails=0 targets=0 notes=fill-to-close 口径
+== 6. 账本一致性 ==
+  [s2] cash账本 124.87 vs 重算 124.88 差 -0.01 | 持仓 5 只 | ledger末行 2026-11-17 close nav=101410.37
+        持仓市值(14:30价) 101,219.80，nav重算 101,344.67
+  [vt15] cash账本 108.82 vs 重算 108.81 差 +0.01 | 持仓 5 只 | ledger末行 2026-11-17 close nav=101091.52
+        持仓市值(14:30价) 100,920.70，nav重算 101,029.52
+== 7. 影子状态 ==
+   {"last_targets": {"sh512800": 0.231103, "sh510230": 0.31749, "sz159928": 0.174965, "sh515170": 0.159451, "sh512690": 0.116885}, "last_date": "2026-11-17", "last_rebalance": "2026-11-17"}
+  rules: {"version": "v2.2", "created": "2026-11-03", "updated": "2026-11-17", "reason": "场外 C 类指数基金口径：<7 自然日 1.5%（惩罚性）、>=7 自然日 0 赎回费；C 类 0.4%/年销售服务费含在净值里不重复收。场内 ETF 只有佣金（万5）。(v2.1 误按 7~30 天 0.5% 计，2026-11-17 更正)", "reb_calendar_days": 14, "min_hold_calendar_days": 7, "buy_cost": 0.0005, "fee_config": "../paper/fees.json", "fee_tiers_note": "实际费率只认 paper/fees.json 的 tiers / per_code（max-lower-bound 匹配）；下面三个 redeem_fee_* 仅留作 v2.1 旧口径记录，代码不再读", "redeem_fee_short": 0.015, "redeem_fee_mid": 0.005, "redeem_fee_long": 0.0015, "tier_days": {"short": 7, "long": 30}, "reference_arm": {"note": "5 交易日一调（≈7 自然日）保留为参考臂：C 类 >=7 天已无赎回费，这一档只在 <7 天时被 1.5% 罚金卡住", "cadence_calendar_days": 7, "sell_cost": 0.0005}}
+  vt15 expo.json: {
+  "date": "2026-11-17",
+  "n": 60,
+  "target": 0.15,
+  "vol60": 0.1365,
+  "expo": 1.0,
+  "warmup": false,
+  "rebalance_date": "2026-11-17"
+}
+== 8. 播报标记 ==
+   sent_20261110.txt 0 B
+   sent_20261111.txt 0 B
+   sent_20261112.txt 0 B
+   sent_20261113.txt 0 B
+   sent_20261116.txt 0 B
+   sent_20261117.txt 0 B
+== 9. 费率口径 ==
+   {"venue": "场外", "share_class": "C类联接（主流指数基金 C 份额）", "tiers": [[0, 0.015], [7, 0.0]], "per_code": {}, "note": "tiers=[[持有自然日下限, 赎回费率]]，取命中的最大下限。C 类口径：<7 天 1.5%（惩罚性），>=7 天 0 赎回费；C 类 0.4%/年销售服务费已含在净值里，不重复收。若改按 A 类算，把 tiers 

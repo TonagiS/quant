@@ -1,0 +1,12 @@
+{
+  "rule": "S2 score + pos>0 门槛，固定 10 日一换，等权 1/k，不足补银行/红利，2% 缓冲",
+  "variants": [
+    "k3_fill",
+    "k3_pure",
+    "k5_fill",
+    "k5_pure",
+    "k3_fill_full",
+    "k5_fill_full",
+    "s2vt15"
+  ]
+}

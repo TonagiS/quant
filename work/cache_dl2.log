@@ -1,0 +1,38 @@
+﻿[17:43:39] start quant_data_cache_2026-11-14.tar.gz
+[17:43:40] size 184.46 MB -> 93 chunks x 2 MB, 6 workers
+[17:43:40] queue 68 chunks
+[17:44:10] progress 64.0/184.5 MB (35%) 2,154 KB/s left=55
+[17:44:41] progress 80.0/184.5 MB (43%) 1,350 KB/s left=47
+[17:45:11] progress 96.0/184.5 MB (52%) 1,081 KB/s left=39
+[17:45:41] progress 120.0/184.5 MB (65%) 1,013 KB/s left=27
+[17:46:12] progress 132.0/184.5 MB (72%) 892 KB/s left=22
+[17:46:42] progress 138.0/184.5 MB (75%) 777 KB/s left=20
+[17:47:12] progress 138.0/184.5 MB (75%) 666 KB/s left=19
+[17:47:42] progress 138.0/184.5 MB (75%) 583 KB/s left=18
+[17:48:13] progress 138.5/184.5 MB (75%) 520 KB/s left=17
+[17:48:43] progress 144.5/184.5 MB (78%) 489 KB/s left=14
+[17:49:13] progress 146.5/184.5 MB (79%) 451 KB/s left=13
+[17:49:43] progress 154.5/184.5 MB (84%) 436 KB/s left=10
+[17:50:13] progress 154.5/184.5 MB (84%) 402 KB/s left=10
+[17:50:44] progress 154.5/184.5 MB (84%) 374 KB/s left=9
+[17:51:14] progress 154.5/184.5 MB (84%) 349 KB/s left=10
+[17:51:44] progress 154.5/184.5 MB (84%) 327 KB/s left=10
+[17:52:14] progress 156.5/184.5 MB (85%) 312 KB/s left=8
+[17:52:44] progress 158.5/184.5 MB (86%) 298 KB/s left=8
+[17:53:14] progress 160.5/184.5 MB (87%) 286 KB/s left=7
+[17:53:45] progress 162.5/184.5 MB (88%) 275 KB/s left=5
+[17:54:15] progress 164.5/184.5 MB (89%) 265 KB/s left=5
+[17:54:45] progress 168.5/184.5 MB (91%) 259 KB/s left=2
+[17:55:15] progress 174.5/184.5 MB (95%) 257 KB/s left=0
+[17:55:45] progress 176.5/184.5 MB (96%) 249 KB/s left=1
+[17:56:16] progress 178.5/184.5 MB (97%) 242 KB/s left=0
+[17:56:46] progress 180.5/184.5 MB (98%) 235 KB/s left=0
+[17:57:16] progress 180.5/184.5 MB (98%) 226 KB/s left=0
+[17:57:46] progress 180.5/184.5 MB (98%) 218 KB/s left=0
+[17:58:16] progress 180.5/184.5 MB (98%) 211 KB/s left=0
+[17:58:47] progress 182.5/184.5 MB (99%) 206 KB/s left=0
+[17:59:17] progress 182.5/184.5 MB (99%) 199 KB/s left=0
+[17:59:38] merged 184.46 MB
+[17:59:40] sha256 expect=d22c96f7eeea88485490c4f556803a3e54bc9ca6de3e833c2143ca6c8036cb45
+[17:59:40] sha256 actual=d22c96f7eeea88485490c4f556803a3e54bc9ca6de3e833c2143ca6c8036cb45
+[17:59:40] CACHE_DL_DONE

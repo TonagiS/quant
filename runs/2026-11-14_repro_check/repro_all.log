@@ -1,0 +1,175 @@
+﻿[18:01:33] start
+[18:01:33] --- statevol_v4_backtest.py (expect runs/2026-11-14_statevol_v4, files=15)
+[18:02:18]     exit=0 in 44.3s
+[18:02:18]     == runs/2026-11-14_statevol_v4
+[18:02:18]     adoption.csv: rows 1, cells changed 2, max |Δ| 1.28e-15 [A-SV.xmkt_calmar_arm 0.21482666402601258->0.2148266640260113]
+[18:02:18]     by_window.csv: rows 200, cells changed 502, max |Δ| 1.21e-13 [xmkt_tr.med_turn 13.4254008983672->13.42540089836708]
+[18:02:18]     crash_first_leg.csv: identical
+[18:02:18]     cross_market.csv: rows 440, cells changed 2717, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:02:18]     cross_market_coverage.csv: identical
+[18:02:18]     cross_market_meta.csv: identical
+[18:02:18]     diagnostics_components.csv: rows 4170, cells changed 277, max |Δ| 1.35e-14 [SMH.volcap_mean 0.7193176768962781->0.7193176768962646]
+[18:02:18]     exclusions_cs951.csv: identical
+[18:02:18]     results_long.csv: rows 16680, cells changed 2795, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:02:18]     vs_static.csv: rows 12510, cells changed 1646, max |Δ| 6.04e-14 [xmkt_tr.calmar 3.308618692168709->3.3086186921687695]
+[18:02:19] --- bull_switch_backtest.py (expect runs/2026-11-14_bull_switch, files=11)
+[18:02:55]     exit=0 in 36.5s
+[18:02:56]     == runs/2026-11-14_bull_switch
+[18:02:56]     bench_flag_share.csv: identical
+[18:02:56]     bench_flag_timing.csv: identical
+[18:02:56]     coverage_timing.csv: rows 2399, cells changed 5309, max |Δ| 9.3e+05 [index.code 930713->000685]
+[18:02:56]     pairwise.csv: identical
+[18:02:56]     results_long.csv: rows 90585, cells changed 396948, max |Δ| 5.31e+05 [index.code 931160->399986]
+[18:02:56]     summary.csv: identical
+[18:02:57] --- bull_fast_backtest.py (expect runs/2026-11-14_bull_fast, files=14)
+[18:03:51]     exit=0 in 54.4s
+[18:03:53]     == runs/2026-11-14_bull_fast
+[18:03:53]     bench_flag_stats.csv: identical
+[18:03:53]     bench_flag_timing.csv: identical
+[18:03:53]     diagnostics_by_name.csv: rows 2399, cells changed 49732, max |Δ| 9.31e+05 [index.code 931743->000852]
+[18:03:53]     diagnostics_summary.csv: identical
+[18:03:53]     pairwise.csv: identical
+[18:03:53]     results_long.csv: rows 126819, cells changed 634831, max |Δ| 9.31e+05 [index.code 931743->000852]
+[18:03:53]     summary.csv: identical
+[18:03:53] --- fastcap_v5_backtest.py (expect runs/2026-11-14_fastcap_v5, files=14)
+[18:05:09]     exit=0 in 76.4s
+[18:05:10]     == runs/2026-11-14_fastcap_v5
+[18:05:10]     adoption.csv: rows 1, cells changed 1, max |Δ| 4.72e-16 [A-FC.xmkt_calmar_A 0.21977336529248495->0.21977336529248448]
+[18:05:10]     by_window.csv: rows 250, cells changed 665, max |Δ| 1.21e-13 [xmkt_tr.med_turn 13.4254008983672->13.42540089836708]
+[18:05:10]     crash_first_leg.csv: rows 161, cells changed 148, max |Δ| 2.66e-15 [xmkt_tr.mdd_A -0.1282635234872811->-0.12826352348727843]
+[18:05:10]     cross_market.csv: rows 550, cells changed 3606, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:05:10]     cross_market_coverage.csv: identical
+[18:05:10]     cross_market_meta.csv: identical
+[18:05:10]     diagnostics_components.csv: rows 4170, cells changed 257, max |Δ| 2.84e-13 [SMH.turn_A 13.330018623007302->13.330018623007017]
+[18:05:10]     exclusions_cs951.csv: identical
+[18:05:10]     results_long.csv: rows 20850, cells changed 3708, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:05:10]     vs_static.csv: rows 16680, cells changed 2317, max |Δ| 6.04e-14 [xmkt_tr.calmar 3.308618692168709->3.3086186921687695]
+[18:05:10] --- fc_fastgate_backtest.py (expect runs/2026-11-14_fc_fastgate, files=14)
+[18:06:04]     exit=0 in 53.3s
+[18:06:05]     == runs/2026-11-14_fc_fastgate
+[18:06:05]     bench_capoff_timing.csv: identical
+[18:06:05]     diagnostics_by_name.csv: rows 2399, cells changed 31014, max |Δ| 1.63e+03 [hv_ashare.A-FAST-MKT|bottom_2019-01_lag 1648->22]
+[18:06:05]     diagnostics_summary.csv: identical
+[18:06:05]     pairwise.csv: identical
+[18:06:05]     results_long.csv: rows 108702, cells changed 512076, max |Δ| 1.27e+04 [hv_xmkt.n 13478->752]
+[18:06:05]     summary.csv: identical
+[18:06:05]     theme_2023_2026.csv: identical
+[18:06:06] --- fastcap_ma_sens.py (expect runs/2026-11-14_fastcap_ma_sens, files=15)
+[18:07:43]     exit=0 in 97.0s
+[18:07:44]     == runs/2026-11-14_fastcap_ma_sens
+[18:07:44]     adoption.csv: rows 3, cells changed 5, max |Δ| 4.72e-16 [A-FC.xmkt_calmar_A 0.21977336529248495->0.21977336529248448]
+[18:07:44]     by_window.csv: rows 350, cells changed 1005, max |Δ| 1.21e-13 [xmkt_tr.med_turn 13.4254008983672->13.42540089836708]
+[18:07:44]     crash_first_leg.csv: rows 161, cells changed 171, max |Δ| 2.66e-15 [xmkt_tr.mdd_A -0.1282635234872811->-0.12826352348727843]
+[18:07:44]     cross_market.csv: rows 770, cells changed 5384, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:07:44]     cross_market_coverage.csv: identical
+[18:07:44]     cross_market_meta.csv: identical
+[18:07:44]     cs_vol_2019.csv: identical
+[18:07:44]     diagnostics_components.csv: rows 4170, cells changed 426, max |Δ| 2.84e-13 [SMH.turn_A 13.330018623007302->13.330018623007017]
+[18:07:44]     exclusions_cs951.csv: identical
+[18:07:44]     results_long.csv: rows 29190, cells changed 5540, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:07:44]     vs_static.csv: rows 25020, cells changed 3656, max |Δ| 1.17e-13 [xmkt_tr.d_calmar_static 0.0989789975562565->0.0989789975561397]
+[18:07:44] --- candidates_v2_backtest.py (expect runs/2026-11-14_candidates_v2, files=12)
+[18:08:58]     exit=0 in 74.6s
+[18:08:59]     == runs/2026-11-14_candidates_v2
+[18:08:59]     comparison_all_splits.csv: rows 1110, cells changed 11, max |Δ| 3.33e-16 [test.med_d_calmar_vs_a 0.49912982389392907->0.4991298238939294]
+[18:08:59]     comparison_test.csv: rows 378, cells changed 3, max |Δ| 3.33e-16 [test.med_d_calmar_vs_a 0.49912982389392907->0.4991298238939294]
+[18:08:59]     exclusions.csv: identical
+[18:08:59]     focus_results.csv: rows 498, cells changed 1, max |Δ| 2.64e-16 [sh562360.all_d_calmar_fixed -0.10901644644388164->-0.1090164464438819]
+[18:08:59]     live_signal.csv: identical
+[18:08:59]     results_long.csv: rows 9600, cells changed 165, max |Δ| 3.15e-14 [sz159111.test_bh_calmar 3.3314016197228935->3.331401619722862]
+[18:08:59]     sector_consistency.csv: identical
+[18:08:59]     summary_by_group.csv: rows 864, cells changed 5, max |Δ| 2.5e-16 [E.med_d_calmar_fixed -0.07394418082448938->-0.07394418082448963]
+[18:08:59] --- chinext_ai_backtest.py (expect runs/2026-11-14_chinext_ai, files=6)
+[18:09:02]     exit=0 in 2.5s
+[18:09:02]     == runs/2026-11-14_chinext_ai
+[18:09:02]     results_long.csv: identical
+[18:09:02]     summary.csv: identical
+[18:09:02]     universe.csv: identical
+[18:09:02] --- highvol_stocks_backtest.py (expect runs/2026-11-14_highvol_stocks, files=15)
+[18:09:36]     exit=0 in 34.1s
+[18:09:38]     == runs/2026-11-14_highvol_stocks
+[18:09:38]     ashare_list_sina.csv: identical
+[18:09:38]     ashare_pull_meta.csv: identical
+[18:09:38]     coverage.csv: rows 1229, cells changed 3533, max |Δ| 8.26e+03 [xmkt.rows 3140->11399]
+[18:09:38]     pairwise.csv: identical
+[18:09:38]     results_long.csv: rows 105056, cells changed 598788, max |Δ| 1.09e+04 [xmkt.n 251->11149]
+[18:09:38]     summary.csv: identical
+[18:09:38]     xmkt_pull_meta.csv: identical
+[18:09:38] --- ablation_v3_backtest.py (expect runs/2026-11-14_ablation_v3, files=14)
+[18:10:51]     exit=0 in 73.4s
+[18:10:52]     == runs/2026-11-14_ablation_v3
+[18:10:52]     adoption.csv: rows 6, cells changed 12, max |Δ| 4.72e-16 [A-vol.xmkt_calmar_A 0.21977336529248495->0.21977336529248448]
+[18:10:52]     by_window.csv: rows 400, cells changed 1167, max |Δ| 1.21e-13 [xmkt_tr.med_turn 13.4254008983672->13.42540089836708]
+[18:10:52]     cross_market.csv: rows 880, cells changed 6167, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:10:52]     cross_market_coverage.csv: identical
+[18:10:52]     cross_market_meta.csv: identical
+[18:10:52]     diagnostics_components.csv: rows 122, cells changed 279, max |Δ| 1.31e-14 [SMH.volcap_mean 0.8275227972403381->0.827522797240325]
+[18:10:52]     exclusions_cs951.csv: identical
+[18:10:52]     lowvol_share_etf_long.csv: identical
+[18:10:52]     results_long.csv: rows 33360, cells changed 6338, max |Δ| 2.84e-13 [SMH.turn 13.330018623007302->13.330018623007017]
+[18:10:52]     vs_static.csv: rows 29190, cells changed 4263, max |Δ| 7.64e-14 [xmkt_tr.d_calmar_static -0.4618016066569437->-0.4618016066568673]
+[18:10:52] --- statevol_v4_episodes.py (expect runs/2026-11-14_statevol_v4, files=15)
+[18:10:55]     exit=0 in 2.6s
+[18:10:55]     == runs/2026-11-14_statevol_v4
+[18:10:55]     adoption.csv: identical
+[18:10:55]     by_window.csv: identical
+[18:10:55]     crash_first_leg.csv: rows 161, cells changed 135, max |Δ| 1.4e-14 [xmkt_tr.pos_peak_A 0.7466092384025429->0.7466092384025289]
+[18:10:55]     cross_market.csv: identical
+[18:10:55]     cross_market_coverage.csv: identical
+[18:10:55]     cross_market_meta.csv: identical
+[18:10:55]     diagnostics_components.csv: identical
+[18:10:55]     exclusions_cs951.csv: identical
+[18:10:55]     results_long.csv: identical
+[18:10:55]     vs_static.csv: identical
+[18:10:55] --- layered_v1_backtest.py (expect runs/2026-11-14_layered_v1, files=13)
+[18:11:30]     exit=0 in 34.4s
+[18:11:30]     == runs/2026-11-14_layered_v1
+[18:11:30]     comparison_all_splits.csv: identical
+[18:11:30]     comparison_test.csv: identical
+[18:11:30]     exclusions.csv: rows 769, cells changed 6, max |Δ| 0.000244 [sh511990.aum_est 1133584812360.36->1133584812360.3599]
+[18:11:30]     focus_map.csv: identical
+[18:11:30]     focus_results.csv: identical
+[18:11:30]     live_signal.csv: identical
+[18:11:30]     results_long.csv: rows 3200, cells changed 70, max |Δ| 3.15e-14 [sz159111.test_bh_calmar 3.3314016197228935->3.331401619722862]
+[18:11:30]     summary_by_group.csv: identical
+[18:11:30]     universe_all.csv: identical
+[18:11:30] --- long_history_backtest.py (expect runs/2026-11-14_long_history, files=21)
+[18:12:12]     exit=0 in 42.3s
+[18:12:13]     == runs/2026-11-14_long_history
+[18:12:13]     best_arm_by_period.csv: identical
+[18:12:13]     by_lane_etf.csv: identical
+[18:12:13]     by_period.csv: rows 84, cells changed 1, max |Δ| 7.91e-16 [etf.med_d_calmar_vs_bh -0.08124942452552449->-0.0812494245255237]
+[18:12:13]     by_sector_etf.csv: rows 833, cells changed 1, max |Δ| 2.22e-16 [full.med_d_calmar_vs_a -0.06949214481726199->-0.06949214481726221]
+[18:12:13]     by_year.csv: rows 301, cells changed 1, max |Δ| 1.11e-16 [etf.med_cagr 0.1578176891399662->0.1578176891399663]
+[18:12:13]     by_year_names.csv: rows 13937, cells changed 100, max |Δ| 4.44e-15 [etf.calmar 3.142414700317512->3.1424147003175165]
+[18:12:13]     consistency.csv: identical
+[18:12:13]     exclusions.csv: identical
+[18:12:13]     focus_results.csv: identical
+[18:12:13]     index_meta.csv: identical
+[18:12:13]     index_theme_table.csv: identical
+[18:12:13]     live_signal.csv: identical
+[18:12:13]     pull_etf_meta.csv: identical
+[18:12:13]     results_long.csv: rows 5656, cells changed 16, max |Δ| 1.58e-15 [etf.calmar 0.1252602154032153->0.12526021540321688]
+[18:12:13]     sensitivity_qfq_naive.csv: rows 1330, cells changed 2, max |Δ| 1.69e-14 [etf_qfqnaive.d_calmar_fixed -0.11901876113772403->-0.1190187611377409]
+[18:12:13]     sensitivity_qfq_naive_summary.csv: identical
+[18:12:13] --- fullmkt_single_asset.py (expect runs/2026-11-14_fullmkt_single_asset, files=15)
+[18:12:13]     exit=2 in 0.1s
+[18:12:13]     tail:
+[18:12:13]       At E:\Code\quant\work\repro_all.ps1:44 char:3
+[18:12:13]       +   & $Py @argv *> (Join-Path $PSScriptRoot ("repro_{0}.log" -f ($name  ...
+[18:12:13]       +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[18:12:13]           + CategoryInfo          : NotSpecified: (C:\Users\Tonagi...le or directory:String) [], RemoteException
+[18:12:13]           + FullyQualifiedErrorId : NativeCommandError
+[18:12:13]        
+[18:12:14]     == runs/2026-11-14_fullmkt_single_asset
+[18:12:14]     em_etf_list_raw.csv: identical
+[18:12:14]     exclusions.csv: identical
+[18:12:14]     focus_map.csv: identical
+[18:12:14]     focus_results.csv: identical
+[18:12:14]     live_signal.csv: identical
+[18:12:14]     pull_meta.csv: identical
+[18:12:14]     results_long.csv: identical
+[18:12:14]     sina_etf_live.csv: identical
+[18:12:14]     summary_by_group.csv: identical
+[18:12:14]     universe_all.csv: identical
+[18:12:14] REPRO_ALL_DONE

@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-17",
+  "n": 60,
+  "target": 0.15,
+  "vol60": 0.1365,
+  "expo": 1.0,
+  "warmup": false,
+  "rebalance_date": "2026-11-17"
+}

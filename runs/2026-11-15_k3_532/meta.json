@@ -1,0 +1,26 @@
+{
+  "pool": 53,
+  "start": "2020-04-03",
+  "end": "2026-11-13",
+  "slot": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "filler": [
+    "sh512800",
+    "sh510880"
+  ],
+  "cost": 0.0005,
+  "delay": 1,
+  "td": 252,
+  "pos_layer": "G1×volcap(0.15/vol60,0.4) ×taper(T0/1=1.0,T2=.85,T3=.6,T4=.5)",
+  "score": "mean(rank(mom20),rank(mom60),rank(mom120)) ; close>MA60 ; pos>0",
+  "variants": [
+    "dual",
+    "f10",
+    "fd",
+    "full",
+    "s2vt15"
+  ]
+}

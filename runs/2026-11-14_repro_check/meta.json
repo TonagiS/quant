@@ -1,0 +1,29 @@
+{
+  "run": "2026-11-14_repro_check",
+  "purpose": "验证 release data-cache-2026-11-14 是否让 2026-11-14 系列回测结果发生变化",
+  "repo_commit": "3fae88c",
+  "cache_release": "data-cache-2026-11-14",
+  "cache_sha256": "d22c96f7eeea88485490c4f556803a3e54bc9ca6de3e833c2143ca6c8036cb45",
+  "cache_size_bytes": 193425209,
+  "scripts_run": [
+    "work/statevol_v4_backtest.py",
+    "work/bull_switch_backtest.py",
+    "work/bull_fast_backtest.py",
+    "work/fastcap_v5_backtest.py",
+    "work/fc_fastgate_backtest.py",
+    "work/fastcap_ma_sens.py",
+    "work/candidates_v2_backtest.py",
+    "work/chinext_ai_backtest.py",
+    "work/highvol_stocks_backtest.py",
+    "work/ablation_v3_backtest.py",
+    "work/statevol_v4_episodes.py",
+    "work/layered_v1_backtest.py",
+    "work/long_history_backtest.py",
+    "work/fullmkt_single_asset.py eval"
+  ],
+  "verdict": "reproduced",
+  "summary_files_identical": true,
+  "max_abs_float_delta": 2.84e-13,
+  "notes": "明细表差异仅为浮点末位、行序、列序；无结论级变化",
+  "timestamp": "2026-11-14T18:20:00+08:00"
+}
