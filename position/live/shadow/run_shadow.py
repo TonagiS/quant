@@ -32,10 +32,13 @@ LOG = os.path.join(SHADOW, "shadow_log.csv")
 STATE = os.path.join(SHADOW, "state.json")
 UNIVERSE = os.path.join(SHADOW, "universe_v1.csv")
 RULES = os.path.join(SHADOW, "rules_v2.json")
+CACHE = os.path.join(ROOT, "data", "cache_ohlc")     # 本地日线缓存（tools/cache_refresh.py 每晚刷）
 
 COLS = ["date", "time", "phase", "universe_n", "enough", "cash_gate_above_ma", "n_cand",
         "targets_json", "orders_json", "px_1430_json", "px_close_json",
         "ret_fill1430", "ret_fillclose", "failed", "notes"]
+
+RETRY_N, RETRY_WAIT, COVER_MIN = 3, 2.0, 0.7   # 重试次数 / 退避基数秒 / 最低数据覆盖率
 
 
 def universe():
@@ -53,6 +56,59 @@ def hist_close(code, days=400):
     df = df.copy()
     df["date"] = pd.to_datetime(df["date"])
     return df.set_index("date")["close"].astype(float)
+
+
+def _retry(fn, *args, tries=RETRY_N, wait=RETRY_WAIT, **kw):
+    """带退避的重试；三次都失败才抛出最后一次异常。"""
+    last = None
+    for i in range(max(1, tries)):
+        try:
+            return fn(*args, **kw)
+        except Exception as e:  # noqa: BLE001
+            last = e
+            if i + 1 < tries:
+                time.sleep(wait * (i + 1))
+    raise last
+
+
+def hist_close_safe(code, days=400):
+    """历史收盘价：先打腾讯接口（重试 3 次），失败退回本地 cache_ohlc。
+
+    2026-11-17 事故：腾讯 ifzq 短时 SSL/超时，52 只里 17 只抓不到，
+    银行/上证180金融/红利被挤出候选池，规则把剩余 4 只全额吃下，凭空多出 3 卖 4 买。
+    现在抓不到就吃本地缓存（T-1 收盘），并让调用方把"用了缓存"记进日志。
+    """
+    try:
+        return _retry(hist_close, code, days), "live"
+    except Exception as e:  # noqa: BLE001
+        fp = os.path.join(CACHE, f"{code}.csv")
+        if not os.path.exists(fp):
+            raise
+        df = pd.read_csv(fp, parse_dates=["date"])
+        return df.set_index("date")["close"].astype(float), f"cache:{type(e).__name__}"
+
+
+def protect_holdings(targets, prev, missing):
+    """持仓因行情缺失掉出候选池 → 按上次权重保留，其余名字按比例缩到剩余预算。
+
+    规则本身不动（选谁、怎么配权还是 engine.targets 说了算），只保证"抓不到数据"
+    不等于"卖出"。2026-11-17 那次 3 卖 4 买就是缺了这一步。
+    """
+    keep = {c: float(prev[c]) for c in missing if c in prev}
+    if not keep:
+        return dict(targets)
+    s = sum(keep.values())
+    if s > 1.0:
+        keep = {c: w / s for c, w in keep.items()}
+        s = 1.0
+    rest = {c: float(w) for c, w in targets.items() if c not in keep}
+    tot = sum(rest.values())
+    budget = max(0.0, 1.0 - s)
+    if rest and tot > 0 and budget > 0:
+        rest = {c: w / tot * budget for c, w in rest.items()}
+    elif budget <= 0:
+        rest = {}
+    return {c: w for c, w in {**keep, **rest}.items() if w > 1e-9}
 
 
 def px_1430(code):
@@ -127,22 +183,24 @@ def main():
     state = load_json(STATE, {"last_targets": {}, "last_date": None})
 
     if a.phase == "1430":
+        raw["failed"] = {}                    # 每次跑都重置，别把昨天的失败带进今天
         px = {}
         for c in codes:
             try:
-                px[c] = px_1430(c)
+                px[c] = _retry(px_1430, c)
                 raw["codes"][c] = px[c]
             except Exception as e:
                 raw["failed"][c] = f"1430 {type(e).__name__}: {str(e)[:60]}"
             time.sleep(0.1)
         save_json(raw_path, raw)
-        hist = {}
+        hist, src = {}, {}
         ok_codes = [c for c in codes if c in px]
         for c in ok_codes:
             try:
-                s = hist_close(c)
+                s, how = hist_close_safe(c)
                 s.loc[pd.Timestamp(date.today())] = px[c]  # 14:30 价代替当日收盘
                 hist[c] = s
+                src[c] = how
             except Exception as e:
                 raw["failed"][c] = f"hist {type(e).__name__}: {str(e)[:60]}"
         close = pd.DataFrame(hist).sort_index()
@@ -158,13 +216,29 @@ def main():
             except ValueError:
                 due = True
         gate = engine.cash_gate(close) if not close.empty else {"above_ma": None}
+        coverage = (len(close.columns) / len(codes)) if codes else 0.0
+        missing_held = [c for c in prev if c not in close.columns]
+        cached_n = sum(1 for v in src.values() if str(v).startswith("cache"))
         if close.empty:
             targets, n_cand, enough = prev, "", ""
             notes = f"无可用 14:30 价（失败 {len(raw['failed'])} 只），保持上次目标"
+        elif due and coverage < COVER_MIN:
+            # 大面积取数失败：宁可不动，也不按残缺池子调仓
+            targets, n_cand, enough = prev, "", ""
+            notes = (f"数据覆盖率 {coverage:.0%} < {COVER_MIN:.0%}"
+                     f"（失败 {len(raw['failed'])} 只），保持上次目标，不调仓")
         elif due:
             t = engine.targets(close)
             targets, n_cand, enough = t["targets"], len(t["cand"]), t["enough"]
             notes = ""
+            if not targets:
+                targets = prev
+                notes = "候选不足（enough=False），保持上次目标"
+            elif missing_held:
+                targets = protect_holdings(targets, prev, missing_held)
+                notes = "行情缺失按上次权重保留：" + ",".join(missing_held)
+            if cached_n:
+                notes = (notes + "；" if notes else "") + f"{cached_n} 只历史走本地缓存"
         else:
             targets, n_cand, enough = prev, "", ""
             notes = f"非调仓日（v2 每 {reb_days} 自然日调仓，上次 {last_reb}）"
@@ -182,26 +256,29 @@ def main():
                "px_1430_json": json.dumps(px, ensure_ascii=False), "px_close_json": "",
                "ret_fill1430": "", "ret_fillclose": "",
                "failed": json.dumps(raw["failed"], ensure_ascii=False), "notes": notes}
+        save_json(raw_path, raw)              # 把 hist 阶段的失败也落盘
         if not a.dry_run:
             append_row(row)
-            if due and targets and not close.empty:
+            if due and targets and not close.empty and coverage >= COVER_MIN:
                 state["last_targets"] = targets
                 state["last_date"] = str(date.today())
                 state["last_rebalance"] = str(date.today())
                 save_json(STATE, state)
         print(f"[1430] {'调仓' if due else '非调仓日'} 目标 {len(targets)} 只，失败 {len(raw['failed'])}，"
-              f"闸门 {gate['above_ma']}")
+              f"缓存兜底 {cached_n}，覆盖率 {coverage:.0%}，闸门 {gate['above_ma']}")
         print(json.dumps(targets, ensure_ascii=False))
         return
 
     # eod：补收盘价与两种成交假设的当日收益
+    raw["failed"] = {}
     px_c = {}
     for c in codes:
         try:
-            px_c[c] = px_close(c)
+            px_c[c] = _retry(px_close, c)
         except Exception as e:
             raw["failed"][c] = f"close {type(e).__name__}: {str(e)[:60]}"
         time.sleep(0.1)
+    save_json(raw_path, raw)
     summary = load_json(os.path.join(SHADOW, "last_1430.json"), {})
     tg = state.get("last_targets", {})
     p1430 = {c: raw["codes"][c] for c in raw["codes"]}
