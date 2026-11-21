@@ -98,6 +98,8 @@ def pack_row(kind, window, n_names, arm, cost, d):
     m = RC.metr(d["ret"], d["lo"], None, d["turn"], d["expo"])
     row = {"pool": kind, "window": window, "n_names": n_names, "arm": arm,
            "cost_bp": int(round(cost * 1e4)),
+           "start": str(cal[d["lo"]].date()) if 0 <= d["lo"] < len(cal) else "",
+           "lo": int(d["lo"]),
            "cagr": m["cagr"], "mdd": m["mdd"], "calmar": m["calmar"],
            "turn_two_way": m.get("turn_two_way", m.get("turn")),
            "avg_expo": m.get("avg_expo", m.get("expo", float(np.mean(d["expo"][d["lo"]:])) if d["lo"] < len(d["expo"]) else np.nan))}
@@ -271,20 +273,28 @@ def cmd_check():
 
 
 def pool_stats():
-    """P12 在 52 只内部的规模与换手，对照固定 ext 池。"""
+    """P12 在 52 只内部的规模与换手，对照固定 ext 池。汇总从评价起点起算（不含截断后尚无 150 根的月份）。"""
     rows = []
+    ev = {"EXT19": G["ext19_start"], "EXT17": G["ext17_start"]}
     for kind in ("EXT19", "EXT17"):
         C, A, secv, sdate = ext_universe(kind)
         lists = p12_lists_in(C, A, min_bars=150)
+        ev0 = pd.Timestamp(ev[kind])
         prev = None
         for d, mem in lists.items():
-            if pd.Timestamp(d) < pd.Timestamp(sdate):
+            if pd.Timestamp(d) < ev0:
+                prev = mem
                 continue
             turned = np.nan
-            if prev is not None and (mem or prev):
+            evictions = additions = np.nan
+            if prev is not None:
                 a, b = set(mem), set(prev)
-                turned = 1.0 - len(a & b) / max(len(a | b), 1)
+                if a or b:
+                    turned = 1.0 - len(a & b) / max(len(a | b), 1)
+                    evictions = len(b - a)
+                    additions = len(a - b)
             rows.append(dict(pool=kind, date=d, n=len(mem), turnover=turned,
+                             evictions=evictions, additions=additions,
                              n_fixed=int(C.loc[d].notna().sum()) if d in C.index else np.nan))
             prev = mem
     df = pd.DataFrame(rows)
@@ -292,10 +302,18 @@ def pool_stats():
     summ = []
     for kind, g in df.groupby("pool"):
         g2 = g.dropna(subset=["turnover"])
+        # 首月若从空名单起步，换手=1 是名单诞生，不算例行换池；另报去掉首月后的换手
+        g3 = g2.iloc[1:] if len(g2) else g2
+        at40 = g[g.n == 40]
+        ev40 = at40.dropna(subset=["evictions"])
         summ.append(dict(pool=kind, n_months=int(len(g)),
                          mean_n=float(g.n.mean()), min_n=int(g.n.min()), max_n=int(g.n.max()),
+                         months_at_40=int((g.n == 40).sum()),
                          mean_turn=float(g2.turnover.mean()) if len(g2) else np.nan,
-                         share_unchanged=float((g2.turnover == 0).mean()) if len(g2) else np.nan,
+                         mean_turn_ex_first=float(g3.turnover.mean()) if len(g3) else np.nan,
+                         share_unchanged_ex_first=float((g3.turnover == 0).mean()) if len(g3) else np.nan,
+                         total_evictions=float(g3.evictions.sum()) if len(g3) else np.nan,
+                         evictions_after_40=float(ev40.evictions.sum()) if len(ev40) else 0.0,
                          mean_n_fixed=float(g.n_fixed.mean())))
     sdf = pd.DataFrame(summ)
     sdf.to_csv(RUN / "pool_p12_summary.csv", index=False)
@@ -307,6 +325,28 @@ def cmd_run():
     RUN.mkdir(parents=True, exist_ok=True)
     df, books = collect_books()
     df.to_csv(RUN / "results.csv", index=False)
+    # 同起点切片：P12 因月末生效比 FIXED 晚约半个月，把 FIXED 从 P12 的 lo 起重算，避免把这 10 余个交易日算进「P12 有没有作用」
+    same = []
+    for kind, sd in G["wins"]:
+        if not kind.startswith("EXT"):
+            continue
+        C, f_s2, secv = ER.universe(kind, sd)
+        lab = win_label(kind, f_s2)
+        ncol = int(C.notna().any().sum())
+        for cost in COSTS:
+            bp = int(round(cost * 1e4))
+            dP = books[(kind, sd, "CHAMP_EXT_P12", bp)]
+            dF = books[(kind, sd, "CHAMP_EXT_FIXED", bp)]
+            lo = int(dP["lo"])
+            for arm, d in (("CHAMP_EXT_FIXED_from_P12start", dF), ("CHAMP_EXT_P12", dP)):
+                dd = dict(d, lo=lo)
+                same.append(pack_row(kind, lab, ncol, arm, cost, dd))
+            # 也切片 S4 / S2+VT15 到同一 lo，便于对照
+            for arm in ("S4", "S2+VT15", "S2"):
+                dd = dict(books[(kind, sd, arm, bp)], lo=lo)
+                same.append(pack_row(kind, lab, ncol, f"{arm}_from_P12start", cost, dd))
+    sdf_same = pd.DataFrame(same)
+    sdf_same.to_csv(RUN / "results_same_start.csv", index=False)
     ps = pool_stats()
     print(ps.to_string(index=False), flush=True)
     # 校准摘要写入 json

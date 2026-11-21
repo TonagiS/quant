@@ -1,0 +1,36 @@
+{
+  "ext19_start": "2019-08-13",
+  "ext17_start": "2017-08-14",
+  "n_rows": 92,
+  "align_max_abs": 0.04703226814395056,
+  "pool_p12": [
+    {
+      "pool": "EXT17",
+      "n_months": 112,
+      "mean_n": 35.776785714285715,
+      "min_n": 22,
+      "max_n": 40,
+      "months_at_40": 67,
+      "mean_turn": 0.014131210948416961,
+      "mean_turn_ex_first": 0.005249510146150449,
+      "share_unchanged_ex_first": 0.8738738738738738,
+      "total_evictions": 0.0,
+      "evictions_after_40": 0.0,
+      "mean_n_fixed": 43.3125
+    },
+    {
+      "pool": "EXT19",
+      "n_months": 88,
+      "mean_n": 38.60227272727273,
+      "min_n": 27,
+      "max_n": 40,
+      "months_at_40": 67,
+      "mean_turn": 0.015705137763498776,
+      "mean_turn_ex_first": 0.004391403714803362,
+      "share_unchanged_ex_first": 0.896551724137931,
+      "total_evictions": 0.0,
+      "evictions_after_40": 0.0,
+      "mean_n_fixed": 47.70454545454545
+    }
+  ]
+}

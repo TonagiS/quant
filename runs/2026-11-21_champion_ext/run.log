@@ -1,0 +1,80 @@
+window EXT19@2019-08-13 n=52
+window EXT17@2017-08-14 n=52
+window PIT@2019-01-02 n=189
+window PIT@2019-08-13 n=189
+window PIT@2017-01-03 n=189
+window PIT@2017-08-14 n=189
+ pool  n_months    mean_n  min_n  max_n  mean_turn  share_unchanged  mean_n_fixed
+EXT17       119 33.672269      0     40   0.014131         0.866071     42.109244
+EXT19        95 35.757895      0     40   0.015705         0.886364     46.305263
+run done rows 92 align_max 0.04703226814395056
+
+===== 5bp calmar =====
+window                    EXT19@2019-08-13  EXT17@2017-08-14  PIT@2019-01-02  PIT@2019-08-13  PIT@2017-01-03  PIT@2017-08-14
+arm                                                                                                                         
+S2                                   0.394             0.294           0.186           0.156           0.185           0.101
+S2+VT15                              0.661             0.411           0.492           0.330           0.302           0.151
+S4                                   0.692             0.438           0.665           0.467           0.371           0.330
+CHAMP_EXT_FIXED                      0.689             0.696             NaN             NaN             NaN             NaN
+CHAMP_EXT_P12                        0.727             0.749             NaN             NaN             NaN             NaN
+C3                                   1.024             0.941           1.111           1.024           0.901           0.941
+C3 60% + S4                          0.961             0.692           1.244           0.947           0.711           0.675
+C3 60% + CHAMP_EXT_FIXED             0.996             1.003             NaN             NaN             NaN             NaN
+C3 60% + CHAMP_EXT_P12               1.034             0.964             NaN             NaN             NaN             NaN
+CHAMP_PIT                              NaN               NaN           1.239           0.721           0.718           0.899
+C3 60% + CHAMP_PIT                     NaN               NaN           1.447           1.032           1.256           1.114
+
+===== 20bp calmar =====
+window                    EXT19@2019-08-13  EXT17@2017-08-14  PIT@2019-01-02  PIT@2019-08-13  PIT@2017-01-03  PIT@2017-08-14
+arm                                                                                                                         
+S2                                   0.255             0.174           0.086           0.061           0.086           0.013
+S2+VT15                              0.487             0.284           0.286           0.198           0.166           0.059
+S4                                   0.517             0.305           0.441           0.324           0.205           0.158
+CHAMP_EXT_FIXED                      0.480             0.442             NaN             NaN             NaN             NaN
+CHAMP_EXT_P12                        0.442             0.521             NaN             NaN             NaN             NaN
+C3                                   0.991             0.910           1.079           0.991           0.871           0.910
+C3 60% + S4                          0.812             0.549           0.888           0.788           0.482           0.497
+C3 60% + CHAMP_EXT_FIXED             0.818             0.777             NaN             NaN             NaN             NaN
+C3 60% + CHAMP_EXT_P12               0.834             0.809             NaN             NaN             NaN             NaN
+CHAMP_PIT                              NaN               NaN           0.899           0.450           0.413           0.581
+C3 60% + CHAMP_PIT                     NaN               NaN           1.190           0.822           0.826           0.905
+window EXT19@2019-08-13 n=52
+window EXT17@2017-08-14 n=52
+window PIT@2019-01-02 n=189
+window PIT@2019-08-13 n=189
+window PIT@2017-01-03 n=189
+window PIT@2017-08-14 n=189
+ pool  n_months    mean_n  min_n  max_n  months_at_40  mean_turn  mean_turn_ex_first  share_unchanged_ex_first  total_evictions  evictions_after_40  mean_n_fixed
+EXT17       112 35.776786     22     40            67   0.014131            0.005250                  0.873874              0.0                 0.0     43.312500
+EXT19        88 38.602273     27     40            67   0.015705            0.004391                  0.896552              0.0                 0.0     47.704545
+run done rows 92 align_max 0.04703226814395056
+
+===== 5bp calmar =====
+window                    EXT19@2019-08-13  EXT17@2017-08-14  PIT@2019-01-02  PIT@2019-08-13  PIT@2017-01-03  PIT@2017-08-14
+arm                                                                                                                         
+S2                                   0.394             0.294           0.186           0.156           0.185           0.101
+S2+VT15                              0.661             0.411           0.492           0.330           0.302           0.151
+S4                                   0.692             0.438           0.665           0.467           0.371           0.330
+CHAMP_EXT_FIXED                      0.689             0.696             NaN             NaN             NaN             NaN
+CHAMP_EXT_P12                        0.727             0.749             NaN             NaN             NaN             NaN
+C3                                   1.024             0.941           1.111           1.024           0.901           0.941
+C3 60% + S4                          0.961             0.692           1.244           0.947           0.711           0.675
+C3 60% + CHAMP_EXT_FIXED             0.996             1.003             NaN             NaN             NaN             NaN
+C3 60% + CHAMP_EXT_P12               1.034             0.964             NaN             NaN             NaN             NaN
+CHAMP_PIT                              NaN               NaN           1.239           0.721           0.718           0.899
+C3 60% + CHAMP_PIT                     NaN               NaN           1.447           1.032           1.256           1.114
+
+===== 20bp calmar =====
+window                    EXT19@2019-08-13  EXT17@2017-08-14  PIT@2019-01-02  PIT@2019-08-13  PIT@2017-01-03  PIT@2017-08-14
+arm                                                                                                                         
+S2                                   0.255             0.174           0.086           0.061           0.086           0.013
+S2+VT15                              0.487             0.284           0.286           0.198           0.166           0.059
+S4                                   0.517             0.305           0.441           0.324           0.205           0.158
+CHAMP_EXT_FIXED                      0.480             0.442             NaN             NaN             NaN             NaN
+CHAMP_EXT_P12                        0.442             0.521             NaN             NaN             NaN             NaN
+C3                                   0.991             0.910           1.079           0.991           0.871           0.910
+C3 60% + S4                          0.812             0.549           0.888           0.788           0.482           0.497
+C3 60% + CHAMP_EXT_FIXED             0.818             0.777             NaN             NaN             NaN             NaN
+C3 60% + CHAMP_EXT_P12               0.834             0.809             NaN             NaN             NaN             NaN
+CHAMP_PIT                              NaN               NaN           0.899           0.450           0.413           0.581
+C3 60% + CHAMP_PIT                     NaN               NaN           1.190           0.822           0.826           0.905
