@@ -13,6 +13,12 @@ invest-wiki-main/
 # 一次性的备份与归档
 bak/
 _outbox/
+_send/
+# 改文件前的手工备份
+*.bak_*
+
+# 本地行情/桥缓存（体积大，可重建）
+_cache/
 
 # pip 安装残留 / torch 编译缓存
 pip-*/
