@@ -36,6 +36,10 @@ MIN_STATS = 60
 COST = L.COST
 END = "2026-11-13"
 SPLIT_JUMP = 0.30
+EVENT_TOL = 0.005      # v2 候选事件阈值（不复权与前复权日收益之差）
+K_TOL = 0.005          # v2 确认 k 变化的阈值（事件前后 median(Δqfq/Δraw) 相对差）
+K_WIN = 30             # v2 事件前后各取的有效日数
+TR_METHOD = "v2"      # "v1" = 2026-11-21 之前的口径，仅用于复现
 MAX_GAP_DAYS = 30
 ARMS = ["A", "B", "C", "D", "E", "F"]
 ALL_ARMS = ["BH"] + ARMS
@@ -81,16 +85,62 @@ def tr_series(code: str, naive=False):
         # qfq = 拆分/折算按比例 + 分红按减法。按拆分日（不复权单日变动>30%）分段，
         # 段内比例 k = median(Δqfq/Δraw)，总收益 r_t = Δqfq_t / (k * raw_{t-1})；拆分日用 qfq pct。
         rr = df.r.pct_change()
-        jump = (rr.abs() > SPLIT_JUMP).fillna(False)
-        seg = jump.cumsum()
-        dq, dr = df.q.diff(), df.r.diff()
-        x = (dq / dr).where((dr.abs() > 0) & ~jump)
-        k = x.groupby(seg).transform("median")
-        r = dq / (k * df.r.shift(1))
         qpct = df.q.pct_change()
-        r[jump] = qpct[jump]
+        dq, dr = df.q.diff(), df.r.diff()
+        if TR_METHOD == "v1":
+            jump = (rr.abs() > SPLIT_JUMP).fillna(False)
+            seg = jump.cumsum()
+            x = (dq / dr).where((dr.abs() > 0) & ~jump)
+            k = x.groupby(seg).transform("median")
+            r = dq / (k * df.r.shift(1))
+            r[jump] = qpct[jump]
+        else:
+            # v2（2026-11-21 修正）。v1 只把 |不复权日收益| > 30% 当作分段点（拆分），
+            # 漏掉了"按比例前复权"的其他事件：如 510500 2022-08-29 大额分红（不复权 −12.7%，前复权 −0.07%）、
+            # 159934 2025-09-22 份额合并（不复权 +7.5%，前复权 +1.9%）。漏掉后整段 k 取了错误的中位数，
+            # 事件后每天的收益都按 1/k 被系统性放大或缩小（510500 约 ×1.144，159934 约 ×0.95）。
+            # v2：候选事件 = |Δqfq/(k_滚动·raw_{t-1}) − 不复权日收益| > EVENT_TOL（k_滚动 = 前 K_WIN 个有效日 median(Δqfq/Δraw)），或 |不复权日收益| > 30%；
+            # 只有事件前后 median(Δqfq/Δraw) 相差 > K_TOL、且与当日隐含跳变 (1+按前段 k 估的总收益)/(1+不复权收益) 一致（对数比误差 <30%）
+            # 时才确认为 k 变化点并分段；|不复权日收益| > 30% 的拆分照旧分段。
+            # 段内收益仍是 Δqfq / (k·raw_{t-1})（保留减法前复权里的分红）；变化点当日用前段 k。
+            xr = (dq / dr).where(rr.abs() > 0.003)
+            kroll = xr.rolling(K_WIN, min_periods=5).median().shift(1)   # 事件前的滚动 k
+            tr_hat = dq / (kroll * df.r.shift(1))                          # 按事件前 k 估的当日总收益
+            resid = tr_hat - rr
+            cand = ((resid.abs() > EVENT_TOL) | (rr.abs() > SPLIT_JUMP)).fillna(False)
+            x = xr.where(~cand)
+            xv = x.dropna()
+            brk = pd.Series(False, index=df.index)
+            for t in df.index[cand.to_numpy()]:
+                if abs(rr[t]) > SPLIT_JUMP:          # v1 的拆分点照旧
+                    brk[t] = True
+                    continue
+                implied = (1 + tr_hat[t]) / (1 + rr[t])   # 按比例事件当日隐含的 k 跳变
+                before = xv[xv.index < t].iloc[-K_WIN:]
+                after = xv[xv.index > t].iloc[:K_WIN]
+                if len(before) >= 5 and len(after) >= 5 and np.isfinite(implied) and implied > 0 and abs(implied - 1) > K_TOL:
+                    kb, ka = before.median(), after.median()
+                    if kb > 0 and ka > 0 and abs(ka / kb - 1) > K_TOL and abs(np.log(ka / kb) / np.log(implied) - 1) < 0.3:
+                        brk[t] = True   # 事件前后 k 的变化与当日隐含跳变一致，才确认
+            jump = brk
+            seg = jump.cumsum()
+            xs = (dq / dr).where((dr.abs() > 0) & ~cand)
+            gs = xs.groupby(seg)
+            kseg_v = gs.median().where(gs.count() >= 5).reindex(range(int(seg.max()) + 1))
+            bdays = df.index[jump.to_numpy()]
+            for j in range(1, len(kseg_v)):          # 有效日不足的短段（如样本末尾刚拆分）：k = 前段 k × 当日前复权/不复权涨幅比
+                if pd.isna(kseg_v.iloc[j]) and pd.notna(kseg_v.iloc[j - 1]):
+                    t = bdays[j - 1]
+                    kseg_v.iloc[j] = kseg_v.iloc[j - 1] * (1 + qpct[t]) / (1 + rr[t])
+            kseg_v = kseg_v.ffill().bfill().fillna(1.0)
+            k = seg.map(kseg_v)
+            kprev = seg.map(kseg_v.shift(1))
+            r = dq / (k * df.r.shift(1))
+            r_evt = dq / (kprev * df.r.shift(1))
+            r[jump] = r_evt[jump].where(kprev[jump].notna(), qpct[jump])
         q = q.loc[df.index]
-        kseg = k.groupby(seg).first()
+        kseg = k.groupby(seg).first().dropna().round(3)
+        kseg = kseg[kseg.ne(kseg.shift())]
         info = f"tr(jump_days={int(jump.sum())};k_segs={','.join(f'{v:.3g}' for v in kseg.dropna())}){gap_info}"
     r = r.fillna(0.0)
     bad = ~np.isfinite(r) | (r <= -0.95)
