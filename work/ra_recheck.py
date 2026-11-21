@@ -90,11 +90,16 @@ def eval_series(args):
     pos, _ = FC.arms_positions(F)
     ret = F["ret"].fillna(0.0).to_numpy()
     dates = F["ret"].index
-    ev = np.arange(len(dates)) >= LH.WARMUP
-    if ev_from is not None:
-        ev &= np.asarray(dates >= pd.Timestamp(ev_from))
+    if panel.startswith("cs950"):      # 原截面口径：2019 起，不要求 250 根预热，至少 60 日
+        ev = np.asarray(dates >= pd.Timestamp(ev_from))
+        min_n = 60
+    else:
+        ev = np.arange(len(dates)) >= LH.WARMUP
+        if ev_from is not None:
+            ev &= np.asarray(dates >= pd.Timestamp(ev_from))
+        min_n = 250
     ev &= np.asarray(dates <= END)
-    if ev.sum() < 250:
+    if ev.sum() < min_n:
         return []
     i0 = int(np.argmax(ev))
     i1 = int(len(ev) - np.argmax(ev[::-1]))
