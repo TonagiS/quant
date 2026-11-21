@@ -242,6 +242,7 @@ def anova(X_, met):
 
 
 def post(t0):
+    prep()
     T = pd.read_csv(RUN / "grid_results.csv.gz")
     res = {}
     # (1) 时间切分选择
